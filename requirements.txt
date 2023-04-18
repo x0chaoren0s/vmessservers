@@ -1,0 +1,7 @@
+Kivy==2.1.0
+requests==2.27.0
+urllib3
+chardet
+idna
+lxml==4.9.1
+tqdm==4.65.0
