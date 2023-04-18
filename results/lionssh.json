@@ -1,0 +1,12 @@
+{
+    "https://lionssh.com/create/vmess-ws-in-2": {
+        "region": "India",
+        "host": "vm.in.goserver.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/asia/IN/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNCBsaW9uc3NoOiBJbmRpYSIsICJhZGQiOiAidm0uaW4uZ29zZXJ2ZXIucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICI0ZmYwYjUxYy1hYTI3LTRhMzAtYjgxMS02NDZlNzhjNDg0Y2YiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImluLmdvc2VydmVyLnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
+        "date_create": "2023-04-17",
+        "date_expire": "2023-04-24",
+        "date_span": "2023-04-17 - 2023-04-24"
+    }
+}
