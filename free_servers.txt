@@ -1,0 +1,46 @@
+ipconfig /flushdns
+####  free servers start
+107.170.78.12	ciscossh.com
+# 104.21.64.88	www.jagoanssh.com
+188.114.97.3	www.jagoanssh.com
+172.67.176.210	www.vpnjantit.com
+209.50.56.159	freesslvpn.us
+207.180.221.116	www.speedssh.com
+104.21.69.131	www.fastssh.com
+207.180.221.116	www.dynamicssh.com
+209.50.49.30	androvpn.com
+94.237.75.13	akunssh.net
+172.67.190.86	sshocean.com
+104.18.109.96	openvpn.net
+104.18.109.96	swupdate.openvpn.net
+104.26.0.190	loli.net
+188.114.97.0	serverssh.net
+172.67.179.173	cloudssh.us
+178.238.229.117	www.flyssh.com
+104.21.13.155	vpnudp.com
+178.238.229.117	www.ssh-free.com
+172.67.146.203	sshdropbear.net
+172.67.171.219	opentunnel.net
+172.67.170.134	globalssh.net
+185.2.139.203	www.vpnbook.com
+162.0.217.29	www.freeopenvpn.org
+185.159.159.140	protonvpn.com
+68.65.122.154	freevpn4you.net
+54.192.18.82	privadovpn.com
+172.67.218.175	skyssh.com
+
+165.232.84.38	m.nl.ssh.speedssh.com
+164.90.229.112	m.de.ssh.speedssh.com
+143.198.172.122	m.us1.ssh.speedssh.com
+178.128.106.190	m.sg1.ssh.speedssh.com
+31.192.238.133	ssh-sg1.starssh.com
+31.192.234.147	ssh-sg.starssh.com
+31.192.238.133	sg1.starssh.com
+31.192.234.242	sg3.starssh.com
+31.192.234.143	sgm1.starssh.com
+38.9.141.95		id.starssh.com
+31.192.235.102	nl-ssh30days.starssh.com
+31.192.237.7	de-ssh30days.starssh.com
+31.192.232.86	usa-ssh30days.starssh.com
+5.34.178.157	usa4.vpnjantit.com
+####  free servers end
