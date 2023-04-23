@@ -10,7 +10,9 @@ sys.path.append(Path(__file__).parent.parent.parent)
 
 from ..server_list.server_list_parser_base import Server_list_parser_base
 
-
+from selenium import webdriver
+from selenium.webdriver.edge.options import Options
+from selenium.webdriver.common.by import By
 
 class Server_parser_base:
     name = 'Server_parser_base'
@@ -20,6 +22,7 @@ class Server_parser_base:
                  server_dict: dict = None,
                  server_list_parser: Server_list_parser_base = None,
                  interval_sec: int = 0,
+                 use_selenium: bool = False,
                  change_session: bool = True
                  ) -> None:
         '''
@@ -30,7 +33,8 @@ class Server_parser_base:
         self.server_dict = server_dict
         self.server_list_parser = server_list_parser
         self.interval_sec = interval_sec
-
+        
+        self.use_selenium = use_selenium
         self.change_session = change_session
         self.session = self.new_session()
         self.headers = {
@@ -53,6 +57,12 @@ class Server_parser_base:
         self.logger = logger
 
     def parse(self, save=True, init_index=0) -> dict:
+        if self.use_selenium:
+            return self.parse_by_selenium(save, init_index)
+        else:
+            return self.parse_by_requests(save, init_index)
+
+    def parse_by_requests(self, save=True, init_index=0) -> dict:
         if self.server_dict is None:
             self.server_dict = self.server_list_parser.parse()
         self.logger.info(f'num of servers: {len(self.server_dict)}')
@@ -103,9 +113,58 @@ class Server_parser_base:
                 json.dump(ret, fout, indent=4)
             config_file = self.save_folder/f'{self.name}.conf'
             with open(config_file, 'w') as fout:
-                for i,server_info in enumerate(ret.values()):
-                    if i==0:
+                data_span_printed = False
+                for server_info in ret.values():
+                    if 'error_info' in server_info:
+                        continue
+                    if not data_span_printed:
                         print(f"# {server_info['date_span']}", file=fout)
+                        data_span_printed = True
+                    if 'config' in server_info:
+                        print(server_info['config'], file=fout)
+        num_tried = len(ret)
+        num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
+        self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
+        return ret
+
+    def parse_by_selenium(self, save=True, init_index=0) -> dict:
+        if self.server_dict is None:
+            self.server_dict = self.server_list_parser.parse()
+        self.logger.info(f'num of servers: {len(self.server_dict)}')
+
+        ret = self.server_dict.copy()
+        for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
+            if i<init_index:
+                continue
+            self.logger.info(url)
+            if i>0:
+                time.sleep(self.interval_sec)
+            options = Options() # 定义一个option对象
+            options.add_argument("headless")
+            driver = webdriver.Edge(options = options)  # Edge浏览器无头模式
+            driver.get(url)
+            info_dict = self.filling_form_via_selenium(driver) # keys: user, pass, host, [ip], port, config
+            driver.close()
+            ret[url].update(info_dict)
+            if 'error_info' in ret[url]:
+                self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
+            else:
+                ret[url]['config'] = self.adjust_config(ret[url])
+                ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
+                self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
+        if save:
+            json_file = self.save_folder/f'{self.name}.json'
+            with open(json_file, 'w') as fout:
+                json.dump(ret, fout, indent=4)
+            config_file = self.save_folder/f'{self.name}.conf'
+            with open(config_file, 'w') as fout:
+                data_span_printed = False
+                for server_info in ret.values():
+                    if 'error_info' in server_info:
+                        continue
+                    if not data_span_printed:
+                        print(f"# {server_info['date_span']}", file=fout)
+                        data_span_printed = True
                     if 'config' in server_info:
                         print(server_info['config'], file=fout)
         num_tried = len(ret)
@@ -120,6 +179,11 @@ class Server_parser_base:
         ''' keys: user, pass, host, [ip], port, config '''
         raise Exception('未实现 after_filling_form 方法')
     
+    def filling_form_via_selenium(self, driver_in_form_page) -> dict:
+        ''' keys: config, date_create, date_expire '''
+        raise Exception('未实现 filling_form_via_selenium 方法')
+
+
     def solve_recaptcha_v2(self, websiteURL: str, websiteKey: str) -> str:
         sleep_sec = 4 # 循环请求识别结果，sleep_sec 秒请求一次
         max_sec = 180  # 最多等待 max_sec 秒
@@ -261,7 +325,7 @@ class Server_parser_base:
 
 
     @staticmethod
-    def getRandStr(strLen = -1):
+    def getRandStr(strLen = -1) -> str:
         ''' strLen：随机字符串的长度，默认为 -1，代表闭区间 [4,12] 内的随机长度 '''
         if strLen == -1:
             strLen = random.randint(4,12)
