@@ -1,12 +1,32 @@
 {
-    "https://lionssh.com/create/vmess-ws-in-2": {
-        "region": "India",
-        "host": "vm.in.goserver.pw",
+    "https://lionssh.com/create/vmess-kr-1": {
+        "region": "South Korea",
+        "host": "vm.kr.goserver.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/IN/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNCBsaW9uc3NoOiBJbmRpYSIsICJhZGQiOiAidm0uaW4uZ29zZXJ2ZXIucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICI0ZmYwYjUxYy1hYTI3LTRhMzAtYjgxMS02NDZlNzhjNDg0Y2YiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImluLmdvc2VydmVyLnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
-        "date_create": "2023-04-17",
-        "date_expire": "2023-04-24",
-        "date_span": "2023-04-17 - 2023-04-24"
+        "Referer": "https://lionssh.com/services/vray/asia/KR/30-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNS0yMCBsaW9uc3NoOiBTb3V0aCBLb3JlYSIsICJhZGQiOiAidm0ua3IuZ29zZXJ2ZXIucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICJkZWEyM2YzNS03YmVhLTRkMjgtOTNlYy02YTdlNDNjN2VkMzIiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImtyLmdvc2VydmVyLnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
+        "date_create": "2023-04-20",
+        "date_expire": "2023-05-20",
+        "date_span": "2023-04-20 - 2023-05-20"
+    },
+    "https://lionssh.com/create/vmess-ws-us-1": {
+        "region": "America",
+        "host": "vm.us.goserver.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/america/US/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBsaW9uc3NoOiBBbWVyaWNhIiwgImFkZCI6ICJ2bS51cy5nb3NlcnZlci5wdyIsICJwb3J0IjogIjgwIiwgImlkIjogIjExYTA4ZmU0LWQzNDUtNDFkZi1iMGYyLWFkZjgwMDU2MWYyNSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAidXMuZ29zZXJ2ZXIucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvbnRscyIsICJ0bHMiOiAiIn0=",
+        "date_create": "2023-04-20",
+        "date_expire": "2023-04-27",
+        "date_span": "2023-04-20 - 2023-04-27"
+    },
+    "https://lionssh.com/create/vmess-ws-au-1": {
+        "region": "Australia",
+        "host": "vm.au.goserver.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/AU/AU/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBsaW9uc3NoOiBBdXN0cmFsaWEiLCAiYWRkIjogInZtLmF1Lmdvc2VydmVyLnB3IiwgInBvcnQiOiAiODAiLCAiaWQiOiAiMjY1ODdhNzAtZmRjYi00ZjQ2LWJiMGUtZTk3NTljMjJiMmMwIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJhdS5nb3NlcnZlci5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy9udGxzIiwgInRscyI6ICIifQ==",
+        "date_create": "2023-04-20",
+        "date_expire": "2023-04-27",
+        "date_span": "2023-04-20 - 2023-04-27"
     }
 }

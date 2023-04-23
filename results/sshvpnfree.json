@@ -1,0 +1,71 @@
+{
+    "https://sshvpnfree.com/accounts/VMESS/12": {
+        "region": "France, Strasbourg",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBGcmFuY2UsIFN0cmFzYm91cmciLCAiYWRkIjogIjE0NS4yMzkuMTk3LjIyNiIsICJwb3J0IjogIjgwIiwgImlkIjogImU2NjZmYmU5LTljNjItNGM2NS1hMWNhLTIwYjc1ZTgwMTMwYSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSJ9",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/20": {
+        "region": "Poland, Warsaw",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBQb2xhbmQsIFdhcnNhdyIsICJhZGQiOiAiMTQ2LjU5LjEzLjE1MSIsICJwb3J0IjogIjgwIiwgImlkIjogIjk2Yzk2OWVjLThhMzYtNDhjMC1hYzMyLWNhMzYwYTZhYzIxNiIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSJ9",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/28": {
+        "region": "Singapore, Singapore",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJhZGQiOiAiMTUuMjM1LjE0MS4yMjEiLCAicG9ydCI6ICI4MCIsICJpZCI6ICI4MzU2ZTA2OS1hYjVjLTQ5Y2ItODM3OS0zMDBlY2Q4Nzg2ZWIiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3ZtZXNzLyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICIiLCAidGxzIjogIm5vbmUifQ==",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/36": {
+        "region": "Australia, Sydney",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBBdXN0cmFsaWEsIFN5ZG5leSIsICJhZGQiOiAiNTEuMTYxLjE2MC4xNiIsICJwb3J0IjogIjgwIiwgImlkIjogIjc3ZDg5NWFhLTM2M2ItNGQ3Ni04MTFlLTM0ZjVkNmFmNDNjYyIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSJ9",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/44": {
+        "region": "Canada, Beauharnois",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBDYW5hZGEsIEJlYXVoYXJub2lzIiwgImFkZCI6ICI1MS4yMjIuMjcuOCIsICJwb3J0IjogIjgwIiwgImlkIjogImQyNTRkYTZlLTcxMTEtNDI3YS04OWNkLWNiNmE0YjJjZjFkNyIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSJ9",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/60": {
+        "region": "France, Gravelines",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "error_info": "server in maintenance, or some other thing wrong."
+    },
+    "https://sshvpnfree.com/accounts/VMESS/72": {
+        "region": "England, London",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBFbmdsYW5kLCBMb25kb24iLCAiYWRkIjogIjU0LjM3LjE4LjIwNSIsICJwb3J0IjogIjgwIiwgImlkIjogIjA4NTk2ZmJmLTE5ZmEtNDJhMC04ZGQ2LTk1YjkyMDc4MDMyYyIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvdm1lc3MvIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJ0bHMiOiAibm9uZSJ9",
+        "date_span": "2023-04-23 - 2023-04-27"
+    },
+    "https://sshvpnfree.com/accounts/VMESS/80": {
+        "region": "Germany, Limburg",
+        "port": 80,
+        "Referer": "https://sshvpnfree.com/type/VMESS",
+        "date_create": "2023-04-23",
+        "date_expire": "2023-04-27",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNC0yNyBzc2h2cG5mcmVlOiBHZXJtYW55LCBMaW1idXJnIiwgImFkZCI6ICI1MS42OC4xODguMTczIiwgInBvcnQiOiAiODAiLCAiaWQiOiAiYjE2MTVkNjYtM2IxZC00ODBjLWJkMjUtMTgyNTRhMDEyYjQxIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi92bWVzcy8iLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInRscyI6ICJub25lIn0=",
+        "date_span": "2023-04-23 - 2023-04-27"
+    }
+}
