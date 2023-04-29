@@ -1,14 +1,14 @@
 {
-    "https://www.vpnjantit.com/create-free-account?server=ae3&type=V2ray": {
-        "region": "Al Fujairah City, UAE",
-        "host": "ae3.vpnjantit.com",
-        "ip": "45.86.228.210",
+    "https://www.vpnjantit.com/create-free-account?server=ae2&type=V2ray": {
+        "region": "Dubai, UAE",
+        "host": "ae2.vpnjantit.com",
+        "ip": "5.44.42.16",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS44Ni4yMjguMjEwIiwgInBzIjogInZwbmphbnRpdDogQWwgRnVqYWlyYWggQ2l0eSwgVUFFIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjNjMGVjZGFlLWRjNjMtMTFlZC1iNWNmLTAwMTYzYzFiN2IzMCJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjE2IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBEdWJhaSwgVUFFIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjUyMzQ1NTQ0LWU1ZmItMTFlZC05NGVlLWQzMTc4Mjk0ZTEwMSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ae4&type=V2ray": {
         "region": "Dubai, UAE",
@@ -16,10 +16,10 @@
         "ip": "5.44.42.42",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjQyIiwgInBzIjogInZwbmphbnRpdDogRHViYWksIFVBRSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI0NjhlMTczMC1kYzYzLTExZWQtOWFiOS1iYjM5ZWQ5ZjE3M2QifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjQyIiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBEdWJhaSwgVUFFIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjViNGIzNDkwLWU1ZmItMTFlZC05YzViLTFiM2U5ODUxM2U3MyJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ae5&type=V2ray": {
         "region": "Dubai, UAE",
@@ -27,32 +27,21 @@
         "ip": "5.44.42.44",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjQ0IiwgInBzIjogInZwbmphbnRpdDogRHViYWksIFVBRSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI1N2U4MjhjMi1kYzYzLTExZWQtOGU3OS01ZjI4MmExNjRmZGUifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjQ0IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBEdWJhaSwgVUFFIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjZmZDdjNmM2LWU1ZmItMTFlZC1hMjAzLTZmZjljNzUwNDAwOSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=bd1&type=V2ray": {
-        "region": "Dhaka, Bangladesh",
-        "host": "bd1.vpnjantit.com",
-        "ip": "38.54.42.200",
+    "https://www.vpnjantit.com/create-free-account?server=az1&type=V2ray": {
+        "region": "Zardob, Azerbaijan",
+        "host": "az1.vpnjantit.com",
+        "ip": "180.149.44.67",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC40Mi4yMDAiLCAicHMiOiAidnBuamFudGl0OiBEaGFrYSwgQmFuZ2xhZGVzaCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI2MmU4ZmM2YS1kYzYzLTExZWQtOTMxNy01MjU0MDFmNDBiYWUifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
-    },
-    "https://www.vpnjantit.com/create-free-account?server=bg1&type=V2ray": {
-        "region": "Sofia, Bulgaria",
-        "host": "bg1.vpnjantit.com",
-        "ip": "195.123.227.30",
-        "port": 10000,
-        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyNy4zMCIsICJwcyI6ICJ2cG5qYW50aXQ6IFNvZmlhLCBCdWxnYXJpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3MWY0ZjY1MC1kYzYzLTExZWQtOTA4ZC1mYjM4ZDUzNjVmNzcifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODAuMTQ5LjQ0LjY3IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBaYXJkb2IsIEF6ZXJiYWlqYW4iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNzZiNTAzZGMtZTVmYi0xMWVkLTk0NjktNzc5MzQwOWVmMWExIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=bg2&type=V2ray": {
         "region": "Sofia, Bulgaria",
@@ -60,10 +49,10 @@
         "ip": "195.123.228.112",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xMTIiLCAicHMiOiAidnBuamFudGl0OiBTb2ZpYSwgQnVsZ2FyaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiN2NhMGM2ZDgtZGM2My0xMWVkLTk4NmItOWY4YjZjMTc4MWFmIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xMTIiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFNvZmlhLCBCdWxnYXJpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI4OWZiZTlmNi1lNWZiLTExZWQtYmE4Zi01YjdhZDgxZTI3ZjAifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=bg3&type=V2ray": {
         "region": "Sofia, Bulgaria",
@@ -71,10 +60,32 @@
         "ip": "195.123.228.18",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xOCIsICJwcyI6ICJ2cG5qYW50aXQ6IFNvZmlhLCBCdWxnYXJpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI4NTJhMGRmMC1kYzYzLTExZWQtYjg1Yy1mYjQyOTAxYTg5Y2MifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xOCIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogU29maWEsIEJ1bGdhcmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjkyMWQ1NmVjLWU1ZmItMTFlZC05M2UxLWQzYmJhOTVlZThiMSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=bh1&type=V2ray": {
+        "region": "Manama, Bahrain",
+        "host": "bh1.vpnjantit.com",
+        "ip": "38.54.2.143",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC4yLjE0MyIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogTWFuYW1hLCBCYWhyYWluIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFiODUxZDBlLWU1ZmItMTFlZC1hNGViLTUyNTRmNWIzYTNhYSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ca1&type=V2ray": {
+        "region": "Montr\ufffdal, Canada",
+        "host": "ca1.vpnjantit.com",
+        "ip": "51.79.70.147",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43OS43MC4xNDciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IE1vbnRyXHVmZmZkYWwsIENhbmFkYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiMTg4NGE1MC1lNWZiLTExZWQtYmU1Yi0xYmJlZWViMTc0MGEifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ca2&type=V2ray": {
         "region": "Montr\ufffdal, Canada",
@@ -82,10 +93,10 @@
         "ip": "192.99.247.52",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTIuOTkuMjQ3LjUyIiwgInBzIjogInZwbmphbnRpdDogTW9udHJcdWZmZmRhbCwgQ2FuYWRhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjg1NGEzZjQ0LWRjNjMtMTFlZC04OWIxLTI3ZWI0YjJiMGRjNyJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTIuOTkuMjQ3LjUyIiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBNb250clx1ZmZmZGFsLCBDYW5hZGEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYmNmOWVlMTYtZTVmYi0xMWVkLTg1NGYtNGZiMWE0NzVhYzJjIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=cz1&type=V2ray": {
         "region": "Prague, Czech Republic",
@@ -93,10 +104,10 @@
         "ip": "195.123.246.120",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0Ni4xMjAiLCAicHMiOiAidnBuamFudGl0OiBQcmFndWUsIEN6ZWNoIFJlcHVibGljIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjk1YmQxMGQ2LWRjNjMtMTFlZC04MjRlLTUyY2YwMGU0NjFhZCJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0Ni4xMjAiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYzg2NDRjMmUtZTVmYi0xMWVkLTk2OTYtNTJjZjAwZTQ2MWFkIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=cz2&type=V2ray": {
         "region": "Prague, Czech Republic",
@@ -104,10 +115,54 @@
         "ip": "62.233.57.53",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI2Mi4yMzMuNTcuNTMiLCAicHMiOiAidnBuamFudGl0OiBQcmFndWUsIEN6ZWNoIFJlcHVibGljIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjlkNzFhOWI4LWRjNjMtMTFlZC1hY2Q3LTFmMmViYTRkYzEyNSJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI2Mi4yMzMuNTcuNTMiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiY2YxNGJlMjgtZTVmYi0xMWVkLTllY2ItYjM1OWY4ODM0NmQzIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=fi1&type=V2ray": {
+        "region": "Helsinki, Finland",
+        "host": "fi1.vpnjantit.com",
+        "ip": "185.252.144.66",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODUuMjUyLjE0NC42NiIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogSGVsc2lua2ksIEZpbmxhbmQiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZDc4NDY1MGUtZTVmYi0xMWVkLTljNzktOGYwYWIwMmFmYzhlIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=gr2&type=V2ray": {
+        "region": "Frankfurt am Main, Germany",
+        "host": "gr2.vpnjantit.com",
+        "ip": "51.75.74.253",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43NS43NC4yNTMiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEZyYW5rZnVydCBhbSBNYWluLCBHZXJtYW55IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImRmMDVhZGJhLWU1ZmItMTFlZC1hMWJkLTVmZWUxMDZhZjg4ZCJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=gr4&type=V2ray": {
+        "region": "Bietigheim-Bissingen, Germany",
+        "host": "gr4.vpnjantit.com",
+        "ip": "87.106.198.110",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4Ny4xMDYuMTk4LjExMCIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogQmlldGlnaGVpbS1CaXNzaW5nZW4sIEdlcm1hbnkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZTYyNWQ5ZWUtZTVmYi0xMWVkLTgwMzYtMDdmN2RjZTFhOWQxIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=gr5&type=V2ray": {
+        "region": "Karlsruhe, Germany",
+        "host": "gr5.vpnjantit.com",
+        "ip": "217.160.33.100",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTcuMTYwLjMzLjEwMCIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogS2FybHNydWhlLCBHZXJtYW55IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImVkZDZmYzJjLWU1ZmItMTFlZC1iOGQ3LTE3MTk2NjJjYTY2NiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=hu1&type=V2ray": {
         "region": "Budapest, Hungary",
@@ -115,10 +170,10 @@
         "ip": "5.181.77.240",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjE4MS43Ny4yNDAiLCAicHMiOiAidnBuamFudGl0OiBCdWRhcGVzdCwgSHVuZ2FyeSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJhNjFhN2E0YS1kYzYzLTExZWQtYjYzNy1iNzMwZTI3MGY0ZmEifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjE4MS43Ny4yNDAiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEJ1ZGFwZXN0LCBIdW5nYXJ5IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImY3ZTZhOTRjLWU1ZmItMTFlZC05MzA3LTEzYTdkOGIzNDUzOCJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=il1&type=V2ray": {
         "region": "Petah Tiqva, Israel",
@@ -126,10 +181,10 @@
         "ip": "195.20.17.47",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMjAuMTcuNDciLCAicHMiOiAidnBuamFudGl0OiBQZXRhaCBUaXF2YSwgSXNyYWVsIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImI2NTFmYzc2LWRjNjMtMTFlZC05YjAwLTAwMTYzYzUwZGI2YSJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMjAuMTcuNDciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFBldGFoIFRpcXZhLCBJc3JhZWwiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMGZlMTk0MTItZTVmYy0xMWVkLWE0N2MtMDAxNjNjNTBkYjZhIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=in2&type=V2ray": {
         "region": "Delhi, India",
@@ -137,10 +192,10 @@
         "ip": "49.50.84.127",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS41MC44NC4xMjciLCAicHMiOiAidnBuamFudGl0OiBEZWxoaSwgSW5kaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYmU3MGY2M2MtZGM2My0xMWVkLWI2NDktM2FmZThlMjgzMmQ4In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS41MC44NC4xMjciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IERlbGhpLCBJbmRpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxNzA4NjQ3OC1lNWZjLTExZWQtYjBlYi0zYWZlOGUyODMyZDgifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=in5&type=V2ray": {
         "region": "Delhi, India",
@@ -148,10 +203,21 @@
         "ip": "49.50.84.146",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS41MC44NC4xNDYiLCAicHMiOiAidnBuamFudGl0OiBEZWxoaSwgSW5kaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiY2M5ZDVhZDQtZGM2My0xMWVkLWE5ZTQtYmYzMTgzZmJlNDFjIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS41MC44NC4xNDYiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IERlbGhpLCBJbmRpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxZTkyNTVkMi1lNWZjLTExZWQtOGQxMi00MzQ3NDg0NjI0YzcifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=indo6&type=V2ray": {
+        "region": "Cileungsir, Indonesia",
+        "host": "indo6.vpnjantit.com",
+        "ip": "103.150.196.183",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMTUwLjE5Ni4xODMiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IENpbGV1bmdzaXIsIEluZG9uZXNpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzMDI0OGFjYy1lNWZjLTExZWQtOWIyMC1iZjY2YmUyMjI0OTgifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=indo7&type=V2ray": {
         "region": "Cileungsir, Indonesia",
@@ -159,21 +225,43 @@
         "ip": "103.150.197.217",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMTUwLjE5Ny4yMTciLCAicHMiOiAidnBuamFudGl0OiBDaWxldW5nc2lyLCBJbmRvbmVzaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZDVhY2NkMjYtZGM2My0xMWVkLWJjNjQtNjdmNWM2ODEzMDViIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMTUwLjE5Ny4yMTciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IENpbGV1bmdzaXIsIEluZG9uZXNpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzODk3OTdhOC1lNWZjLTExZWQtODFkMS1mZmM4MjJkNGQyYjAifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=it2&type=V2ray": {
-        "region": "Palermo, Italy",
-        "host": "it2.vpnjantit.com",
-        "ip": "45.86.231.199",
+    "https://www.vpnjantit.com/create-free-account?server=jp4&type=V2ray": {
+        "region": "Tokyo, Japan",
+        "host": "jp4.vpnjantit.com",
+        "ip": "8.209.241.25",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS44Ni4yMzEuMTk5IiwgInBzIjogInZwbmphbnRpdDogUGFsZXJtbywgSXRhbHkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZWJmMTJiYjgtZGM2My0xMWVkLTkyMTUtMDAxNjNjZjRlYmRhIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4LjIwOS4yNDEuMjUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFRva3lvLCBKYXBhbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzZjJlNDI0Mi1lNWZjLTExZWQtYTRhMC0wMDE2M2UwMDRjYzMifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=jp5&type=V2ray": {
+        "region": "Tokyo, Japan",
+        "host": "jp5.vpnjantit.com",
+        "ip": "47.245.53.75",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0Ny4yNDUuNTMuNzUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFRva3lvLCBKYXBhbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI0NTg2OWI4YS1lNWZjLTExZWQtODVhNC0wMDE2M2UwMDQxZGEifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=jp6&type=V2ray": {
+        "region": "Tokyo, Japan",
+        "host": "jp6.vpnjantit.com",
+        "ip": "8.209.245.117",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4LjIwOS4yNDUuMTE3IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBUb2t5bywgSmFwYW4iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNGM1OTAzMzAtZTVmYy0xMWVkLThjOTktMDAxNjNlMDA2MWQ0In0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=kh1&type=V2ray": {
         "region": "Phnom Penh, Cambodia",
@@ -181,10 +269,10 @@
         "ip": "220.158.233.184",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMjAuMTU4LjIzMy4xODQiLCAicHMiOiAidnBuamFudGl0OiBQaG5vbSBQZW5oLCBDYW1ib2RpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmNjgyYzViZS1kYzYzLTExZWQtOThmNS1lMzExMjdiZGYxOGMifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMjAuMTU4LjIzMy4xODQiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFBobm9tIFBlbmgsIENhbWJvZGlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjU4ZTQzZmEyLWU1ZmMtMTFlZC04N2FhLTliOGJhMmUxNWUwMiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=kh2&type=V2ray": {
         "region": "Phnom Penh, Cambodia",
@@ -192,10 +280,10 @@
         "ip": "220.158.233.91",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMjAuMTU4LjIzMy45MSIsICJwcyI6ICJ2cG5qYW50aXQ6IFBobm9tIFBlbmgsIENhbWJvZGlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjAxMzNjNDRhLWRjNjQtMTFlZC1hNjAyLTZiNGNmZmVmNDlkMSJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMjAuMTU4LjIzMy45MSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogUGhub20gUGVuaCwgQ2FtYm9kaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNjJiYThiMzAtZTVmYy0xMWVkLTg3NzQtMTNhY2NmY2Q5MTUxIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=kz1&type=V2ray": {
         "region": "Almaty, Kazakhstan",
@@ -203,10 +291,10 @@
         "ip": "213.156.137.115",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTMuMTU2LjEzNy4xMTUiLCAicHMiOiAidnBuamFudGl0OiBBbG1hdHksIEthemFraHN0YW4iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMDgxNjRhYjItZGM2NC0xMWVkLTk1NzAtNWJlZDlmYmQzMDY4In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTMuMTU2LjEzNy4xMTUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEFsbWF0eSwgS2F6YWtoc3RhbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3MTZhNWFiNi1lNWZjLTExZWQtOTFhMC1kYjliNmRmODNmN2QifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=md1&type=V2ray": {
         "region": "Chisinau, Moldova",
@@ -214,21 +302,43 @@
         "ip": "89.43.111.206",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4OS40My4xMTEuMjA2IiwgInBzIjogInZwbmphbnRpdDogQ2hpc2luYXUsIE1vbGRvdmEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMGU3YzEwNmMtZGM2NC0xMWVkLThlYWQtNjczNWE1MTAzMjZjIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4OS40My4xMTEuMjA2IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBDaGlzaW5hdSwgTW9sZG92YSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3ODQxZDI0Mi1lNWZjLTExZWQtOGMyNS0yZmMzZjZkZWU1MDYifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=ph4&type=V2ray": {
-        "region": "Quezon City, Philippines",
-        "host": "ph4.vpnjantit.com",
-        "ip": "103.56.7.234",
+    "https://www.vpnjantit.com/create-free-account?server=nl2&type=V2ray": {
+        "region": "Meppel, Netherlands",
+        "host": "nl2.vpnjantit.com",
+        "ip": "195.123.219.71",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuNTYuNy4yMzQiLCAicHMiOiAidnBuamFudGl0OiBRdWV6b24gQ2l0eSwgUGhpbGlwcGluZXMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMTk5YzI0ZmEtZGM2NC0xMWVkLTgzNTUtYTNkN2UzYjc3NzM4In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIxOS43MSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogTWVwcGVsLCBOZXRoZXJsYW5kcyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI4MDkxMTI1MC1lNWZjLTExZWQtOGE5Zi0xZmZiYTkwNjFiMmEifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ph5&type=V2ray": {
+        "region": "Quezon City, Philippines",
+        "host": "ph5.vpnjantit.com",
+        "ip": "103.150.221.236",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMTUwLjIyMS4yMzYiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFF1ZXpvbiBDaXR5LCBQaGlsaXBwaW5lcyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5MDU5NTkxOC1lNWZjLTExZWQtOTk3NS0wZjNjZDU5ZTM3MGUifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ph6&type=V2ray": {
+        "region": "Quezon City, Philippines",
+        "host": "ph6.vpnjantit.com",
+        "ip": "103.56.4.77",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuNTYuNC43NyIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogUXVlem9uIENpdHksIFBoaWxpcHBpbmVzIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjk5Mzg3MDNjLWU1ZmMtMTFlZC04OGE1LWRmM2UyZDc4NWFkNSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ph7&type=V2ray": {
         "region": "Quezon City, Philippines",
@@ -236,10 +346,43 @@
         "ip": "49.157.28.247",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS4xNTcuMjguMjQ3IiwgInBzIjogInZwbmphbnRpdDogUXVlem9uIENpdHksIFBoaWxpcHBpbmVzIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjI1NWU3YWUwLWRjNjQtMTFlZC04ZTdiLTZmZDEwMzViOGFiOCJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0OS4xNTcuMjguMjQ3IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBRdWV6b24gQ2l0eSwgUGhpbGlwcGluZXMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYTE2ZDlmODQtZTVmYy0xMWVkLWE5YTgtOTM5MWRlMGY5NGFiIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ph8&type=V2ray": {
+        "region": "Quezon City, Philippines",
+        "host": "ph8.vpnjantit.com",
+        "ip": "103.56.6.245",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuNTYuNi4yNDUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFF1ZXpvbiBDaXR5LCBQaGlsaXBwaW5lcyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiOTM1NmNjOC1lNWZjLTExZWQtYWMxMC1jN2IzMGY3M2YzNWIifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=pk1&type=V2ray": {
+        "region": "Karachi, Pakistan",
+        "host": "pk1.vpnjantit.com",
+        "ip": "38.54.79.126",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC43OS4xMjYiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEthcmFjaGksIFBha2lzdGFuIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImMxOTM5ZDlhLWU1ZmMtMTFlZC04ZGU3LTUyNTQ5NTViZjg4ZiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=pk2&type=V2ray": {
+        "region": "Karachi, Pakistan",
+        "host": "pk2.vpnjantit.com",
+        "ip": "38.60.217.155",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC42MC4yMTcuMTU1IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBLYXJhY2hpLCBQYWtpc3RhbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJjOGY5OTViMi1lNWZjLTExZWQtYjEwYi01MjU0OTU1YmI3MzYifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=pk3&type=V2ray": {
         "region": "Karachi, Pakistan",
@@ -247,10 +390,21 @@
         "ip": "38.54.79.103",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC43OS4xMDMiLCAicHMiOiAidnBuamFudGl0OiBLYXJhY2hpLCBQYWtpc3RhbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIyZjgzYzQyNi1kYzY0LTExZWQtYTIzZC01MjU0OTU1YjVhOGYifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC43OS4xMDMiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEthcmFjaGksIFBha2lzdGFuIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImQxNTAyNjE4LWU1ZmMtMTFlZC1iN2U1LTUyNTQ5NTViNWE4ZiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=pl1&type=V2ray": {
+        "region": "Warsaw, Poland",
+        "host": "pl1.vpnjantit.com",
+        "ip": "146.59.44.159",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDYuNTkuNDQuMTU5IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBXYXJzYXcsIFBvbGFuZCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJkN2RmMGE4MC1lNWZjLTExZWQtOGY5OC04ZjIxZjc3N2RiYzcifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=pl2&type=V2ray": {
         "region": "Warsaw, Poland",
@@ -258,18 +412,21 @@
         "ip": "146.59.32.32",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDYuNTkuMzIuMzIiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFdhcnNhdywgUG9sYW5kIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImRlYzI1ODIwLWU1ZmMtMTFlZC1hYzdlLTFiZjNjNmE5YzZkNSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=premiph&type=V2ray": {
+    "https://www.vpnjantit.com/create-free-account?server=premiph3&type=V2ray": {
         "region": "Quezon City, Philippines",
-        "host": "premiph.vpnjantit.com",
-        "ip": "103.56.7.252",
+        "host": "premiph3.vpnjantit.com",
+        "ip": "103.56.6.244",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuNTYuNy4yNTIiLCAicHMiOiAidnBuamFudGl0OiBRdWV6b24gQ2l0eSwgUGhpbGlwcGluZXMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiODExNGEzYTAtZGM2NC0xMWVkLWJiMTEtOTc5ODc2OTk1OTRjIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuNTYuNi4yNDQiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFF1ZXpvbiBDaXR5LCBQaGlsaXBwaW5lcyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlZDczMDg0Mi1lNWZjLTExZWQtYWFhZi0xZjI1Nzg2NmZlMjgifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=pt1&type=V2ray": {
         "region": "Lisbon, Portugal",
@@ -277,21 +434,21 @@
         "ip": "31.129.22.11",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzMS4xMjkuMjIuMTEiLCAicHMiOiAidnBuamFudGl0OiBMaXNib24sIFBvcnR1Z2FsIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjk2ZGFhZTMyLWRjNjQtMTFlZC04NzRmLWNmNjkwODEyODRhZSJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzMS4xMjkuMjIuMTEiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IExpc2JvbiwgUG9ydHVnYWwiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZjQ0NzE5ODgtZTVmYy0xMWVkLWE5MDItYTcwZTQ4YmJmNGMzIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=ru1&type=V2ray": {
-        "region": "Moscow, Russia",
-        "host": "ru1.vpnjantit.com",
-        "ip": "45.95.203.252",
+    "https://www.vpnjantit.com/create-free-account?server=ro1&type=V2ray": {
+        "region": "Bucharest, Romania",
+        "host": "ro1.vpnjantit.com",
+        "ip": "185.202.92.174",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS45NS4yMDMuMjUyIiwgInBzIjogInZwbmphbnRpdDogTW9zY293LCBSdXNzaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYWU4MDVlYmEtZGM2NC0xMWVkLWEyNWEtMWI3NDhhZDlmNDk0In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODUuMjAyLjkyLjE3NCIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogQnVjaGFyZXN0LCBSb21hbmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImZiNWVlZWY4LWU1ZmMtMTFlZC1iYzFmLThmNzEwNmQ4MTQ4OCJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=sa2&type=V2ray": {
         "region": "Johannesburg, South Africa",
@@ -299,32 +456,67 @@
         "ip": "38.54.63.251",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC42My4yNTEiLCAicHMiOiAidnBuamFudGl0OiBKb2hhbm5lc2J1cmcsIFNvdXRoIEFmcmljYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiNzE3ODQ3Mi1kYzY0LTExZWQtODZmZi01MjU0MDA5ZDU4MGUifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC42My4yNTEiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEpvaGFubmVzYnVyZywgU291dGggQWZyaWNhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjA0YjE1MjAyLWU1ZmQtMTFlZC04NzgyLTUyNTQwMDlkNTgwZSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=sg3&type=V2ray": {
-        "region": "Singapore, Singapore",
-        "host": "sg3.vpnjantit.com",
-        "ip": "45.12.80.144",
+    "https://www.vpnjantit.com/create-free-account?server=sau1&type=V2ray": {
+        "region": "Jeddah, Saudi Arabia",
+        "host": "sau1.vpnjantit.com",
+        "ip": "38.54.61.246",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xMi44MC4xNDQiLCAicHMiOiAidnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIwODVkM2I0Mi1kYzY1LTExZWQtYjBlYy0wMDE2M2UwYzFiZTQifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC42MS4yNDYiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEplZGRhaCwgU2F1ZGkgQXJhYmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjEwMDcxMjdjLWU1ZmQtMTFlZC05OWYwLTUyNTQwMWIzY2MzMCJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=sg4&type=V2ray": {
-        "region": "Singapore, Singapore",
-        "host": "sg4.vpnjantit.com",
-        "ip": "51.79.249.23",
+    "https://www.vpnjantit.com/create-free-account?server=se1&type=V2ray": {
+        "region": "Stockholm, Sweden",
+        "host": "se1.vpnjantit.com",
+        "ip": "46.246.98.117",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43OS4yNDkuMjMiLCAicHMiOiAidnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlNDgwNjBiZS1kYzY0LTExZWQtYTg2NC00NzM5ZTNmOWMwNTAifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0Ni4yNDYuOTguMTE3IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBTdG9ja2hvbG0sIFN3ZWRlbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxNzEzODdmOC1lNWZkLTExZWQtODJmOC0wMDE2M2M2MjMxNDAifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=sg12&type=V2ray": {
+        "region": "Singapore, Singapore",
+        "host": "sg12.vpnjantit.com",
+        "ip": "51.79.158.116",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43OS4xNTguMTE2IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxZjc1ZmU1OC1lNWZkLTExZWQtYmVhYi1kNzJmMmUyMDAyODcifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=sg13&type=V2ray": {
+        "region": "Singapore, Singapore",
+        "host": "sg13.vpnjantit.com",
+        "ip": "51.79.243.229",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "error_info": "solve failed."
+    },
+    "https://www.vpnjantit.com/create-free-account?server=sg2&type=V2ray": {
+        "region": "Singapore, Singapore",
+        "host": "sg2.vpnjantit.com",
+        "ip": "51.79.157.71",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "error_info": "get timeout"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=sg5&type=V2ray": {
+        "region": "Singapore, Singapore",
+        "host": "sg5.vpnjantit.com",
+        "ip": "139.99.88.161",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "error_info": "get timeout"
     },
     "https://www.vpnjantit.com/create-free-account?server=sg7&type=V2ray": {
         "region": "Singapore, Singapore",
@@ -332,10 +524,7 @@
         "ip": "15.235.166.61",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNS4yMzUuMTY2LjYxIiwgInBzIjogInZwbmphbnRpdDogU2luZ2Fwb3JlLCBTaW5nYXBvcmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZWVjM2ZmNTQtZGM2NC0xMWVkLTlhZjktODdkM2JiMWIyMjFkIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "error_info": "solve failed."
     },
     "https://www.vpnjantit.com/create-free-account?server=sg8&type=V2ray": {
         "region": "Singapore, Singapore",
@@ -343,10 +532,10 @@
         "ip": "15.235.140.54",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNS4yMzUuMTQwLjU0IiwgInBzIjogInZwbmphbnRpdDogU2luZ2Fwb3JlLCBTaW5nYXBvcmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZjhiNzg2YWMtZGM2NC0xMWVkLWIyY2QtMTdlMDEwZmQ4YWE0In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNS4yMzUuMTQwLjU0IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5ODRmZDQ1Ni1lNWZlLTExZWQtYTNjMS04NzdhNzczNWU4MGIifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=sg9&type=V2ray": {
         "region": "Singapore, Singapore",
@@ -354,10 +543,10 @@
         "ip": "45.12.80.145",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xMi44MC4xNDUiLCAicHMiOiAidnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI0ZGJiZTBkYS1kYzY1LTExZWQtYjM1MC0wMDE2M2UyMmM5NjkifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xMi44MC4xNDUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IFNpbmdhcG9yZSwgU2luZ2Fwb3JlIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjEzZDk3OTljLWU1ZmYtMTFlZC04OWQ4LTAwMTYzZTIyYzk2OSJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=sgv1&type=V2ray": {
         "region": "Singapore, Singapore",
@@ -365,10 +554,10 @@
         "ip": "195.123.237.75",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIzNy43NSIsICJwcyI6ICJ2cG5qYW50aXQ6IFNpbmdhcG9yZSwgU2luZ2Fwb3JlIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjE0M2E5MGFlLWRjNjUtMTFlZC05ZmU0LTY3ODExM2M0NTU2ZiJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIzNy43NSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogU2luZ2Fwb3JlLCBTaW5nYXBvcmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZGY0ODQ4Y2EtZTVmZS0xMWVkLWExODktYTdmMzZiMjViZDZlIn0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=sp1&type=V2ray": {
         "region": "Madrid, Spain",
@@ -376,7 +565,10 @@
         "ip": "212.227.228.91",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "error_info": "post timeout"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTIuMjI3LjIyOC45MSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogTWFkcmlkLCBTcGFpbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlN2NmNGQ0YS1lNWZlLTExZWQtYmEyYi1hZmRkMGZjNTRkMzAifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=sz1&type=V2ray": {
         "region": "Gen\ufffdve, Switzerland",
@@ -384,10 +576,10 @@
         "ip": "45.90.59.186",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS45MC41OS4xODYiLCAicHMiOiAidnBuamFudGl0OiBHZW5cdWZmZmR2ZSwgU3dpdHplcmxhbmQiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNDRkMzI3NjItZGM2NS0xMWVkLTgxMjEtMGYwMThjYTcyOTUwIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS45MC41OS4xODYiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEdlblx1ZmZmZHZlLCBTd2l0emVybGFuZCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIwZDY4MjIyMC1lNWZmLTExZWQtYTIwOS1kM2VmMWRkMjkwYjcifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=th2&type=V2ray": {
         "region": "Mueang Nonthaburi, Thailand",
@@ -395,21 +587,43 @@
         "ip": "141.98.19.77",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDEuOTguMTkuNzciLCAicHMiOiAidnBuamFudGl0OiBNdWVhbmcgTm9udGhhYnVyaSwgVGhhaWxhbmQiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNGZmMjJjOWMtZGM2NS0xMWVkLTk2NDItMDAxNjNlZDE3OGE0In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDEuOTguMTkuNzciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IE11ZWFuZyBOb250aGFidXJpLCBUaGFpbGFuZCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxNjVmMWY4Mi1lNWZmLTExZWQtODc2MS0wMDE2M2VkMTc4YTQifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=tr3&type=V2ray": {
+    "https://www.vpnjantit.com/create-free-account?server=tr2&type=V2ray": {
         "region": "Istanbul, Turkey",
-        "host": "tr3.vpnjantit.com",
-        "ip": "37.221.120.25",
+        "host": "tr2.vpnjantit.com",
+        "ip": "37.221.122.131",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzNy4yMjEuMTIwLjI1IiwgInBzIjogInZwbmphbnRpdDogSXN0YW5idWwsIFR1cmtleSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3NTgzZDBkMi1kYzY1LTExZWQtOGIwNy1mYmMzYzEyNGI5NDUifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzNy4yMjEuMTIyLjEzMSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogSXN0YW5idWwsIFR1cmtleSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIxZGRiZTBjNC1lNWZmLTExZWQtOGIyZC1jMzkxMTljZjgzMWEifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=tr5&type=V2ray": {
+        "region": "Istanbul, Turkey",
+        "host": "tr5.vpnjantit.com",
+        "ip": "45.144.153.64",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xNDQuMTUzLjY0IiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBJc3RhbmJ1bCwgVHVya2V5IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjI1YjU3NWU0LWU1ZmYtMTFlZC1iOTM0LTRiNmUwNWRkYWVmNiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ua1&type=V2ray": {
+        "region": "Kyiv, Ukraine",
+        "host": "ua1.vpnjantit.com",
+        "ip": "82.118.18.101",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4Mi4xMTguMTguMTAxIiwgInBzIjogIjIwMjMtMDUtMDYgdnBuamFudGl0OiBLeWl2LCBVa3JhaW5lIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjJjOWMyOTE2LWU1ZmYtMTFlZC04ZmIyLTA3YWZiMTdmMzE0MiJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ua2&type=V2ray": {
         "region": "Kyiv, Ukraine",
@@ -417,10 +631,18 @@
         "ip": "5.34.182.12",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjM0LjE4Mi4xMiIsICJwcyI6ICJ2cG5qYW50aXQ6IEt5aXYsIFVrcmFpbmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOGEyOGU5ZjAtZGM2NS0xMWVkLTgzNGYtZGI0NDI1NjI5Y2ZiIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "error_info": "solve failed."
+    },
+    "https://www.vpnjantit.com/create-free-account?server=ua3&type=V2ray": {
+        "region": "Kyiv, Ukraine",
+        "host": "ua3.vpnjantit.com",
+        "ip": "5.34.182.153",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjM0LjE4Mi4xNTMiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEt5aXYsIFVrcmFpbmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNjkxNjdiZGEtZTVmZi0xMWVkLTk3OTktOWZiZmYxZDcxZjg5In0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=ua4&type=V2ray": {
         "region": "Kyiv, Ukraine",
@@ -428,10 +650,7 @@
         "ip": "193.238.153.61",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTMuMjM4LjE1My42MSIsICJwcyI6ICJ2cG5qYW50aXQ6IEt5aXYsIFVrcmFpbmUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOTFlZDM5MmEtZGM2NS0xMWVkLWI4MjctMmZiZDcxMGM2ZmU0In0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "error_info": "something wrong."
     },
     "https://www.vpnjantit.com/create-free-account?server=usa2&type=V2ray": {
         "region": "Los Angeles, USA",
@@ -439,10 +658,10 @@
         "ip": "195.123.240.135",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0MC4xMzUiLCAicHMiOiAidnBuamFudGl0OiBMb3MgQW5nZWxlcywgVVNBIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFkODhjOTFhLWRjNjUtMTFlZC1hMzUwLWI3NzBlOTBiZTViZSJ9",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0MC4xMzUiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IExvcyBBbmdlbGVzLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYzVmNjMxNGMtZTVmZi0xMWVkLTg3ZWUtODMyMDAyYmY1YmU3In0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=usa3&type=V2ray": {
         "region": "Los Angeles, USA",
@@ -450,21 +669,21 @@
         "ip": "195.123.243.21",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0My4yMSIsICJwcyI6ICJ2cG5qYW50aXQ6IExvcyBBbmdlbGVzLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYmM1NmIwMzgtZGM2NS0xMWVkLTllZDAtNTJhYzAwNjRmNTBhIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0My4yMSIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogTG9zIEFuZ2VsZXMsIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlNWI1YWExYy1lNWZmLTExZWQtYjUzYS01MmFjMDA2NGY1MGEifQ==",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=usa5&type=V2ray": {
-        "region": "Dallas, USA",
-        "host": "usa5.vpnjantit.com",
-        "ip": "154.7.253.177",
+    "https://www.vpnjantit.com/create-free-account?server=usa4&type=V2ray": {
+        "region": "Miami, USA",
+        "host": "usa4.vpnjantit.com",
+        "ip": "5.34.178.157",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNTQuNy4yNTMuMTc3IiwgInBzIjogInZwbmphbnRpdDogRGFsbGFzLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiY2JjNDY2ZmEtZGM2NS0xMWVkLWEwNDktMmJjODNkYWI5N2QwIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjM0LjE3OC4xNTciLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IE1pYW1pLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZmIwN2EwYzgtZTVmZi0xMWVkLWExYTktZmI5ZjgwZDg4NzU0In0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
     "https://www.vpnjantit.com/create-free-account?server=usa6&type=V2ray": {
         "region": "Washington, USA",
@@ -472,20 +691,20 @@
         "ip": "107.175.221.56",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDcuMTc1LjIyMS41NiIsICJwcyI6ICJ2cG5qYW50aXQ6IFdhc2hpbmd0b24sIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJkMzI2YzdjNi1kYzY1LTExZWQtYjU5Yy0wMDE2M2NjZTM0ZTcifQ==",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDcuMTc1LjIyMS41NiIsICJwcyI6ICIyMDIzLTA1LTA2IHZwbmphbnRpdDogV2FzaGluZ3RvbiwgVVNBIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjExMzU1NTBjLWU2MDAtMTFlZC04MDI4LTAwMTYzY2NlMzRlNyJ9",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     },
-    "https://www.vpnjantit.com/create-free-account?server=vn7&type=V2ray": {
-        "region": "Long Kh\ufffdnh, Vietnam",
-        "host": "vn7.vpnjantit.com",
-        "ip": "103.27.62.82",
+    "https://www.vpnjantit.com/create-free-account?server=vn6&type=V2ray": {
+        "region": "Khe Tre, Vietnam",
+        "host": "vn6.vpnjantit.com",
+        "ip": "103.143.143.179",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMjcuNjIuODIiLCAicHMiOiAidnBuamFudGl0OiBMb25nIEtoXHVmZmZkbmgsIFZpZXRuYW0iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZGUxZjYzNWUtZGM2NS0xMWVkLWEzYTUtNjJmYmE3MjU2OGUxIn0=",
-        "date_create": "2023-04-16",
-        "date_expire": "2023-04-23",
-        "date_span": "2023-04-16 - 2023-04-23"
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMTQzLjE0My4xNzkiLCAicHMiOiAiMjAyMy0wNS0wNiB2cG5qYW50aXQ6IEtoZSBUcmUsIFZpZXRuYW0iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMjgzZTc2MDItZTYwMC0xMWVkLTk1YWQtY2ZhYTdmNTI5MWY1In0=",
+        "date_create": "2023-04-29",
+        "date_expire": "2023-05-06",
+        "date_span": "2023-04-29 - 2023-05-06"
     }
 }
