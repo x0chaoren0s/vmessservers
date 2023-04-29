@@ -17,7 +17,6 @@ from selenium.webdriver.common.by import By
 class Server_parser_base:
     name = 'Server_parser_base'
     save_folder = Path(__file__).absolute().parent.parent.parent/'results'
-    subscribe_folder = Path(__file__).absolute().parent.parent.parent/'chores'
 
     def __init__(self,
                  server_dict: dict = None,
@@ -168,8 +167,6 @@ class Server_parser_base:
                         data_span_printed = True
                     if 'config' in server_info:
                         print(server_info['config'], file=fout)
-            subscribe_file = self.subscribe_folder/f'{self.name}.conf'
-            shutil.copy(str(config_file), str(subscribe_file))
         num_tried = len(ret)
         num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
         self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
