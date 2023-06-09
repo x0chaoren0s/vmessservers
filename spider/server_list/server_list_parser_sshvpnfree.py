@@ -10,7 +10,7 @@ from tqdm import tqdm
 class Server_list_parser_sshvpnfree(Server_list_parser_base):
     name = 'vmess_list_sshvpnfree'
 
-    def __init__(self, server_list_url: str = 'https://sshvpnfree.com/type/VMESS',
+    def __init__(self, server_list_url: str = 'https://sshs8.com/v2ray-best-vmess-server/',
                  server_provider_url: str = None) -> None:
         super().__init__(server_list_url, server_provider_url)
 
@@ -20,15 +20,15 @@ class Server_list_parser_sshvpnfree(Server_list_parser_base):
         res = self.session.get(self.server_list_url, timeout=60)
         assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
         html = etree.HTML(res.text)
-        server_card_xpath_list = html.xpath('//div[@class="col-md-3"]')
+        server_card_xpath_list = html.xpath('//section')
         # server_host_list = [x.xpath('div/div/ul/li[1]/span/b/text()')[0].strip() for x in server_card_xpath_list]
         # print(region_str_list) # ['Singapore', ..
-        server_region_list = [x.xpath('div/ul/li[4]/span/text()')[0].strip()+', '+
-                              x.xpath('div/ul/li[5]/span/text()')[0].strip() for x in server_card_xpath_list]
+        server_region_list = [x.xpath('div[2]/ul/li[3]/text()')[0].split(':')[1].strip()+', '+
+                              x.xpath('div[2]/ul/li[4]/text()')[0].split(':')[1].strip() for x in server_card_xpath_list]
         # print(region_str_list) # ['Singapore', ..
         # server_available_list = [len(x.xpath('div/div/p/span[@class="badge badge-success"]'))>0 for x in server_card_xpath_list]
         # print(region_str_list) # ['Singapore', ..
-        server_url_list = [x.xpath('div/ul/div/a/@href')[0] for x in server_card_xpath_list]
+        server_url_list = [x.xpath('div[2]/p/a/@href')[0] for x in server_card_xpath_list]
         # print(region_url_list) # ['https://www.sshvpnfree.com/singapore-v2ray-server', ..
 
         ret = dict()
