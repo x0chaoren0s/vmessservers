@@ -26,6 +26,8 @@ class Server_list_parser_lionssh(Server_list_parser_base):
         region_str_list = [x.xpath('div/h3/text()')[0].strip() for x in region_card_xpath_list]
         # print(region_str_list) # ['Singapore', ..
         region_url_list = [x.xpath('div/div[3]/div/a[1]/@href')[0].strip() for x in region_card_xpath_list]
+        region_url_list = [url[:url.rfind('/')]+'/7-days' for url in region_url_list] # 有的按顺序不是7天，统一到7天
+        region_url_list = [url if url!='/7-days' else '' for url in region_url_list] # 有的按顺序不是7天，统一到7天
         # print(region_url_list) # ['https://www.lionssh.com/singapore-v2ray-server', ..
         region_available_list = [len(url)>0 for url in region_url_list]
         # print(region_available_list) # ['Singapore', ..
