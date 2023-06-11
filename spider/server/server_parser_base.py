@@ -302,11 +302,11 @@ class Server_parser_base:
         session.mount('https://', HTTPAdapter(max_retries=10))
         return session
 
-    def adjust_config(self, server_info) -> str:
+    def adjust_config(self, server_info: dict) -> str:
         config = server_info['config']
         try:
             config_dict = json.loads(base64.b64decode(config.split('vmess://')[1]).decode())
-            if 'ip' in server_info:
+            if 'ip' in server_info and server_info.get('use_ip', True):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['ip']
             config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
