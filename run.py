@@ -7,6 +7,7 @@ from spider.server.server_parser_vpnjantit import SP_VPNJANTIT
 from spider.server.server_parser_sshocean import SP_SSHOCEAN
 from spider.server.server_parser_freevmess import SP_FREEVMESS
 from utils.update_subscription import update_subscription
+from utils.update_git import update_git
 
 import os
 
@@ -14,7 +15,7 @@ if __name__ == '__main__':
     spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS]
     spiders = [SP_LIONSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,]
     # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
-    # spiders = [SP_SSHVPNFREE,SP_FREEVMESS]
+    spiders = [SP_SSHOCEAN,SP_GREENSSH,SP_FREEVMESS]
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN]
     # spiders = [SP_VPNJANTIT]
     spider_processes = [Process(target=s.parse) for s in spiders]
@@ -22,3 +23,4 @@ if __name__ == '__main__':
     [process.join() for process in spider_processes]
 
     update_subscription()
+    update_git()
