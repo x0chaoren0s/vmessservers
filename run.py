@@ -12,7 +12,11 @@ import os
 
 if __name__ == '__main__':
     spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS]
-    spiders = [SP_FREEVMESS,]
+    spiders = [SP_LIONSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,]
+    # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
+    # spiders = [SP_SSHVPNFREE,SP_FREEVMESS]
+    # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN]
+    # spiders = [SP_VPNJANTIT]
     spider_processes = [Process(target=s.parse) for s in spiders]
     [process.start() for process in spider_processes]
     [process.join() for process in spider_processes]
