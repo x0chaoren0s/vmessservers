@@ -18,6 +18,7 @@ def update_git():
     files_chore = [
         'free_servers.txt',
         'readme.md',
+        'msedgedriver.exe',
     ]
     for folder in folders_py:
         os.system(f"git add {folder}/*.py & git commit -m spider_update & git push")
