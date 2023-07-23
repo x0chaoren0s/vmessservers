@@ -8,7 +8,7 @@ def update_subscription():
         if conf.endswith('.conf'):
             shutil.copy(f'results/{conf}', f'chores/{conf}')
 
-    os.system('cd chores & git add . & git commit -m configs & git push')
+    os.system('cd chores & git add . & git commit -m configs & git push -f')
 
 
 if __name__ == '__main__':
