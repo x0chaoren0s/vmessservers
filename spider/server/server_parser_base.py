@@ -78,7 +78,7 @@ class Server_parser_base:
             if i>0:
                 time.sleep(self.interval_sec)
             try:
-                res = self.session.get(url, headers=self.headers, allow_redirects=False, timeout=60)
+                res = self.session.get(url, headers=self.headers, allow_redirects=False, timeout=3)
             except:
                 ret[url]['error_info'] = 'get timeout'
                 self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
@@ -107,6 +107,7 @@ class Server_parser_base:
                 ret[url]['config'] = self.adjust_config(ret[url])
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
+                # print(ret[url])
         if save:
             json_file = self.save_folder/f'{self.name}.json'
             with open(json_file, 'w') as fout:
@@ -142,9 +143,13 @@ class Server_parser_base:
             options = Options() # 定义一个option对象
             options.add_argument("headless")
             driver = webdriver.Edge(options = options)  # Edge浏览器无头模式
-            driver.get(url)
-            info_dict = self.filling_form_via_selenium(driver) # keys: user, pass, host, [ip], port, config
-            driver.close()
+            try:
+                driver.get(url)
+                info_dict = self.filling_form_via_selenium(driver) # keys: user, pass, host, [ip], port, config
+                driver.close()
+            except:
+                info_dict = dict()
+                info_dict['error_info'] = 'net::ERR_CONNECTION_TIMED_OUT'
             ret[url].update(info_dict)
             if 'error_info' in ret[url]:
                 self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
@@ -191,7 +196,7 @@ class Server_parser_base:
 
         # 第一步，创建验证码任务 
         self.logger.info(f'getting yescaptcha taskID for recaptcha_v2...')
-        url = "https://china.yescaptcha.com/createTask"
+        url = "https://cn.yescaptcha.com/createTask"
         data = {
             "clientKey": clientKey,
             "task": {
@@ -218,7 +223,7 @@ class Server_parser_base:
         sec = 0
         while sec < max_sec:
             try:
-                url = f"https://china.yescaptcha.com/getTaskResult"
+                url = f"https://cn.yescaptcha.com/getTaskResult"
                 data = {
                     "clientKey": clientKey,
                     "taskId": taskID
@@ -246,6 +251,7 @@ class Server_parser_base:
         # 第一步，创建验证码任务 
         self.logger.info(f'getting yescaptcha taskID for hcaptcha...')
         url = "https://china.yescaptcha.com/createTask"
+        url = "https://cn.yescaptcha.com/createTask"
         data = {
             "clientKey": clientKey,
             "task": {
@@ -273,6 +279,7 @@ class Server_parser_base:
         while sec < max_sec:
             try:
                 url = f"https://china.yescaptcha.com/getTaskResult"
+                url = f"https://cn.yescaptcha.com/getTaskResult"
                 data = {
                     "clientKey": clientKey,
                     "taskId": taskID
@@ -309,6 +316,9 @@ class Server_parser_base:
             if 'ip' in server_info and server_info.get('use_ip', True):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['ip']
+            if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
+                # config = self.config_using_ip(config, server_info['ip'])
+                config_dict['add'] = server_info['cloudflare_host']
             config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
             return 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
         except Exception as e:

@@ -31,11 +31,13 @@ class Server_parser_sshocean(Server_parser_base):
         ret = dict()
         html = etree.HTML(res.text)
         try:
-            info_card_xpath = html.xpath('//div[@class="alert alert-success text-center p-2"]')[0]
-            ret['config'] = info_card_xpath.xpath('textarea[@id="ssClipboard"]/text()')[0].strip()
+            info_card_xpath = html.xpath('//div[@class="col-10 col-lg-4 col-10 card mb-2 h-100"]')[0]
+            ret['config'] = html.xpath('//input[@id="ssClipboard"]/@value')[0].strip()
+            ret['cloudflare_host'] = info_card_xpath.xpath('div/div/ul/li[2]/span/text()')[0][17:]
+            ret['use_cloudflare'] = False
             ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
-            ret['date_create'] = self.normalize_date(info_card_xpath.xpath('ul/li[11]/b/text()')[0], '%d %b %Y')
-            ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('ul/li[12]/b/text()')[0], '%d %b %Y')
+            ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[10]/span/text()')[0][9:], '%d %b %Y')
+            ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[11]/span/text()')[0][9:], '%d %b %Y')
         except:
             ret['error_info'] = 'something wrong.'
             with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:

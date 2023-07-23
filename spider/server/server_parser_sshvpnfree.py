@@ -17,12 +17,17 @@ class Server_parser_sshvpnfree(Server_parser_base):
         driver = driver_in_form_page
         ret = dict()
         
-        input_pass = WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.XPATH, '//input[@id="password"]'))
-        input_pass.clear()
-        input_pass.send_keys(self.getRandStr(12))
+        try:
+            input_pass = WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.XPATH, '//input[@id="password"]'))
+            input_pass.clear()
+            input_pass.send_keys(self.getRandStr(12))
 
-        button_create = driver.find_element(By.XPATH, '//button[@type="submit"]')
-        button_create.click() # 此时已提交
+            button_create = driver.find_element(By.XPATH, '//button[@type="submit"]')
+            button_create.click() # 此时已提交
+        except:
+            ret['error_info'] = 'error in submitting.'
+            return ret
+            
 
         try:
             input_date_create = WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.XPATH, '//div[@class="panel-body"]/div[2]/div[@class="col-xs-8"][11]/div/input'))

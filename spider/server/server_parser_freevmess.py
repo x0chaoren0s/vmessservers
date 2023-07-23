@@ -40,7 +40,7 @@ class Server_parser_freevmess(Server_parser_base):
             ret['config'] = html.xpath('//input[@id="myInput"]/@value')[0].strip()
             ret['host'] = json.loads(base64.b64decode(ret['config'].split('vmess://')[1]).decode())['add']
             ret['ip'] = info_card_xpath.xpath('ul/li[3]/text()')[0].strip()
-            ret['port'] = info_card_xpath.xpath('ul/li[2]/text()')[0].split(' ')[-1]
+            ret['port'] = int(info_card_xpath.xpath('ul/li[2]/text()')[0].split(' ')[-1])
             ret['use_ip'] = False # 返回的config用的是ip对应的host（网页上没显示这个信息），host可用，但改成ip就能ping却用不了
             ret['date_create'] = self.normalized_local_date()
             dt = datetime.datetime.strptime(ret['date_create'], "%Y-%m-%d")
