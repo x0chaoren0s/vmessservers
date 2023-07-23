@@ -8,7 +8,7 @@ from lxml import etree
 from tqdm import tqdm
 
 '''
-sshocean的vmess服务器联不通
+sshocean的vmess服务器主host只有少量能用，但cloudflare直接没法用
 '''
 
 class Server_list_parser_sshocean(Server_list_parser_base):
@@ -25,8 +25,8 @@ class Server_list_parser_sshocean(Server_list_parser_base):
         assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
         # print(res.text)
         html = etree.HTML(res.content)
-        region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6 mb-5"]')
-        region_str_list = [x.xpath('div/div/div/span/text()')[0] for x in region_card_xpath_list]
+        region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6 col-10 mb-5"]')
+        region_str_list = [x.xpath('div/div/div/text()')[0] for x in region_card_xpath_list]
         # # print(region_str_list) # ['Singapore', ..
         region_url_list = [x.xpath('div/div/a/@href')[0] for x in region_card_xpath_list]
         # print(region_url_list) # ['https://www.sshocean.com/singapore-v2ray-server', ..
@@ -39,8 +39,9 @@ class Server_list_parser_sshocean(Server_list_parser_base):
             assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
             # print(res.text)
             html = etree.HTML(res.text)
-            server_card_xpath_list = html.xpath('//div[@class="col-lg-4 col-md-6 mb-5"]')
+            server_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6 col-10 mb-5"]')
             server_host_list = [x.xpath('div/div/ul/li[1]/span[2]/b/text()')[0].strip() for x in server_card_xpath_list] # 有些网页源代码中table下面不一定有tbody，而是直接跟tr
+            server_cloudflarehost_list = [host.replace('v2rayserv','securev2ray') for host in server_host_list] # 有些网页源代码中table下面不一定有tbody，而是直接跟tr
             # print(region_str_list) # ['Singapore', ..
             server_region_list = [x.xpath('div/div/ul/li[2]/span[2]/b/text()')[0].strip() for x in server_card_xpath_list]
             # print(region_str_list) # ['Singapore', ..
@@ -51,12 +52,12 @@ class Server_list_parser_sshocean(Server_list_parser_base):
             server_url_list = [x.xpath('div/div/a/@href')[0] for x in server_card_xpath_list]
             # print(region_url_list) # ['https://www.sshocean.com/singapore-v2ray-server', ..
 
-            for host,region,available,url in zip(server_host_list,server_region_list,server_available_list,server_url_list):
+            for host,chost,region,available,url in zip(server_host_list,server_cloudflarehost_list,server_region_list,server_available_list,server_url_list):
                 if not available:
                     continue
                 if not self.check_server(host, 80):
                     continue
-                ret[url] = {'region': region, 'host': host, 'port': 80, 'Referer': res.url}
+                ret[url] = {'region': region, 'host': host, 'cloudflare_host': chost, 'port': 80, 'Referer': res.url}
         return ret             
 
 
