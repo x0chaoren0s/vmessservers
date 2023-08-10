@@ -18,6 +18,8 @@ class Server_parser_freevmess(Server_parser_base):
     def filling_form(self, res) -> Tuple[str, dict]:
         form_data = dict()
         html = etree.HTML(res.text)
+        websiteKey = html.xpath('//div[@class="h-captcha"]/@data-sitekey')[0]
+        hcaptcha_res = self.solve_hcaptcha(res.url, websiteKey)
         form_data['name'] = self.getRandStr(9)+'6' # 要求5-10个字符，要有数字
         form_data['ipuser'] = html.xpath('//input[@name="ipuser"]/@value')[0]
         form_data['nameser'] = html.xpath('//input[@name="nameser"]/@value')[0]
@@ -25,9 +27,11 @@ class Server_parser_freevmess(Server_parser_base):
         form_data['ipserver'] = html.xpath('//input[@name="ipserver"]/@value')[0]
         form_data['proov'] = html.xpath('//input[@name="proov"]/@value')[0]
         form_data['datecreated'] = html.xpath('//input[@name="datecreated"]/@value')[0]
-        form_data['firstNumber'] = html.xpath('//input[@name="firstNumber"]/@value')[0]
-        form_data['secondNumber'] = html.xpath('//input[@name="secondNumber"]/@value')[0]
-        form_data['captcha'] = f"{int(form_data['firstNumber'])+int(form_data['secondNumber'])}"
+        # form_data['firstNumber'] = html.xpath('//input[@name="firstNumber"]/@value')[0]
+        # form_data['secondNumber'] = html.xpath('//input[@name="secondNumber"]/@value')[0]
+        # form_data['captcha'] = f"{int(form_data['firstNumber'])+int(form_data['secondNumber'])}"
+        form_data['g-recaptcha-response'] = hcaptcha_res
+        form_data['h-captcha-response'] = hcaptcha_res
         form_data['submit'] = ''
         return res.url, form_data
     

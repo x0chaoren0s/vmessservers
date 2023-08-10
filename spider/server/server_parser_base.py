@@ -108,24 +108,28 @@ class Server_parser_base:
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
                 # print(ret[url])
+                
+        num_tried = len(ret)
+        num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
+        self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
         if save:
             json_file = self.save_folder/f'{self.name}.json'
             with open(json_file, 'w') as fout:
                 json.dump(ret, fout, indent=4)
             config_file = self.save_folder/f'{self.name}.conf'
             with open(config_file, 'w') as fout:
-                data_span_printed = False
-                for server_info in ret.values():
-                    if 'error_info' in server_info:
-                        continue
-                    if not data_span_printed:
-                        print(f"# {server_info['date_span']}", file=fout)
-                        data_span_printed = True
-                    if 'config' in server_info:
-                        print(server_info['config'], file=fout)
-        num_tried = len(ret)
-        num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
-        self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
+                if num_succeed>0:
+                    data_span_printed = False
+                    for server_info in ret.values():
+                        if 'error_info' in server_info:
+                            continue
+                        if not data_span_printed:
+                            print(f"# {server_info['date_span']}", file=fout)
+                            data_span_printed = True
+                        if 'config' in server_info:
+                            print(server_info['config'], file=fout)
+                else:
+                    print(self.null_config(), file=fout)
         return ret
 
     def parse_by_selenium(self, save=True, init_index=0) -> dict:
@@ -157,24 +161,28 @@ class Server_parser_base:
                 ret[url]['config'] = self.adjust_config(ret[url])
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
+                
+        num_tried = len(ret)
+        num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
+        self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
         if save:
             json_file = self.save_folder/f'{self.name}.json'
             with open(json_file, 'w') as fout:
                 json.dump(ret, fout, indent=4)
             config_file = self.save_folder/f'{self.name}.conf'
             with open(config_file, 'w') as fout:
-                data_span_printed = False
-                for server_info in ret.values():
-                    if 'error_info' in server_info:
-                        continue
-                    if not data_span_printed:
-                        print(f"# {server_info['date_span']}", file=fout)
-                        data_span_printed = True
-                    if 'config' in server_info:
-                        print(server_info['config'], file=fout)
-        num_tried = len(ret)
-        num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
-        self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
+                if num_succeed>0:
+                    data_span_printed = False
+                    for server_info in ret.values():
+                        if 'error_info' in server_info:
+                            continue
+                        if not data_span_printed:
+                            print(f"# {server_info['date_span']}", file=fout)
+                            data_span_printed = True
+                        if 'config' in server_info:
+                            print(server_info['config'], file=fout)
+                else:
+                    print(self.null_config(), file=fout)
         return ret
 
     def filling_form(self, res) -> Tuple[str, dict]:
@@ -325,7 +333,28 @@ class Server_parser_base:
             self.logger.error(e)
             self.logger.error(server_info)
 
-        
+    @staticmethod
+    def null_config() -> str:
+        '''
+        返回一个无效的用于提示的空config。可用于避免生产的config文件为空文件
+        '''
+        config_dict = {
+            "v": "2",
+            "ps": f"{Server_parser_base.normalized_local_date()} null config",
+            "add": "127.0.0.1",
+            "port": "80",
+            "id": "84b5956b-530d-4955-8bf6-061ed1cc3850",
+            "aid": "0",
+            "scy": "auto",
+            "net": "ws",
+            "type": "none",
+            "host": "127.0.0.1",
+            "path": "/vmess",
+            "tls": "none",
+            "sni": "127.0.0.1",
+            "alpn": ""
+        }
+        return 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
 
     @staticmethod
     def config_using_ip(config_using_host, ip) -> str:

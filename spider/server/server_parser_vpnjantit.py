@@ -16,7 +16,11 @@ class Server_parser_vpnjantit(Server_parser_base):
     def filling_form(self, res) -> Tuple[str, dict]:
         form_data = dict()
         html = etree.HTML(res.text)
-        websiteKey = html.xpath('//div[@class="g-recaptcha"]/@data-sitekey')[0]
+        try:
+            websiteKey = html.xpath('//div[@class="g-recaptcha"]/@data-sitekey')[0]
+        except:
+            form_data['error_info'] = 'no g-recaptcha data-sitekey'
+            return res.url, form_data
         recaptcha_res = self.solve_recaptcha_v2(res.url, websiteKey)
         if recaptcha_res=='solve failed.':
             form_data['error_info'] = recaptcha_res
