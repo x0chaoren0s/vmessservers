@@ -1,0 +1,50 @@
+{
+    "https://www.freevmess.com/unitedstates-v2ray-server": {
+        "region": "Newyork",
+        "ip": "159.223.160.74",
+        "port": 8443,
+        "Referer": "https://www.freevmess.com/server-v2ray",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNSBmcmVldm1lc3M6IE5ld3lvcmsiLCAiYWRkIjogInVzLXYycmF5LmZyZWV2bWVzcy5jb20iLCAicG9ydCI6IDg0NDMsICJpZCI6ICJiNTdkMDZlNS01YTg0LTRlYTEtZWU0ZC0wNDlhODZmYmE3NWUiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICJ0bHMifQ==",
+        "host": "us-v2ray.freevmess.com",
+        "use_ip": false,
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-15",
+        "date_span": "2023-08-10 - 2023-08-15"
+    },
+    "https://www.freevmess.com/unitedkingdom-v2ray-server": {
+        "region": "England",
+        "ip": "57.128.173.6",
+        "port": 8443,
+        "Referer": "https://www.freevmess.com/server-v2ray",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNSBmcmVldm1lc3M6IEVuZ2xhbmQiLCAiYWRkIjogInVrLXYycmF5LmZyZWV2bWVzcy5jb20iLCAicG9ydCI6IDg0NDMsICJpZCI6ICJhNDE3OTEyZC0wZjJiLTQ5ZmYtODQ2OS03NzI4YzgzZDA0N2YiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICJ0bHMifQ==",
+        "host": "uk-v2ray.freevmess.com",
+        "use_ip": false,
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-15",
+        "date_span": "2023-08-10 - 2023-08-15"
+    },
+    "https://www.freevmess.com/canada-v2ray-server": {
+        "region": "Toronto",
+        "ip": "51.161.35.200",
+        "port": 8443,
+        "Referer": "https://www.freevmess.com/server-v2ray",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNSBmcmVldm1lc3M6IFRvcm9udG8iLCAiYWRkIjogImNhLXYycmF5LmZyZWV2bWVzcy5jb20iLCAicG9ydCI6IDg0NDMsICJpZCI6ICI2ZDAwNjBjOC1iNTQ2LTRlZDItYTExYS1hYjNhMDgzOGYzMmYiLCAiYWlkIjogMCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiIiwgInBhdGgiOiAiIiwgInRscyI6ICJ0bHMifQ==",
+        "host": "ca-v2ray.freevmess.com",
+        "use_ip": false,
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-15",
+        "date_span": "2023-08-10 - 2023-08-15"
+    },
+    "https://www.freevmess.com/india-v2ray-server": {
+        "region": "India",
+        "ip": "139.59.59.1",
+        "port": 8443,
+        "Referer": "https://www.freevmess.com/server-v2ray",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNSBmcmVldm1lc3M6IEluZGlhIiwgImFkZCI6ICJpbi12MnJheS5mcmVldm1lc3MuY29tIiwgInBvcnQiOiA4NDQzLCAiaWQiOiAiNTI2MTg3ZTYtNWMzMC00MWY4LWU2ZTItMjlhYzRlYzA1ZWE2IiwgImFpZCI6IDAsICJuZXQiOiAidGNwIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIiIsICJ0bHMiOiAidGxzIn0=",
+        "host": "in-v2ray.freevmess.com",
+        "use_ip": false,
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-15",
+        "date_span": "2023-08-10 - 2023-08-15"
+    }
+}

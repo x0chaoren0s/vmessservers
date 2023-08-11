@@ -1,32 +1,89 @@
 {
-    "https://lionssh.com/create/vmess-ws-in-2": {
-        "region": "India",
-        "host": "vm.in.goserver.pw",
+    "https://lionssh.com/create/test-vmess-ws": {
+        "region": "Singapore",
+        "host": "vm.sg.serverfast.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/IN/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNS0wNiBsaW9uc3NoOiBJbmRpYSIsICJhZGQiOiAidm0uaW4uZ29zZXJ2ZXIucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICIwNTFiY2QzYS01MTkzLTRiNGEtYWRhYy04NTYyYjkwMTZmYjMiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImluLmdvc2VydmVyLnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
-        "date_create": "2023-04-28",
-        "date_expire": "2023-05-06",
-        "date_span": "2023-04-28 - 2023-05-06"
+        "Referer": "https://lionssh.com/services/vray/asia/SG/7-days",
+        "error_info": "error in [after_filling_form]"
     },
-    "https://lionssh.com/create/vmess-jp-2": {
-        "region": "Japan",
-        "host": "vm.jp.goserver.pw",
+    "https://lionssh.com/create/vmess-ws-id-1": {
+        "region": "Indonesia",
+        "host": "vm.id.serverfast.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/JP/30-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNS0yOSBsaW9uc3NoOiBKYXBhbiIsICJhZGQiOiAidm0ua3IuZ29zZXJ2ZXIucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICJkMmFiZDc5YS0zZTAwLTRjMTgtOGEyMS1iNzQxN2I2NThjY2QiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImtyLmdvc2VydmVyLnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
-        "date_create": "2023-04-28",
-        "date_expire": "2023-05-29",
-        "date_span": "2023-04-28 - 2023-05-29"
+        "Referer": "https://lionssh.com/services/vray/asia/ID/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBJbmRvbmVzaWEiLCAiYWRkIjogInZtLmlkLnNlcnZlcmZhc3QucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICJmMDUxYjY0MS0yZTU2LTRiNWYtOGNkYS04OThlYTJhZDMwYjIiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImlkLnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvbnRscyIsICJ0bHMiOiAiIn0=",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
     },
-    "https://lionssh.com/create/vmess-ws-au-1": {
-        "region": "Australia",
-        "host": "vm.au.goserver.pw",
+    "https://lionssh.com/create/vmess-kr-2": {
+        "region": "United Arab Emirates",
+        "host": "vm.ae.serverfast.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/AU/AU/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wNS0wNiBsaW9uc3NoOiBBdXN0cmFsaWEiLCAiYWRkIjogInZtLmF1Lmdvc2VydmVyLnB3IiwgInBvcnQiOiAiODAiLCAiaWQiOiAiNmZlNGFkNDEtZmVlNC00ZWQ4LWE2NDktZjZkNDgzOTdlZjU3IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJhdS5nb3NlcnZlci5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy9udGxzIiwgInRscyI6ICIifQ==",
-        "date_create": "2023-04-28",
-        "date_expire": "2023-05-06",
-        "date_span": "2023-04-28 - 2023-05-06"
+        "Referer": "https://lionssh.com/services/vray/asia/AE/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBVbml0ZWQgQXJhYiBFbWlyYXRlcyIsICJhZGQiOiAidm0uYWUuc2VydmVyZmFzdC5wdyIsICJwb3J0IjogIjgwIiwgImlkIjogIjIzOTY1MGE5LTlhY2YtNDQzYy1hZGM0LWRlYmY3Yjc2ODJlMSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiYWUuc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy9udGxzIiwgInRscyI6ICIifQ==",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-ws-de-1": {
+        "region": "Germany",
+        "host": "vm.de.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/DE/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBHZXJtYW55IiwgImFkZCI6ICJ2bS5kZS5zZXJ2ZXJmYXN0LnB3IiwgInBvcnQiOiAiODAiLCAiaWQiOiAiM2EzZGQ0NTMtNTczMS00Y2MzLTk5YWEtODg4MjIzMWExMDE2IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJkZS5zZXJ2ZXJmYXN0LnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL250bHMiLCAidGxzIjogIiJ9",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-jp-1": {
+        "region": "Poland",
+        "host": "vm.pl.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/PL/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBQb2xhbmQiLCAiYWRkIjogInZtLnBsLnNlcnZlcmZhc3QucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICIyNDgwODU2My02ODE3LTRmNDUtYTgyMi03NDBhM2MwYmNlZmQiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogInBsLnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvbnRscyIsICJ0bHMiOiAiIn0=",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-bg": {
+        "region": "Bulgaria",
+        "host": "vm.bg.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/BG/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBCdWxnYXJpYSIsICJhZGQiOiAidm0uYmcuc2VydmVyZmFzdC5wdyIsICJwb3J0IjogIjgwIiwgImlkIjogIjA2ZTBjZTE4LTM1MjAtNDIyYS1iNjc5LThjZTM5OWVjMGEzZCIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiYmcuc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy9udGxzIiwgInRscyI6ICIifQ==",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-sp-1": {
+        "region": "Spain",
+        "host": "vm.sp.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/ES/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBTcGFpbiIsICJhZGQiOiAidm0uc3Auc2VydmVyZmFzdC5wdyIsICJwb3J0IjogIjgwIiwgImlkIjogIjJkYzMwOTRhLWRkODAtNDkwZC1hNGQ5LWY5MzdhMzc1OTBiZSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy9udGxzIiwgInRscyI6ICIifQ==",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-it-1": {
+        "region": "Italia",
+        "host": "a.it.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/IT/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBJdGFsaWEiLCAiYWRkIjogInZtLml0LnNlcnZlcmZhc3QucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICI3ZmE5Mzk3Yi00Mjk4LTQzODctYjUzYy04ZmQzZjIyZDk3ZTQiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIml0LnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvbnRscyIsICJ0bHMiOiAiIn0=",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
+    },
+    "https://lionssh.com/create/vmess-vl-1": {
+        "region": "Latvia",
+        "host": "vm.lv.serverfast.pw",
+        "port": 80,
+        "Referer": "https://lionssh.com/services/vray/europe/LV/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0wOC0xNyBsaW9uc3NoOiBMYXR2aWEiLCAiYWRkIjogInZtLmx2LnNlcnZlcmZhc3QucHciLCAicG9ydCI6ICI4MCIsICJpZCI6ICJjZGJmMjk0MS05ZDYxLTQxOGUtOThmNy04YWFkYzhhMTQyMWEiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImx2LnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvbnRscyIsICJ0bHMiOiAiIn0=",
+        "date_create": "2023-08-10",
+        "date_expire": "2023-08-17",
+        "date_span": "2023-08-10 - 2023-08-17"
     }
 }
