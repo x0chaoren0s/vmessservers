@@ -26,7 +26,7 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
         server_host_list = [x.xpath('div/ul/li[2]/text()')[0].strip() for x in region_card_xpath_list] # ['bg2.vpnjantit.com', ..
         server_ip_url_list = [self.server_provider_url+x.xpath('div/ul/li[2]/a/@href')[0] for x in region_card_xpath_list] #['https://www.vpnjantit.com/host-to-ip?host=bg2.vpnjantit.com', ..
         server_url_list = [self.server_provider_url+x.xpath('div/a[2]/@href')[0] 
-            for x in region_card_xpath_list if len(region_card_xpath_list)] # ['https://www.vpnjantit.com/create-free-account?server=bg2&type=SSH', ..
+            for x in region_card_xpath_list if len(x.xpath('div/a[2]/@href'))] # ['https://www.vpnjantit.com/create-free-account?server=bg2&type=SSH', ..
         # server_ip_list = [self.parse_ip(url) for url in server_ip_url_list] # ['195.123.228.112', ..
         
         ret = dict()
