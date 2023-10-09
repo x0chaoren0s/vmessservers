@@ -32,7 +32,10 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
         ret = dict()
         for region,host,ip_url,url in tqdm(zip(region_str_list,server_host_list,server_ip_url_list,server_url_list),
                                            total=len(region_str_list), desc=f'{self.name} parsing ips: '):
-            ip = self.parse_ip(ip_url)
+            try:
+                ip = self.parse_ip(ip_url)
+            except:
+                continue
             if not self.check_server(ip, 10000):
                 continue
             ret[url] = {'region': region, 'host': host, 'ip': ip, 'port': 10000, 'Referer': res.url}
