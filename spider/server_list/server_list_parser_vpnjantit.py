@@ -24,7 +24,7 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
         region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6"]')
         region_str_list = [x.xpath('div/ul/li[1]/text()')[0].split('Location ')[1].strip() for x in region_card_xpath_list if len(x.xpath('div/ul/li[1]/text()'))] # ['Sofia, Bulgaria', ..
         server_host_list = [x.xpath('div/ul/li[2]/text()')[0].strip() for x in region_card_xpath_list if len(x.xpath('div/ul/li[1]/text()'))] # ['bg2.vpnjantit.com', ..
-        server_ip_url_list = [self.server_provider_url+x.xpath('div/ul/li[2]/a/@href')[0] for x in region_card_xpath_list] #['https://www.vpnjantit.com/host-to-ip?host=bg2.vpnjantit.com', ..
+        server_ip_url_list = [self.server_provider_url+x.xpath('div/ul/li[2]/a/@href')[0] for x in region_card_xpath_list if len(x.xpath('div/ul/li[1]/text()'))] #['https://www.vpnjantit.com/host-to-ip?host=bg2.vpnjantit.com', ..
         server_url_list = [self.server_provider_url+x.xpath('div/a[2]/@href')[0] 
             for x in region_card_xpath_list if len(x.xpath('div/a[2]/@href'))] # ['https://www.vpnjantit.com/create-free-account?server=bg2&type=SSH', ..
         # server_ip_list = [self.parse_ip(url) for url in server_ip_url_list] # ['195.123.228.112', ..
