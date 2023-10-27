@@ -22,7 +22,7 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
         # print(res.text)
         html = etree.HTML(res.text)
         region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6"]')
-        region_str_list = [x.xpath('div/ul/li[1]/text()')[0].split('Location ')[1].strip() for x in region_card_xpath_list] # ['Sofia, Bulgaria', ..
+        region_str_list = [x.xpath('div/ul/li[1]/text()')[0].split('Location ')[1].strip() for x in region_card_xpath_list if len(x.xpath('div/ul/li[1]/text()'))] # ['Sofia, Bulgaria', ..
         server_host_list = [x.xpath('div/ul/li[2]/text()')[0].strip() for x in region_card_xpath_list] # ['bg2.vpnjantit.com', ..
         server_ip_url_list = [self.server_provider_url+x.xpath('div/ul/li[2]/a/@href')[0] for x in region_card_xpath_list] #['https://www.vpnjantit.com/host-to-ip?host=bg2.vpnjantit.com', ..
         server_url_list = [self.server_provider_url+x.xpath('div/a[2]/@href')[0] 
