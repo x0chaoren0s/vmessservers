@@ -14,7 +14,7 @@ from spider.server.server_parser_vpnjantit import Server_parser_vpnjantit
 # print(spb.normalize_date('6 Apr 2023', '%d %b %Y'))
 # print(spb.get_ip('greenssh.com'))
 # print(SLP_LIONSSH.parse())
-sl=SLP_LIONSSH.parse()
+sl=SLP_SSHOCEAN.parse()
 for item in list(sl.items()):
     print(item)
 # print(len(sl))
