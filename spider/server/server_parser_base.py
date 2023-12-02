@@ -1,5 +1,6 @@
-import time, requests, logging, random, string, json, base64, shutil
+import time, requests, logging, random, string, json, base64, socket
 from requests.adapters import HTTPAdapter
+from lxml import etree
 from typing import Tuple, Iterable
 from tqdm import tqdm
 from pathlib import Path
@@ -324,6 +325,9 @@ class Server_parser_base:
             if 'ip' in server_info and server_info.get('use_ip', True):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['ip']
+            if 'ip' not in server_info:
+                ip = self.get_ip(server_info['host'])
+                config_dict['add'] = ip
             if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['cloudflare_host']
@@ -443,6 +447,16 @@ class Server_parser_base:
         可用于不显示账户的注册时间的网站，所以自己填。但其实不太准确，因为不知道网站的显示的到期时间是用什么时区
         '''
         return time.strftime("%Y-%m-%d",time.localtime())
+
+    @staticmethod
+    def get_ip(hostname) -> str:
+        # res = requests.post('https://greenssh.com/hostname-to-ip',
+        #                         data={
+        #                                 'hostname': hostname,
+        #                                 'submit': ''
+        #                         })
+        # return etree.HTML(res.content).xpath('//div[@class="alert alert-success rounded-pill"]/strong/text()')[0]
+        return socket.gethostbyname(hostname)
 
 if __name__ == '__main__':
     spb = Server_parser_base()
