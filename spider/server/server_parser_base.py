@@ -69,7 +69,12 @@ class Server_parser_base:
         self.logger.info(f'num of servers: {len(self.server_dict)}')
 
         ret = self.server_dict.copy()
+        registered_hosts = set()
         for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
+            if 'host' in self.server_dict[url]:
+                if self.server_dict[url]['host'] in registered_hosts:
+                    self.logger.warn(f"already registered: {self.server_dict[url]['host']}")
+                    continue
             if self.change_session:
                 self.session = self.new_session()
             self.headers['Referer'] = self.server_dict[url]['Referer']
@@ -109,7 +114,8 @@ class Server_parser_base:
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
                 # print(ret[url])
-                
+            registered_hosts.add(ret[url]['host'])
+
         num_tried = len(ret)
         num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
         self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')

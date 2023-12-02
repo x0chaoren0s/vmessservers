@@ -10,13 +10,13 @@ from spider.server.server_parser_sshvpnfree import SP_SSHVPNFREE, Server_parser_
 from spider.server.server_parser_vpnjantit import Server_parser_vpnjantit
 # from spider.server_list.server_list_parser_serverssh import SLP_SERVERSSH
 
-spb = Server_parser_base()
-print(spb.normalize_date('6 Apr 2023', '%d %b %Y'))
-print(spb.get_ip('greenssh.com'))
-# print(SLP_GREENSSH.parse())
-# sl=SLP_SSHOCEAN.parse()
-# for item in list(sl.items()):
-#     print(item)
+# spb = Server_parser_base()
+# print(spb.normalize_date('6 Apr 2023', '%d %b %Y'))
+# print(spb.get_ip('greenssh.com'))
+# print(SLP_LIONSSH.parse())
+sl=SLP_LIONSSH.parse()
+for item in list(sl.items()):
+    print(item)
 # print(len(sl))
 # server_dict={
 #     'https://www.vpnjantit.com/create-free-account?type=V2ray&server=ar1#create': {'region': 'Argentina 1', 'host': 'ar1.vpnjantit.com', 'ip': '38.54.45.124', 'port': 10000, 'Referer': 'https://www.vpnjantit.com/create-free-account?server=cz2&type=V2ray'}
