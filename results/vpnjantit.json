@@ -5,10 +5,7 @@
         "ip": "5.44.42.16",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjQ0LjQyLjE2IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBBbCBGdWphaXJhaCBDaXR5LCBVQUUiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMGZiMzRkZWMtOTE0YS0xMWVlLWE5ZDUtMjc1YjRkYTM1YjIxIn0=",
-        "date_create": "2023-12-03",
-        "date_expire": "2023-12-10",
-        "date_span": "2023-12-03 - 2023-12-10"
+        "error_info": "something wrong."
     },
     "https://www.vpnjantit.com/create-free-account?server=ae3&type=V2ray": {
         "region": "Al Fujairah City, UAE",
@@ -16,7 +13,7 @@
         "ip": "5.44.42.186",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjQ0LjQyLjE4NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQWwgRnVqYWlyYWggQ2l0eSwgVUFFIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjJkYjM0ODkyLTkxNGEtMTFlZS1hMzdmLTJiYjkzMGI0OWNmNiJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjE4NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQWwgRnVqYWlyYWggQ2l0eSwgVUFFIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImI2MjU3ZGEwLTkxNTItMTFlZS1hOTZkLTUzNzcyMWEzNjAwOCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -27,7 +24,7 @@
         "ip": "5.44.42.42",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjQ0LjQyLjQyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBBbCBGdWphaXJhaCBDaXR5LCBVQUUiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNTM5OGQ1NGEtOTE0YS0xMWVlLWExZDUtNDcwZWI4MmYxYzNjIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjQ0LjQyLjQyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBBbCBGdWphaXJhaCBDaXR5LCBVQUUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZDM2MDc4NjYtOTE1Mi0xMWVlLWFhOGUtYjdkYTc4NjQyMzE2In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -38,7 +35,7 @@
         "ip": "47.74.91.66",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0Ny43NC45MS42NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU3lkbmV5LCBBdXN0cmFsaWEiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNWRhZDk0ZGEtOTE0YS0xMWVlLTk3M2YtMDAxNjNlMDAxMzJjIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0Ny43NC45MS42NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU3lkbmV5LCBBdXN0cmFsaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZjg1NjAzYjYtOTE1Mi0xMWVlLWFiZWQtMDAxNjNlMDAxMzJjIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -49,7 +46,7 @@
         "ip": "180.149.44.176",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxODAuMTQ5LjQ0LjE3NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQmFrdSwgQXplcmJhaWphbiIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI2NTgyYmE2NC05MTRhLTExZWUtYjI5Yy0xZjA1ZjA3ZDZjYmYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODAuMTQ5LjQ0LjE3NiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQmFrdSwgQXplcmJhaWphbiIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmZmQ3MTk4Ni05MTUyLTExZWUtOTNjOC0zN2ZiMDJjZThhZGYifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -60,7 +57,7 @@
         "ip": "141.98.233.6",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxNDEuOTguMjMzLjYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJydXNzZWxzLCBCZWxnaXVtIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjZkM2ZhNzI2LTkxNGEtMTFlZS1hYjdhLWY3YjlkZWY0ZDQ4OCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDEuOTguMjMzLjYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJydXNzZWxzLCBCZWxnaXVtIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjA4YmJiNzBhLTkxNTMtMTFlZS04YWRiLWIzN2RiMzZmZDY4YiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -71,7 +68,7 @@
         "ip": "195.123.227.30",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjIyNy4zMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU29maWEsIEJ1bGdhcmlhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjg2ZTVhZmNjLTkxNGEtMTFlZS1iYmI1LTUzZjk4ZDljYzg2NyJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyNy4zMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU29maWEsIEJ1bGdhcmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjEwZjdmNGQ4LTkxNTMtMTFlZS05NjNiLTIzODVlMTRmZjlmZCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -82,7 +79,7 @@
         "ip": "195.123.228.112",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xMTIiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFNvZmlhLCBCdWxnYXJpYSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5MTA5ZDQ5Mi05MTRhLTExZWUtYjVhOC1kYmM2M2M3NGI3ZDAifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xMTIiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFNvZmlhLCBCdWxnYXJpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzOWVlOWU3OC05MTUzLTExZWUtYjdiZC1jYjE1Mzc5MjcyNjAifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -93,7 +90,7 @@
         "ip": "195.123.228.18",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xOCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU29maWEsIEJ1bGdhcmlhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImE1M2FjZDU0LTkxNGEtMTFlZS04MmI4LWIzZmQ4ZTVlOGE0MyJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjIyOC4xOCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU29maWEsIEJ1bGdhcmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjUxM2U4ZmMwLTkxNTMtMTFlZS1iMzZkLWNiYWI5MmIzYmJmMCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -104,7 +101,7 @@
         "ip": "38.54.2.143",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIzOC41NC4yLjE0MyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTWFuYW1hLCBCYWhyYWluIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImMwNDk2NDk4LTkxNGEtMTFlZS04NmM0LTUyNTRmNWIzYTNhYSJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC4yLjE0MyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTWFuYW1hLCBCYWhyYWluIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjU5NDFiZjNhLTkxNTMtMTFlZS05ZThhLTUyNTRmNWIzYTNhYSJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -115,7 +112,7 @@
         "ip": "89.39.161.235",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4OS4zOS4xNjEuMjM1IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTXHVmZmZkbyBQYXVsbywgQnJhemlsIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImM5ZWU0MjdhLTkxNGEtMTFlZS05ZTJhLTQ3YzFjZTc0MmE4NiJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4OS4zOS4xNjEuMjM1IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTXHVmZmZkbyBQYXVsbywgQnJhemlsIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjYwYjI0ZjhjLTkxNTMtMTFlZS1iNjFlLTlmNmY0YmZkNGJmOCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -126,7 +123,7 @@
         "ip": "83.217.9.81",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4My4yMTcuOS44MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogSXN0YW5idWwsIEJyYXppbCIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlMDI4MGI4ZS05MTRhLTExZWUtYjc5OS00YjhjMzQwM2JiYTYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4My4yMTcuOS44MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogSXN0YW5idWwsIEJyYXppbCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI2N2I5ZTU5Yy05MTUzLTExZWUtOTQyZi1mZjU5YjcxMTcwMmQifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -137,7 +134,7 @@
         "ip": "51.79.70.147",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS43OS43MC4xNDciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJlYXVoYXJub2lzLCBDYW5hZGEiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMDdlYjUxMTItOTE0Yi0xMWVlLTkyZjMtOTNlNTQwNTM0NDU5In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43OS43MC4xNDciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJlYXVoYXJub2lzLCBDYW5hZGEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNzk1OGMyMzItOTE1My0xMWVlLTgzNjAtM2ZmYTI2ZTQ0ZGY5In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -148,7 +145,7 @@
         "ip": "192.99.247.52",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTIuOTkuMjQ3LjUyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBCZWF1aGFybm9pcywgQ2FuYWRhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjE2M2NhNDZlLTkxNGItMTFlZS1hMjQ3LWMzMTI3ODYyNDg3MSJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTIuOTkuMjQ3LjUyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBCZWF1aGFybm9pcywgQ2FuYWRhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjdlMzA5ZmQyLTkxNTMtMTFlZS04NDg2LWNiYjg0YThmZGM0ZCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -159,7 +156,7 @@
         "ip": "195.123.246.120",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjI0Ni4xMjAiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMjMzODg1MjAtOTE0Yi0xMWVlLWFkNTktNTJjZjAwZTQ2MWFkIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0Ni4xMjAiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOTNhMTBmZDItOTE1My0xMWVlLTllNzYtNTJjZjAwZTQ2MWFkIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -170,7 +167,7 @@
         "ip": "62.233.57.53",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI2Mi4yMzMuNTcuNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMmI4NTg0MDgtOTE0Yi0xMWVlLWEyMGUtNmI5MWY4Yzc1ZGEwIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI2Mi4yMzMuNTcuNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFByYWd1ZSwgQ3plY2ggUmVwdWJsaWMiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOWFmMDMzNzYtOTE1My0xMWVlLWI4Y2ItNGZjMmYxMTU5YTgzIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -181,7 +178,7 @@
         "ip": "51.159.70.15",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS4xNTkuNzAuMTUiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBhcmlzLCBGcmFuY2UiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMzZmZjc1NTAtOTE0Yi0xMWVlLWI1M2MtZmJiZWUyMDQ5ZWE0In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS4xNTkuNzAuMTUiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBhcmlzLCBGcmFuY2UiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYTY1Nzc4YWEtOTE1My0xMWVlLWIyNmYtMjdkMzU0MTVjMDQwIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -192,7 +189,7 @@
         "ip": "185.123.53.178",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxODUuMTIzLjUzLjE3OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogVGFsbGlubiwgRXN0b25pYSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzYzEwNDcwNC05MTRiLTExZWUtOWQ1OC0wMDE2M2NhY2ViODAifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODUuMTIzLjUzLjE3OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogVGFsbGlubiwgRXN0b25pYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJhZGI2YTMxZS05MTUzLTExZWUtYTdlYi0wMDE2M2NhY2ViODAifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -203,7 +200,7 @@
         "ip": "77.91.103.148",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI3Ny45MS4xMDMuMTQ4IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBIZWxzaW5raSwgRmlubGFuZCIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI0NGRkMTA0Mi05MTRiLTExZWUtYjEyNC05YjNjOTQwMzYxNGIifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI3Ny45MS4xMDMuMTQ4IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBIZWxzaW5raSwgRmlubGFuZCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiN2UyNzM3Mi05MTUzLTExZWUtYTcwNC03ZmZkZTQ5M2U2ZjUifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -214,7 +211,7 @@
         "ip": "77.91.103.67",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI3Ny45MS4xMDMuNjciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEhlbHNpbmtpLCBGaW5sYW5kIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjRlNDk3OGFhLTkxNGItMTFlZS04NWE1LWVmN2M2MGU1ZmQzYiJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI3Ny45MS4xMDMuNjciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEhlbHNpbmtpLCBGaW5sYW5kIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImNiNGRiZGUwLTkxNTMtMTFlZS05ZDU4LWM3NWRjNjMxYTZiNyJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -225,7 +222,7 @@
         "ip": "51.77.200.55",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwODAiLCAiYWRkIjogIjUxLjc3LjIwMC41NSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU3RyYXNib3VyZywgRnJhbmNlIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjU2N2Y1YTNhLTkxNGItMTFlZS04YjNjLTY3MzUyMmJhMTgyMCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43Ny4yMDAuNTUiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFN0cmFzYm91cmcsIEZyYW5jZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJkMmFkMmRlNi05MTUzLTExZWUtODAyZi1kZjQ0N2M3NDgxZjkifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -236,7 +233,7 @@
         "ip": "149.202.55.79",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxNDkuMjAyLjU1Ljc5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTdHJhc2JvdXJnLCBGcmFuY2UiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNjBjODliNDYtOTE0Yi0xMWVlLThlNjktMTM4OTU2YjA2MjcwIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNDkuMjAyLjU1Ljc5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTdHJhc2JvdXJnLCBGcmFuY2UiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZGM3NTViYWEtOTE1My0xMWVlLTgyYmQtNWY3YWM0OTIyMTEwIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -247,7 +244,7 @@
         "ip": "51.195.91.135",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS4xOTUuOTEuMTM1IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJhMzY2N2Y0YS05MTRiLTExZWUtYTk4MS01ZjExYjgxOTQyOWIifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS4xOTUuOTEuMTM1IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmMjhmZjgzYy05MTUzLTExZWUtOThlYi0wZjQwYzExYWM4NDcifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -258,7 +255,7 @@
         "ip": "51.75.74.253",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS43NS43NC4yNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEZyYW5rZnVydCBhbSBNYWluLCBHZXJtYW55IiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFjYmZmNzdlLTkxNGItMTFlZS1hOGY3LTZmZmQ1NmFkZTQ3OSJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43NS43NC4yNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEZyYW5rZnVydCBhbSBNYWluLCBHZXJtYW55IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImY5NzA0ODI4LTkxNTMtMTFlZS04NDllLTlmZTViZDlhZGNlYyJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -269,7 +266,7 @@
         "ip": "51.68.172.194",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS42OC4xNzIuMTk0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiNWVhMDIwNC05MTRiLTExZWUtOWRlMS0wM2Y0NTIzYmQ1NDUifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS42OC4xNzIuMTk0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIwZjlmMDBiMi05MTU0LTExZWUtYmE1YS0yYmM2Yjg3MmE3ZjUifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -280,7 +277,7 @@
         "ip": "87.106.198.110",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4Ny4xMDYuMTk4LjExMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS2FybHNydWhlLCBHZXJtYW55IiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImJlNWU5NjcwLTkxNGItMTFlZS05ZmU0LTViZDZiYjQ1YTQ0YyJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4Ny4xMDYuMTk4LjExMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS2FybHNydWhlLCBHZXJtYW55IiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjFhN2Y5ZjI4LTkxNTQtMTFlZS04Njk4LTczN2IxMTRkNDYyMiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -291,7 +288,7 @@
         "ip": "217.160.33.100",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIyMTcuMTYwLjMzLjEwMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogRnJhbmtmdXJ0IGFtIE1haW4sIEdlcm1hbnkiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZWMyNzZiODYtOTE0Yi0xMWVlLWFmY2MtY2Y2ZjMyMTBkNWE5In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTcuMTYwLjMzLjEwMCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogRnJhbmtmdXJ0IGFtIE1haW4sIEdlcm1hbnkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMjMxYTllZTQtOTE1NC0xMWVlLWIzYjEtNTM0MzU1YWNlZDZkIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -302,18 +299,7 @@
         "ip": "62.133.60.134",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI2Mi4xMzMuNjAuMTM0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmMzY5ODRiMC05MTRiLTExZWUtOTE5OC03MzA4Y2JiZGU5NzcifQ==",
-        "date_create": "2023-12-03",
-        "date_expire": "2023-12-10",
-        "date_span": "2023-12-03 - 2023-12-10"
-    },
-    "https://www.vpnjantit.com/create-free-account?server=ie1&type=V2ray": {
-        "region": "Dublin, Ireland",
-        "host": "ie1.vpnjantit.com",
-        "ip": "95.164.44.151",
-        "port": 10000,
-        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI5NS4xNjQuNDQuMTUxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBEdWJsaW4sIElyZWxhbmQiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMDYwMTVlNGEtOTE0Yy0xMWVlLWE3M2UtMjc1MzY1NWUxZmMxIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI2Mi4xMzMuNjAuMTM0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBGcmFua2Z1cnQgYW0gTWFpbiwgR2VybWFueSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzNTYzOWQzYS05MTU0LTExZWUtOTEzNC0yYmJmMDE5NGIyYjcifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -324,7 +310,7 @@
         "ip": "195.20.17.47",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMjAuMTcuNDciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBldGFoIFRpcXZhLCBJc3JhZWwiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMWUwMDcyOTItOTE0Yy0xMWVlLThmYmYtMDAxNjNjNTBkYjZhIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMjAuMTcuNDciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBldGFoIFRpcXZhLCBJc3JhZWwiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiM2Q0NzM4ZmUtOTE1NC0xMWVlLWFkNzQtMDAxNjNjNTBkYjZhIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -335,7 +321,7 @@
         "ip": "103.248.61.101",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxMDMuMjQ4LjYxLjEwMSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQXJ0aXN0IFZpbGxhZ2UsIEluZGlhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjMxMTg2NjI4LTkxNGMtMTFlZS1hN2VmLTY2YzE0NjljNTVkOCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMjQ4LjYxLjEwMSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQXJ0aXN0IFZpbGxhZ2UsIEluZGlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjQ2ZjQyNDM0LTkxNTQtMTFlZS1iM2YyLTY2YzE0NjljNTVkOCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -346,7 +332,7 @@
         "ip": "103.248.61.51",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxMDMuMjQ4LjYxLjUxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBBcnRpc3QgVmlsbGFnZSwgSW5kaWEiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMzkzNTg1NzAtOTE0Yy0xMWVlLWIxZGYtNWU3MzBkN2ViZGJiIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMjQ4LjYxLjUxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBBcnRpc3QgVmlsbGFnZSwgSW5kaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNGVjZTg0MDYtOTE1NC0xMWVlLWEyOTAtNWU3MzBkN2ViZGJiIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -357,7 +343,7 @@
         "ip": "91.201.65.220",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI5MS4yMDEuNjUuMjIwIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBQYWxlcm1vLCBJdGFseSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI0MjkzNzMxNi05MTRjLTExZWUtYmZmOC0wMDE2M2UwOTUxZGIifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI5MS4yMDEuNjUuMjIwIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBQYWxlcm1vLCBJdGFseSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI1OTJiNGQyNi05MTU0LTExZWUtOWIyYy0wMDE2M2UwOTUxZGIifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -368,7 +354,7 @@
         "ip": "220.158.233.184",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIyMjAuMTU4LjIzMy4xODQiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBobm9tIFBlbmgsIENhbWJvZGlhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjRlMmQyMGM4LTkxNGMtMTFlZS1iYTAxLTAzMDJkOGVhNzI2ZCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMjAuMTU4LjIzMy4xODQiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFBobm9tIFBlbmgsIENhbWJvZGlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjY2MzFjYTBlLTkxNTQtMTFlZS04N2VkLTRmMjE4OTkxOWQ4MSJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -379,7 +365,7 @@
         "ip": "176.120.72.175",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxNzYuMTIwLjcyLjE3NSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQWxtYXR5LCBLYXpha2hzdGFuIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjZiYzAwZTcwLTkxNGMtMTFlZS05ZmE3LTZiOGIyYWJmMmM4NyJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxNzYuMTIwLjcyLjE3NSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQWxtYXR5LCBLYXpha2hzdGFuIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjZkZmRiYjQ0LTkxNTQtMTFlZS05NWNjLTQ3MmMwNTRmMmIyZCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -390,7 +376,7 @@
         "ip": "107.189.7.49",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxMDcuMTg5LjcuNDkiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJpc3NlbiwgTHV4ZW1ib3VyZyIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI4OTY5MjViYS05MTRjLTExZWUtOTU2NC0wMDE2YzAzYTgyZTIifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDcuMTg5LjcuNDkiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJpc3NlbiwgTHV4ZW1ib3VyZyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3NTY1MTQ5MC05MTU0LTExZWUtOGZmNi0wMDE2YzAzYTgyZTIifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -401,7 +387,7 @@
         "ip": "194.110.247.103",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTQuMTEwLjI0Ny4xMDMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IENoaXNpbmF1LCBNb2xkb3ZhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjkzNTU0ODFhLTkxNGMtMTFlZS05NzQzLTdhNTM3MGFiNjZkYiJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTQuMTEwLjI0Ny4xMDMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IENoaXNpbmF1LCBNb2xkb3ZhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjdlNmU4Yzg4LTkxNTQtMTFlZS04MjczLTdhNTM3MGFiNjZkYiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -412,7 +398,7 @@
         "ip": "47.254.230.116",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0Ny4yNTQuMjMwLjExNiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQW1zdGVyZGFtLCBOZXRoZXJsYW5kcyIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5Y2M0YmNiNC05MTRjLTExZWUtYmU2OS01MmFjMDBkMGU2MGMifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0Ny4yNTQuMjMwLjExNiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQW1zdGVyZGFtLCBOZXRoZXJsYW5kcyIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI4NWNkMjJjOC05MTU0LTExZWUtYmI3Mi01MmFjMDBkMGU2MGMifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -423,7 +409,7 @@
         "ip": "146.59.44.159",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxNDYuNTkuNDQuMTU5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBXYXJzYXcsIFBvbGFuZCIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJhNTAzZWMwNi05MTRjLTExZWUtYjFmMC0xZmM2MjY5MWY3NDYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwIiwgImFkZCI6ICIxNDYuNTkuNDQuMTU5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBXYXJzYXcsIFBvbGFuZCIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiMjYyZWY3MC05MTU0LTExZWUtOWRlYS0xNzU2YWQ4MDUyMWEifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -434,7 +420,7 @@
         "ip": "51.83.98.78",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1MS44My45OC43OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogRWFzdCBHcmluc3RlYWQsIFVuaXRlZCBLaW5nZG9tIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFjYzBhYTM4LTkxNGMtMTFlZS04MzhiLTY3MDgxZTMyYjVjOSJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS44My45OC43OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogRWFzdCBHcmluc3RlYWQsIFVuaXRlZCBLaW5nZG9tIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImI5YWYwYTdhLTkxNTQtMTFlZS1hZmMyLTFmNDhiYmI1MjgyYyJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -445,7 +431,7 @@
         "ip": "45.12.80.139",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0NS4xMi44MC4xMzkiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IExvcyBBbmdlbGVzLCBVU0EiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZDkwZTFkNWEtOTE0Yy0xMWVlLTg3YzMtNTJhYzAwNTExNTJiIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xMi44MC4xMzkiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IExvcyBBbmdlbGVzLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYzA0MmVmNzgtOTE1NC0xMWVlLTk1N2MtNTJhYzAwNTExNTJiIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -456,7 +442,7 @@
         "ip": "194.36.179.233",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTQuMzYuMTc5LjIzMyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQnJhZ2EsIFBvcnR1Z2FsIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImUwZjRmYjJlLTkxNGMtMTFlZS04ODVkLTQ3OTUwMjNiOWUwMSJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTQuMzYuMTc5LjIzMyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQnJhZ2EsIFBvcnR1Z2FsIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImQyYjMxNjA2LTkxNTQtMTFlZS1iNjE2LWI3YTgxMzNlMTdmYiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -467,18 +453,21 @@
         "ip": "103.231.189.167",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxMDMuMjMxLjE4OS4xNjciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJ1Y2hhcmVzdCwgUm9tYW5pYSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlYTRhNTdkYy05MTRjLTExZWUtYTc1OC0yMzE2ZGE2Zjk4OTYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMjMxLjE4OS4xNjciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEJ1Y2hhcmVzdCwgUm9tYW5pYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlNGU2ODA3ZS05MTU0LTExZWUtYjRjMi0xM2QxZDA1ZWIwMjIifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
     },
     "https://www.vpnjantit.com/create-free-account?server=ru1&type=V2ray": {
-        "region": "East Grinstead, United Kingdom",
+        "region": "Moscow, Russia",
         "host": "premiuk.vpnjantit.com",
         "ip": "51.75.170.141",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "error_info": "something wrong."
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1MS43NS4xNzAuMTQxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBNb3Njb3csIFJ1c3NpYSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmMWFlNjhjNi05MTU0LTExZWUtYjllNy0yNzcyZTQ3ZWI4NTAifQ==",
+        "date_create": "2023-12-03",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-03 - 2023-12-10"
     },
     "https://www.vpnjantit.com/create-free-account?server=ru2&type=V2ray": {
         "region": "Moscow, Russia",
@@ -486,7 +475,7 @@
         "ip": "194.146.49.148",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTQuMTQ2LjQ5LjE0OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTW9zY293LCBSdXNzaWEiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOTEzZjY5YzQtOTE0ZC0xMWVlLWJjY2EtODNhNjVlNGE1ZGU0In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwIiwgImFkZCI6ICIxOTQuMTQ2LjQ5LjE0OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTW9zY293LCBSdXNzaWEiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZmIxMGYwYzgtOTE1NC0xMWVlLWFmMDAtZDM0N2VkNmZmMzFlIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -497,7 +486,7 @@
         "ip": "195.123.242.216",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjI0Mi4yMTYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEplZGRhaCwgU2F1ZGkgQXJhYmlhIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjljZGNmMDQ0LTkxNGQtMTFlZS1hNDM1LTUyNTQwMWIzY2MzMCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0Mi4yMTYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEplZGRhaCwgU2F1ZGkgQXJhYmlhIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjAzNWU2ODY0LTkxNTUtMTFlZS1iMzZlLTUyNTQwMWIzY2MzMCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -508,7 +497,7 @@
         "ip": "5.182.39.240",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjE4Mi4zOS4yNDAiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFN0b2NraG9sbSwgU3dlZGVuIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImI1MWVjY2E0LTkxNGQtMTFlZS05ZDMyLTAwMTYzYzYyMzE0MCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjE4Mi4zOS4yNDAiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IFN0b2NraG9sbSwgU3dlZGVuIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjBiZDgxYTk0LTkxNTUtMTFlZS05NTE2LTAwMTYzYzYyMzE0MCJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -519,7 +508,7 @@
         "ip": "82.117.255.207",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4Mi4xMTcuMjU1LjIwNyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU3RvY2tob2xtLCBTd2VkZW4iLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiY2ZiZjZhNTAtOTE0ZC0xMWVlLTlhNzctMDAxNjNjZmI1MzIxIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwIiwgImFkZCI6ICI4Mi4xMTcuMjU1LjIwNyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU3RvY2tob2xtLCBTd2VkZW4iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMzEwOWZhNjItOTE1NS0xMWVlLTk4YWMtMDAxNjNjZmI1MzIxIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -530,7 +519,7 @@
         "ip": "45.95.203.252",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0NS45NS4yMDMuMjUyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJkOWFhOTk5MC05MTRkLTExZWUtYjI1ZS02YTEwNmIxZGUwN2QifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS45NS4yMDMuMjUyIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBTaW5nYXBvcmUsIFNpbmdhcG9yZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzYWZlNzM1ZS05MTU1LTExZWUtOTU2OS02YTEwNmIxZGUwN2QifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -541,7 +530,7 @@
         "ip": "38.54.61.246",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIzOC41NC42MS4yNDYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IE1hZHJpZCwgU3BhaW4iLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZTNlZjU5NzItOTE0ZC0xMWVlLThjODAtYTNiMjQzZGRhNzQzIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIzOC41NC42MS4yNDYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IE1hZHJpZCwgU3BhaW4iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNDQ1OTc5NTgtOTE1NS0xMWVlLTlhMzktMjM2ZGE0YjRhYTU0In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -552,7 +541,7 @@
         "ip": "46.246.98.117",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0Ni4yNDYuOTguMTE3IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBaXHVmZmZkcmljaCwgU3dpdHplcmxhbmQiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiZjhhYzU3MGMtOTE0ZC0xMWVlLWE0ZjgtMWYwMjhlMzZkZDYwIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0Ni4yNDYuOTguMTE3IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBaXHVmZmZkcmljaCwgU3dpdHplcmxhbmQiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNGIzZjJlNjYtOTE1NS0xMWVlLThlZWMtMDc4YjdkNjYzMWU3In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -563,7 +552,7 @@
         "ip": "103.231.188.124",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxMDMuMjMxLjE4OC4xMjQiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMTFiOTc2M2EtOTE0ZS0xMWVlLWE2ZWUtN2YwODcyYTczMTQ2In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxMDMuMjMxLjE4OC4xMjQiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNTRmOGFjNjYtOTE1NS0xMWVlLWE1OTAtY2IyMzA0YzFlYWFiIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -574,7 +563,7 @@
         "ip": "45.12.80.145",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0NS4xMi44MC4xNDUiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMjhkZWUzNGEtOTE0ZS0xMWVlLWE5MGUtNmIxZTUwMWFmMjc3In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xMi44MC4xNDUiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNWU4OTNkOTAtOTE1NS0xMWVlLTgzYTQtYjM0NTJhMThiMTM4In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -585,7 +574,7 @@
         "ip": "212.227.228.91",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwIiwgImFkZCI6ICIyMTIuMjI3LjIyOC45MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogSXN0YW5idWwsIFR1cmtleSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzM2ZmMWIzMi05MTRlLTExZWUtYmM2Mi03ZjFjODgwZTU1ZmYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIyMTIuMjI3LjIyOC45MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogSXN0YW5idWwsIFR1cmtleSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI2NWUwNTkwMi05MTU1LTExZWUtYTFlMS0zM2JmNDEzN2VkZDkifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -596,7 +585,7 @@
         "ip": "45.90.59.186",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0NS45MC41OS4xODYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNDEzNTU2NWUtOTE0ZS0xMWVlLThiMjEtNjM2OWMyNTc2YjY5In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS45MC41OS4xODYiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IElzdGFuYnVsLCBUdXJrZXkiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNmUxMmI3YmUtOTE1NS0xMWVlLWI2MGEtYzdmZGUzNTlmZmFiIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -607,7 +596,7 @@
         "ip": "185.219.135.88",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjQ0MyIsICJhZGQiOiAiMTg1LjIxOS4xMzUuODgiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEt5aXYsIFVrcmFpbmUiLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNmMyZDFhMzYtOTE0ZS0xMWVlLWE5MjMtNzMzNTc5MGMxYzQ1In0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODUuMjE5LjEzNS44OCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS3lpdiwgVWtyYWluZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5NzQzZjgyOC05MTU1LTExZWUtYmVhMC0yZjI5ZTJmMTUzZGUifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -618,7 +607,7 @@
         "ip": "185.39.204.117",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxODUuMzkuMjA0LjExNyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS3lpdiwgVWtyYWluZSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI3ODg4OWFlZS05MTRlLTExZWUtYmE1Ni1mZjliYTEyNTU5ZWIifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxODUuMzkuMjA0LjExNyIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS3lpdiwgVWtyYWluZSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5ZThkZjRiMi05MTU1LTExZWUtOWU3MS02M2IwYzA0YzEwODMifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -629,7 +618,7 @@
         "ip": "45.144.154.80",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjQ0MyIsICJhZGQiOiAiNDUuMTQ0LjE1NC44MCIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogS3lpdiwgVWtyYWluZSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICI5MDllYjU0Ni05MTRlLTExZWUtOTk0Mi02YjZjMzFhM2RiYzEifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xNDQuMTU0LjgwIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBLeWl2LCBVa3JhaW5lIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImE4NjVmMDk4LTkxNTUtMTFlZS1iNDcwLWJiYTg4ZmY3OGJhZiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -640,7 +629,7 @@
         "ip": "45.144.153.64",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI0NS4xNDQuMTUzLjY0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBLeWl2LCBVa3JhaW5lIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjk4NWY0MjAwLTkxNGUtMTFlZS05NzQ5LWEzNzVmYzQzZjIzNCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI0NS4xNDQuMTUzLjY0IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBLeWl2LCBVa3JhaW5lIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImIxYzQ5NmU0LTkxNTUtMTFlZS1hNzc3LTE3ODc0MDIzNTcxMSJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -651,7 +640,7 @@
         "ip": "83.217.9.81",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4My4yMTcuOS44MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogR2xvdWNlc3RlciwgVW5pdGVkIEtpbmdkb20iLCAidGxzIjogInRscyIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYTFkNjcxZjAtOTE0ZS0xMWVlLThlOGItMWZkNmI5NzVkN2NmIn0=",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4My4yMTcuOS44MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogR2xvdWNlc3RlciwgVW5pdGVkIEtpbmdkb20iLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYjkzMDViODQtOTE1NS0xMWVlLWJiNTMtNzcyMmE3Nzc4OGJkIn0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -662,7 +651,7 @@
         "ip": "82.118.18.101",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4Mi4xMTguMTguMTAxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBCZXhsZXksIFVuaXRlZCBLaW5nZG9tIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFiYzdiMzdjLTkxNGUtMTFlZS04NWE5LTZiOTc2ZTQ2NTkyNCJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4Mi4xMTguMTguMTAxIiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBCZXhsZXksIFVuaXRlZCBLaW5nZG9tIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImMzZmVhNzNjLTkxNTUtMTFlZS1hOGE3LTFiZWUwMDE0MTE2ZiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -673,7 +662,7 @@
         "ip": "5.34.182.12",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjM0LjE4Mi4xMiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU2VjYXVjdXMsIFVTQSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJiYzA2NDk2MC05MTRlLTExZWUtODJmMi0yZjcxYmNkZjkzNWYifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjM0LjE4Mi4xMiIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogU2VjYXVjdXMsIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJjYTY1Y2NkNi05MTU1LTExZWUtYjRiYy04NzA5OWY2ZGQ0ZDUifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -684,7 +673,7 @@
         "ip": "5.34.182.153",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1LjM0LjE4Mi4xNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEF0bGFudGEsIFVTQSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJkNzg1MGVkOC05MTRlLTExZWUtYjIwYi0wMDE2M2M0Y2E0YjgifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI1LjM0LjE4Mi4xNTMiLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IEF0bGFudGEsIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmMWMyMWVmNi05MTU1LTExZWUtYTZhNC0wMDE2M2M0Y2E0YjgifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -695,7 +684,18 @@
         "ip": "193.238.153.61",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTMuMjM4LjE1My42MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTG9zIEFuZ2VsZXMsIFVTQSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJlZDIyODkzMi05MTRlLTExZWUtYjA4NS01MmFjMDA2NGY1MGEifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTMuMjM4LjE1My42MSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogTG9zIEFuZ2VsZXMsIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmYzczODljYS05MTU1LTExZWUtYjUyNy01MmFjMDA2NGY1MGEifQ==",
+        "date_create": "2023-12-03",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-03 - 2023-12-10"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=usa4&type=V2ray": {
+        "region": "Miami, USA",
+        "host": "uk.vpnjantit.com",
+        "ip": "77.68.12.207",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI3Ny42OC4xMi4yMDciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IE1pYW1pLCBVU0EiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiMTVhMTMyM2EtOTE1Ni0xMWVlLWEwYmUtYmY3NzIxYWIwOTM5In0=",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -706,7 +706,7 @@
         "ip": "57.128.171.79",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI1Ny4xMjguMTcxLjc5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBEYWxsYXMsIFVTQSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmNWQ5MDViYS05MTRlLTExZWUtOTczZi0wMDE2M2U2MDg1YzgifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjgwIiwgImFkZCI6ICI1Ny4xMjguMTcxLjc5IiwgInBzIjogIjIwMjMtMTItMTAgdnBuamFudGl0OiBEYWxsYXMsIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIyN2NlZTYwMC05MTU2LTExZWUtYjczZi0wMDE2M2U2MDg1YzgifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -717,7 +717,7 @@
         "ip": "85.239.52.97",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICI4NS4yMzkuNTIuOTciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IENoaWNhZ28sIFVTQSIsICJ0bHMiOiAidGxzIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICJmY2UzYjg4Mi05MTRlLTExZWUtYjAxMi1hMzY4MTlmNGU1MTAifQ==",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICI4NS4yMzkuNTIuOTciLCAicHMiOiAiMjAyMy0xMi0xMCB2cG5qYW50aXQ6IENoaWNhZ28sIFVTQSIsICJ0bHMiOiAiIiwgImFpZCI6ICIwIiwgInYiOiAiMiIsICJpZCI6ICIzMjdjZGY4MC05MTU2LTExZWUtYTkwYy05NzhhMjU2ZTJhMWEifQ==",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"
@@ -728,7 +728,7 @@
         "ip": "195.123.243.21",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICIxOTUuMTIzLjI0My4yMSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQXNoYnVybiwgVVNBIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjBlN2YyOGUyLTkxNGYtMTFlZS05ZmZkLTAwMTYzYzc1NWIyNiJ9",
+        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAwIiwgImFkZCI6ICIxOTUuMTIzLjI0My4yMSIsICJwcyI6ICIyMDIzLTEyLTEwIHZwbmphbnRpdDogQXNoYnVybiwgVVNBIiwgInRscyI6ICIiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogIjM4ZTNhYWU4LTkxNTYtMTFlZS1hNjkwLTAwMTYzYzc1NWIyNiJ9",
         "date_create": "2023-12-03",
         "date_expire": "2023-12-10",
         "date_span": "2023-12-03 - 2023-12-10"

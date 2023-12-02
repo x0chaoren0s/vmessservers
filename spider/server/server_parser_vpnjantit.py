@@ -34,8 +34,7 @@ class Server_parser_vpnjantit(Server_parser_base):
         html = etree.HTML(res.text)
         info_card_xpath = html.xpath('//div[@class="row block-9"]/div[3]/div/div/div')[0]
         try:
-            # ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya2"]/@value')[0].strip() # non tls
-            ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya"]/@value')[0].strip() # tls
+            ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya2"]/@value')[0].strip()
             ret['region'] = info_card_xpath.xpath('h5[8]/text()')[0].strip()
             ret['date_create'] = self.normalized_local_date()
             ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('h5[7]/text()')[0], '%Y-%m-%d / %H:%M:%S')
