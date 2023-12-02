@@ -4,118 +4,116 @@
         "host": "vm.sg.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/asia/SG/7-days",
-        "error_info": "post timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBTaW5nYXBvcmUiLCAiYWRkIjogIjEzOS4xODAuMTQyLjE5MyIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICJlZjM3OGYyZS04ODU1LTQ4YmMtODY2ZC03ZTEzYzAwYmQ0YmMiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogInNnLnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvdGxzIiwgInRscyI6ICJ0bHMiLCAic25pIjogInNnLnNlcnZlcmZhc3QucHcifQ==",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-ws-in-2": {
         "region": "India",
         "host": "vm.in.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/asia/IN/7-days",
-        "error_info": "get timeout"
-    },
-    "https://lionssh.com/create/vmess-kr-2": {
-        "region": "United Arab Emirates",
-        "host": "vm.ae.serverfast.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/AE/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBJbmRpYSIsICJhZGQiOiAiOTUuMTY0LjM3LjIzIiwgInBvcnQiOiAiNDQzIiwgImlkIjogImQ4ZDgyOGMwLTJkNWMtNDc4MS1hYzFlLTAxN2NmYWEyNTU0NyIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAic3Auc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-ws-us-1": {
         "region": "America",
         "host": "vm.us.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/america/US/7-days",
-        "error_info": "get timeout"
-    },
-    "https://lionssh.com/create/vmess-ws-ca-2": {
-        "region": "Canada",
-        "host": "vm.ca.serverfast.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/america/CA/7-days",
-        "error_info": "get timeout"
-    },
-    "https://lionssh.com/create/vmess-ws-uk-1": {
-        "region": "United Kingdom",
-        "host": "vm.uk.serverfast.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/europe/GB/7-days",
-        "error_info": "get timeout"
-    },
-    "https://lionssh.com/create/vmess-ws-de-1": {
-        "region": "Germany",
-        "host": "vm.de.serverfast.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/europe/DE/7-days",
-        "error_info": "get timeout"
-    },
-    "https://lionssh.com/create/vmess-ws-de-1-F5XJ": {
-        "region": "Netherlands",
-        "host": "vm.nl.serverfast.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/europe/NL/7-days",
-        "error_info": "get timeout"
+        "error_info": "error in [after_filling_form]"
     },
     "https://lionssh.com/create/vmess-jp-1": {
         "region": "Poland",
         "host": "vm.pl.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/PL/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBQb2xhbmQiLCAiYWRkIjogIjU3LjEyOC4xOTYuODciLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiNDk3YTlmYmYtMzRhZS00MTIxLWIzNjgtODk2YWM0ODZkZWE1IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJwbC5zZXJ2ZXJmYXN0LnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL3RscyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJwbC5zZXJ2ZXJmYXN0LnB3In0=",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-bg": {
         "region": "Bulgaria",
         "host": "vm.bg.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/BG/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBCdWxnYXJpYSIsICJhZGQiOiAiOTUuMTY0LjM3LjIzIiwgInBvcnQiOiAiNDQzIiwgImlkIjogImRiNzQ0NmM4LWZiNmEtNDlkMy04MzY3LTI2NzViMDBlYmU5ZCIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAic3Auc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-sp-1": {
         "region": "Spain",
         "host": "vm.sp.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/ES/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBTcGFpbiIsICJhZGQiOiAiOTUuMTY0LjM3LjIzIiwgInBvcnQiOiAiNDQzIiwgImlkIjogIjU4MGRjMThlLWRkOTEtNDYxYy04YTAyLTdiZmM4ZGIxZThhOSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAic3Auc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-vl-1": {
         "region": "Latvia",
         "host": "vm.lv.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/LV/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBMYXR2aWEiLCAiYWRkIjogIjk1LjE2NC4zNy4yMyIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICIxNWJkMGYzYS0zYzI5LTQ0MjYtODczZS05MTE0YThlYWU3ZDMiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogInNwLnNlcnZlcmZhc3QucHciLCAicGF0aCI6ICIvdjJyYXktdm1lc3MvdGxzIiwgInRscyI6ICJ0bHMiLCAic25pIjogInNwLnNlcnZlcmZhc3QucHcifQ==",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-ru-1": {
         "region": "Rusia",
         "host": "vm.ru.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/RU/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBSdXNpYSIsICJhZGQiOiAiOTUuMTY0LjM3LjIzIiwgInBvcnQiOiAiNDQzIiwgImlkIjogImI2NDliN2JkLWQ5NTctNGUyMC05OWExLTUzYWRkY2FkOWY1YiIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAic3Auc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-po-1": {
         "region": "Portugal",
         "host": "vm.po.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/PT/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBQb3J0dWdhbCIsICJhZGQiOiAiOTUuMTY0LjM3LjIzIiwgInBvcnQiOiAiNDQzIiwgImlkIjogIjg5MGM5MGYxLTRiZTYtNGMzYi1iZTA3LTMyZWQ2OTc2NTU5OSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAic3Auc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAic3Auc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-ie-3": {
         "region": "Ireland",
         "host": "vm.ie.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/IE/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBJcmVsYW5kIiwgImFkZCI6ICI5NS4xNjQuMzcuMjMiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiNDJlNzg0MzMtZDgyZS00YmRiLWFjZTQtMmZmZTE4NDg3MWVlIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJzcC5zZXJ2ZXJmYXN0LnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL3RscyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJzcC5zZXJ2ZXJmYXN0LnB3In0=",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
     "https://lionssh.com/create/vmess-fi-1": {
         "region": "Finland",
         "host": "vm.fi.serverfast.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/europe/FI/7-days",
-        "error_info": "get timeout"
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBGaW5sYW5kIiwgImFkZCI6ICI5NS4xNjQuMzcuMjMiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiZjE4MGUyM2EtZDFlZC00NWZmLWFhZDctYmM3OTk3MzBjYzAwIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJzcC5zZXJ2ZXJmYXN0LnB3IiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL3RscyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJzcC5zZXJ2ZXJmYXN0LnB3In0=",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     },
-    "https://lionssh.com/create/vmess-ws-au-1": {
-        "region": "Australia",
-        "host": "vm.au.serverfast.pw",
+    "https://lionssh.com/create/vmess-af": {
+        "region": "South Africa",
+        "host": "vm.af.serverfast.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/AU/AU/7-days",
-        "error_info": "get timeout"
+        "Referer": "https://lionssh.com/services/vray/ZA/ZA/7-days",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0xMCBsaW9uc3NoOiBTb3V0aCBBZnJpY2EiLCAiYWRkIjogIjEwMi4yMTkuODUuMTk4IiwgInBvcnQiOiAiNDQzIiwgImlkIjogIjdiMTAxZjE0LTc4OTYtNDg5OC1hM2UzLWRiMDNkZmVjOTRlZiIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiYWYuc2VydmVyZmFzdC5wdyIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAiYWYuc2VydmVyZmFzdC5wdyJ9",
+        "date_create": "2023-12-02",
+        "date_expire": "2023-12-10",
+        "date_span": "2023-12-02 - 2023-12-10"
     }
 }
