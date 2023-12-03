@@ -1,1 +1,32 @@
-{}
+{
+    "https://greenssh.com/v2ray-vmess/germany/de1": {
+        "region": "Germany",
+        "host": "de1-vmess.greenssh.xyz",
+        "port": 80,
+        "Referer": "https://greenssh.com/v2ray-vmess/germany",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0wNSBncmVlbnNzaDogR2VybWFueSIsICJhZGQiOiAiZGUxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJwb3J0IjogIjgwIiwgImlkIjogImVkYjQwZDZkLWE5MTUtNDA3MC1hMTcwLTQwOWNiMjAxYjI2YSIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAiZGUxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJwYXRoIjogIi92bWVzcyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiAiZGUxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJhbHBuIjogIiJ9",
+        "date_create": "2023-11-28",
+        "date_expire": "2023-12-05",
+        "date_span": "2023-11-28 - 2023-12-05"
+    },
+    "https://greenssh.com/v2ray-vmess/united-kingdom/uk1": {
+        "region": "United Kingdom",
+        "host": "uk1-vmess.greenssh.xyz",
+        "port": 80,
+        "Referer": "https://greenssh.com/v2ray-vmess/united-kingdom",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0wNSBncmVlbnNzaDogVW5pdGVkIEtpbmdkb20iLCAiYWRkIjogInVrMS12bWVzcy5ncmVlbnNzaC54eXoiLCAicG9ydCI6ICI4MCIsICJpZCI6ICI5ZDQxYzMyNi0wM2ViLTQyZTMtODIwZi1iZGZmMDEyOTUxMTQiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogInVrMS12bWVzcy5ncmVlbnNzaC54eXoiLCAicGF0aCI6ICIvdm1lc3MiLCAidGxzIjogIm5vbmUiLCAic25pIjogInVrMS12bWVzcy5ncmVlbnNzaC54eXoiLCAiYWxwbiI6ICIifQ==",
+        "date_create": "2023-11-28",
+        "date_expire": "2023-12-05",
+        "date_span": "2023-11-28 - 2023-12-05"
+    },
+    "https://greenssh.com/v2ray-vmess/united-states/us1": {
+        "region": "United States",
+        "host": "us1-vmess.greenssh.xyz",
+        "port": 80,
+        "Referer": "https://greenssh.com/v2ray-vmess/united-states",
+        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyMy0xMi0wNSBncmVlbnNzaDogVW5pdGVkIFN0YXRlcyIsICJhZGQiOiAidXMxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJwb3J0IjogIjgwIiwgImlkIjogIjQ4ZTM2YmUwLTRiOGItNDJlYi04MjY2LTIyYTQ0YTI1YWUyMyIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAid3MiLCAidHlwZSI6ICJub25lIiwgImhvc3QiOiAidXMxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJwYXRoIjogIi92bWVzcyIsICJ0bHMiOiAibm9uZSIsICJzbmkiOiAidXMxLXZtZXNzLmdyZWVuc3NoLnh5eiIsICJhbHBuIjogIiJ9",
+        "date_create": "2023-11-28",
+        "date_expire": "2023-12-05",
+        "date_span": "2023-11-28 - 2023-12-05"
+    }
+}

@@ -36,7 +36,7 @@ class Server_parser_sshocean(Server_parser_base):
             ret['config'] = html.xpath('//input[@id="ssClipboardtls"]/@value')[0].strip()
             # ret['cloudflare_host'] = info_card_xpath.xpath('div/div/ul/li[2]/span/text()')[0][17:]
             # ret['use_cloudflare'] = False
-            ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
+            # ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
             ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[10]/span/text()')[0][9:], '%d %b %Y')
             ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[11]/span/text()')[0][9:], '%d %b %Y')
         except:
