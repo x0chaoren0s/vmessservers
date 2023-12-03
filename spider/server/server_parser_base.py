@@ -1,5 +1,6 @@
-import time, requests, logging, random, string, json, base64, shutil
+import time, requests, logging, random, string, json, base64, socket
 from requests.adapters import HTTPAdapter
+from lxml import etree
 from typing import Tuple, Iterable
 from tqdm import tqdm
 from pathlib import Path
@@ -68,7 +69,12 @@ class Server_parser_base:
         self.logger.info(f'num of servers: {len(self.server_dict)}')
 
         ret = self.server_dict.copy()
+        registered_hosts = set()
         for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
+            if 'host' in self.server_dict[url]:
+                if self.server_dict[url]['host'] in registered_hosts:
+                    self.logger.warn(f"already registered: {self.server_dict[url]['host']}")
+                    continue
             if self.change_session:
                 self.session = self.new_session()
             self.headers['Referer'] = self.server_dict[url]['Referer']
@@ -108,7 +114,8 @@ class Server_parser_base:
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
                 # print(ret[url])
-                
+            registered_hosts.add(ret[url]['host'])
+
         num_tried = len(ret)
         num_succeed = len([v for v in list(ret.values()) if 'error_info' not in v])
         self.logger.info(f'finished. succeed: {num_succeed} / {num_tried}')
@@ -324,6 +331,9 @@ class Server_parser_base:
             if 'ip' in server_info and server_info.get('use_ip', True):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['ip']
+            if 'ip' not in server_info:
+                ip = self.get_ip(server_info['host'])
+                config_dict['add'] = ip
             if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['cloudflare_host']
@@ -443,6 +453,16 @@ class Server_parser_base:
         可用于不显示账户的注册时间的网站，所以自己填。但其实不太准确，因为不知道网站的显示的到期时间是用什么时区
         '''
         return time.strftime("%Y-%m-%d",time.localtime())
+
+    @staticmethod
+    def get_ip(hostname) -> str:
+        # res = requests.post('https://greenssh.com/hostname-to-ip',
+        #                         data={
+        #                                 'hostname': hostname,
+        #                                 'submit': ''
+        #                         })
+        # return etree.HTML(res.content).xpath('//div[@class="alert alert-success rounded-pill"]/strong/text()')[0]
+        return socket.gethostbyname(hostname)
 
 if __name__ == '__main__':
     spb = Server_parser_base()

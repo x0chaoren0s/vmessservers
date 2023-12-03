@@ -39,7 +39,8 @@ class Server_parser_lionssh(Server_parser_base):
         # html = etree.HTML(res.text)
         try:
             # info_card_xpath = html.xpath('//div[@class="alert alert_success py-4 text-sm bg-white border-green-600 text-green-600 shadow-lg leading-relaxed"]')[0]
-            ret['config'] = json.loads(json.loads(res.content.decode())['data']['account']['config'])['ntls']
+            # ret['config'] = json.loads(json.loads(res.content.decode())['data']['account']['config'])['ntls']
+            ret['config'] = json.loads(json.loads(res.content.decode())['data']['account']['config'])['tls']
             ret['date_create'] = json.loads(res.content.decode())['data']['account']['created_at'][:10]
             ret['date_expire'] = json.loads(res.content.decode())['data']['account']['expired_at'][:10]
         except:

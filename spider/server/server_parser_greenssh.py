@@ -32,7 +32,8 @@ class Server_parser_greenssh(Server_parser_base):
         ret = dict()
         html = etree.HTML(res.text)
         try:
-            ret['config'] = html.xpath('///textarea[@id="ssClipboard"]/text()')[0].strip()
+            # ret['config'] = html.xpath('///textarea[@id="ssClipboard"]/text()')[0].strip()
+            ret['config'] = html.xpath('//textarea[@id="ssClipboardtls"]/text()')[0].strip()
             ret['date_create'] = self.normalize_date(
                 html.xpath('//li[@class="list-group-item d-flex justify-content-between align-items-center"][8]/b/text()')[0].strip(),
                 "%d %b %Y")
