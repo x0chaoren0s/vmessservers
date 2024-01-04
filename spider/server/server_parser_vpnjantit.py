@@ -32,7 +32,7 @@ class Server_parser_vpnjantit(Server_parser_base):
     def after_filling_form(self, res) -> dict:
         ret = dict()
         html = etree.HTML(res.text)
-        info_card_xpath = html.xpath('//div[@class="row block-9"]/div[3]/div/div/div')[0]
+        info_card_xpath = html.xpath('//div[@class="row block-9"]/div[2]/div/div/div')[0]
         try:
             ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya2"]/@value')[0].strip()
             ret['region'] = info_card_xpath.xpath('h5[8]/text()')[0].strip()
