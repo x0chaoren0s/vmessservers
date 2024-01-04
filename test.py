@@ -11,7 +11,7 @@ from spider.server.server_parser_sshocean import Server_parser_sshocean
 # from spider.server_list.server_list_parser_serverssh import SLP_SERVERSSH
 
 # print(SLP_AKUNSSH.parse())
-sl=SLP_SSHOCEAN.parse()
+sl=SLP_VPNJANTIT.parse()
 for item in list(sl.items()):
     print(item)
 # print(len(sl))
