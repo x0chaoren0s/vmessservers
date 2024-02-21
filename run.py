@@ -17,7 +17,7 @@ if __name__ == '__main__':
     # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
     # spiders = [SP_SSHOCEAN,SP_GREENSSH,SP_FREEVMESS]
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN]
-    spiders = [SP_GREENSSH]
+    # spiders = [SP_GREENSSH]
     # spiders = [SP_VPNJANTIT,]
     spider_processes = [Process(target=s.parse) for s in spiders]
     [process.start() for process in spider_processes]
