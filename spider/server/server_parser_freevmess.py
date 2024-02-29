@@ -39,13 +39,13 @@ class Server_parser_freevmess(Server_parser_base):
         ret = dict()
         html = etree.HTML(res.text)
         try:
-            info_card_xpath = html.xpath('//div[@class="col-xs-12 col-sm-4 col-md-4 portfolio-item vlesstcp"][2]')[0]
+            info_card_xpath = html.xpath('//div[@class="col-xs-12 col-sm-4 col-md-4 portfolio-item vlesstcp"][1]')[0]
             ret['region'] = info_card_xpath.xpath('ul/li[1]/text()')[0].strip()
             ret['config'] = html.xpath('//input[@id="myInput"]/@value')[0].strip()
             ret['host'] = json.loads(base64.b64decode(ret['config'].split('vmess://')[1]).decode())['add']
             ret['ip'] = info_card_xpath.xpath('ul/li[3]/text()')[0].strip()
             ret['port'] = int(info_card_xpath.xpath('ul/li[2]/text()')[0].split(' ')[-1])
-            ret['use_ip'] = False # 返回的config用的是ip对应的host（网页上没显示这个信息），host可用，但改成ip就能ping却用不了
+            # ret['use_ip'] = False # 返回的config用的是ip对应的host（网页上没显示这个信息），host可用，但改成ip就能ping却用不了
             ret['date_create'] = self.normalized_local_date()
             dt = datetime.datetime.strptime(ret['date_create'], "%Y-%m-%d")
             ret['date_expire'] = (dt + datetime.timedelta(days=5)).strftime("%Y-%m-%d")
