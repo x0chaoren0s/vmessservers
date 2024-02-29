@@ -20,24 +20,25 @@ class Server_list_parser_akunssh(Server_list_parser_base):
         res = self.session.get(self.server_list_url, timeout=60)
         assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
         html = etree.HTML(res.text)
-        server_card_xpath_list = html.xpath('//div[@class="col-lg-3 mb-5"]')
-        print(server_card_xpath_list) # ['Singapore', ..
-        server_host_list = [x.xpath('div/ul/li[1]/div/span/text()')[0].strip() for x in server_card_xpath_list]
-        print(server_host_list) # ['Singapore', ..
-        server_region_list = [x.xpath('div/ul/li[2]/div/span/text()')[0].strip() for x in server_card_xpath_list]
-        print(server_region_list) # ['Singapore', ..
-        server_available_list = [x.xpath('div/ul/li[4]/span/text()[1]')[0] for x in server_card_xpath_list]
-        print(server_available_list) # ['Singapore', ..
-        server_url_list = [x.xpath('div/a/@href')[0] for x in server_card_xpath_list]
-        print(server_url_list) # ['https://www.akunssh.com/singapore-v2ray-server', ..
+        server_card_xpath_list = html.xpath('//div[@class="col-md-6 col-xl-3"]')
+        # print(server_card_xpath_list) # ['Singapore', ..
+        server_host_list = [x.xpath('div/div/ul/li[1]/span/text()')[0].strip() for x in server_card_xpath_list]
+        # print(server_host_list) # ['Singapore', ..
+        server_region_list = [x.xpath('div/div/ul/li[2]/span/text()')[0].strip() for x in server_card_xpath_list]
+        # print(server_region_list) # ['Singapore', ..
+        server_available_list = [len(x.xpath('div/div/p/span[@class="badge bg-blue rounded-pill"]'))>0 for x in server_card_xpath_list]
+        # print(server_available_list) # [True, ..
+        server_url_list = ['https://akunssh.net'+x.xpath('div/div/a/@href')[0] for x in server_card_xpath_list]
+        # print(server_url_list) # ['https://akunssh.net/v2ray-vmess-server/create-v2ray-vmess-7-ae-account', ..
 
         ret = dict()
-        for host,region,available,url in zip(server_host_list,server_region_list,server_available_list,server_url_list):
+        for host,region,available,url in tqdm(zip(server_host_list,server_region_list,server_available_list,server_url_list),
+                                              total=len(server_host_list), desc=f'{self.name} checking hosts: '):
             if not available:
                 continue
-            if not self.check_server(host, 80):
+            if not self.check_server(host, 443):
                 continue
-            ret[url] = {'region': region, 'host': host, 'port': 80, 'Referer': res.url}
+            ret[url] = {'region': region, 'host': host, 'port': 443, 'Referer': res.url}
         return ret             
 
 
