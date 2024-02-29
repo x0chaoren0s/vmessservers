@@ -324,7 +324,7 @@ class Server_parser_base:
         session.mount('https://', HTTPAdapter(max_retries=10))
         return session
 
-    def adjust_config(self, server_info: dict) -> str:
+    def adjust_config(self, server_info: dict, host='cn.bing.com', sni='cn.bing.com') -> str:
         config = server_info['config']
         try:
             config_dict = json.loads(base64.b64decode(config.split('vmess://')[1]).decode())
@@ -338,6 +338,10 @@ class Server_parser_base:
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['cloudflare_host']
             config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
+            if host:
+                config_dict['host'] = host
+            if sni:
+                config_dict['sni'] = sni
             return 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
         except Exception as e:
             self.logger.error(e)
