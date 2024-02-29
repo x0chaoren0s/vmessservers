@@ -37,6 +37,7 @@ class Server_parser_sshocean(Server_parser_base):
             # ret['cloudflare_host'] = info_card_xpath.xpath('div/div/ul/li[2]/span/text()')[0][17:]
             # ret['use_cloudflare'] = False
             # ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
+            ret['change_host'] = False # 一般都可以修改设置中的host和sni为cn.bing.com，但是该网站的配置改了host后连不上
             ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[10]/span/text()')[0][9:], '%d %b %Y')
             ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[11]/span/text()')[0][9:], '%d %b %Y')
         except:

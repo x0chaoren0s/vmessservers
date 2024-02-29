@@ -74,6 +74,7 @@ class Server_parser_base:
             if 'host' in self.server_dict[url]:
                 if self.server_dict[url]['host'] in registered_hosts:
                     self.logger.warn(f"already registered: {self.server_dict[url]['host']}")
+                    ret[url]['error_info'] = "already registered"
                     continue
             if self.change_session:
                 self.session = self.new_session()
@@ -338,9 +339,9 @@ class Server_parser_base:
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['cloudflare_host']
             config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
-            if host:
+            if server_info.get('change_host', True):
                 config_dict['host'] = host
-            if sni:
+            if server_info.get('change_sni', True):
                 config_dict['sni'] = sni
             return 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
         except Exception as e:
