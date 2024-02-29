@@ -102,6 +102,7 @@ class Server_parser_base:
             self.headers['Referer'] = res.url
             try:
                 res = self.session.post(post_url, data=form_data, headers=self.headers, allow_redirects=False, timeout=60)
+                res = self.post_redirect(res)
             except:
                 ret[url]['error_info'] = 'post timeout'
                 self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
@@ -139,6 +140,8 @@ class Server_parser_base:
                 else:
                     print(self.null_config(), file=fout)
         return ret
+    def post_redirect(self, res_before) -> requests.Response:
+        return res_before
 
     def parse_by_selenium(self, save=True, init_index=0) -> dict:
         if self.server_dict is None:
