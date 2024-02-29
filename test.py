@@ -9,15 +9,16 @@ from spider.server.server_parser_sshvpnfree import SP_SSHVPNFREE, Server_parser_
 from spider.server.server_parser_vpnjantit import Server_parser_vpnjantit
 from spider.server.server_parser_sshocean import Server_parser_sshocean
 from spider.server.server_parser_lionssh import Server_parser_lionssh
+from spider.server.server_parser_akunssh import Server_parser_akunssh
 # from spider.server_list.server_list_parser_serverssh import SLP_SERVERSSH
 
 # print(SLP_AKUNSSH.parse())
-sl=SLP_FREEVMESS.parse()
-for item in list(sl.items()):
-    print(item)
+# sl=SLP_AKUNSSH.parse()
+# for item in list(sl.items()):
+#     print(item)
 # print(len(sl))
-# server_dict={
-#     'https://lionssh.com/create/vmess-ws-id-1': {'region': 'Indonesia', 'host': 'vm.id.servergo.pw', 'port': 80, 'Referer': 'https://lionssh.com/services/vray/asia/ID/7-days'}
-# }
-# SP=Server_parser_lionssh(server_dict=server_dict)
-# SP.parse()
+server_dict={
+    'https://akunssh.net/v2ray-vmess-server/create-v2ray-vmess-7-pl-account': {'region': 'Poland', 'host': 'pl1-vmess.tunnel.cx', 'port': 443, 'Referer': 'https://akunssh.net/v2ray-vmess-server'}
+}
+SP=Server_parser_akunssh(server_dict=server_dict)
+SP.parse()
