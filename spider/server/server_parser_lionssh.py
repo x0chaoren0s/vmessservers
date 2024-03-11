@@ -44,9 +44,12 @@ class Server_parser_lionssh(Server_parser_base):
             ret['date_create'] = json.loads(res.content.decode())['data']['account']['created_at'][:10]
             ret['date_expire'] = json.loads(res.content.decode())['data']['account']['expired_at'][:10]
         except:
-            ret['error_info'] = 'error in [after_filling_form]'
-            with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
-                print(res.text, file=fout)
+            try:
+                ret['error_info'] = json.loads(res.content.decode())['message']
+            except:
+                ret['error_info'] = 'error in [after_filling_form]'
+                with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
+                    print(res.text, file=fout)
         return ret
     
 SP_LIONSSH = Server_parser_lionssh()

@@ -35,11 +35,12 @@ class Server_parser_vpnjantit(Server_parser_base):
         try:
             info_card_xpath = html.xpath('//div[@class="kolbuatakun4"][2]/div/div/div')[0]
         except:
-            # ret['error_info'] = 'html layout changed.'
+            ret['error_info'] = 'Sorry, server is under maintenance or something error.'
             self.logger.critical('html layout changed.')
             with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
                 print(res.text, file=fout)
-            exit()
+            # exit()
+            return ret
         try:
             ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya2"]/@value')[0].strip()
             ret['region'] = info_card_xpath.xpath('h5[8]/text()')[0].strip()
