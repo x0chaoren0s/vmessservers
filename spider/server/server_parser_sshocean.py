@@ -38,8 +38,15 @@ class Server_parser_sshocean(Server_parser_base):
             # ret['use_cloudflare'] = False
             # ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
             ret['change_host'] = False # 一般都可以修改设置中的host和sni为cn.bing.com，但是该网站的配置改了host后连不上
-            ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[10]/span/text()')[0][9:], '%d %b %Y')
-            ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[11]/span/text()')[0][9:], '%d %b %Y')
+            #Created: 25 Mar 2024
+            # ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[11]/span/text()')[0][9:], '%d %b %Y')
+            date_create_str = [s for s in info_card_xpath.xpath('div/div/ul/li/span/text()') if s.startswith('Created: ')][0][9:]
+            ret['date_create'] = self.normalize_date(date_create_str, '%d %b %Y')
+            #Expired: 1 Apr 2024
+            # ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div/div/ul/li[12]/span/text()')[0][9:], '%d %b %Y')
+            date_expire_str = [s for s in info_card_xpath.xpath('div/div/ul/li/span/text()') if s.startswith('Expired: ')][0][9:]
+            ret['date_expire'] = self.normalize_date(date_expire_str, '%d %b %Y')
+
         except:
             ret['error_info'] = 'something wrong.'
             with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
