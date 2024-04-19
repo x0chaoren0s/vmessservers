@@ -48,3 +48,7 @@ vi glider.conf
 buildozer init
 vi buildozer.spec
 buildozer android debug
+
+$$\mathbf{C} = \frac{1}{N-1} \mathbf{\bar{X}}^T \mathbf{\bar{X}} \tag{1}$$
+$$\mathbf{C} = \mathbf{U} \mathbf{\Lambda} \mathbf{U}^T \tag{2}$$
+$$\mathbf{y} = \mathbf{W}^T (\mathbf{x} - \mathbf{\mu}) \tag{3}$$
