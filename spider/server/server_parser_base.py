@@ -341,6 +341,8 @@ class Server_parser_base:
             if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
                 # config = self.config_using_ip(config, server_info['ip'])
                 config_dict['add'] = server_info['cloudflare_host']
+            if 'uuid' in server_info and server_info.get('use_uuid', False):
+                config_dict['id'] = server_info['uuid']
             config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
             if server_info.get('change_host', True):
                 config_dict['host'] = host

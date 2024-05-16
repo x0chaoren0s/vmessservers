@@ -34,6 +34,7 @@ class Server_parser_vpnjantit(Server_parser_base):
         html = etree.HTML(res.text)
         try:
             info_card_xpath = html.xpath('//div[@class="kolbuatakun4"][2]/div/div/div')[0]
+            info_text_list = html.xpath('//div[@class="kolbuatakun4"][2]/div/div/div//text()')
         except:
             ret['error_info'] = 'Sorry, server is under maintenance or something error.'
             self.logger.critical('html layout changed.')
@@ -43,9 +44,13 @@ class Server_parser_vpnjantit(Server_parser_base):
             return ret
         try:
             ret['config'] = info_card_xpath.xpath('h5/input[@id="linknya2"]/@value')[0].strip()
-            ret['region'] = info_card_xpath.xpath('h5[8]/text()')[0].strip()
+            # ret['region'] = info_card_xpath.xpath('h5[8]/text()')[0].strip()
+            ret['region'] = info_text_list[info_text_list.index('Location:')+1].strip()
             ret['date_create'] = self.normalized_local_date()
-            ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('h5[7]/text()')[0], '%Y-%m-%d / %H:%M:%S')
+            # ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('h5[7]/text()')[0], '%Y-%m-%d / %H:%M:%S')
+            ret['date_expire'] = self.normalize_date(info_text_list[info_text_list.index('Expiration Date: ')+1].strip(), '%Y-%m-%d / %H:%M:%S')
+            ret['uuid'] = info_text_list[info_text_list.index('UUID:')+1].strip()
+            ret['use_uuid'] = True
         except:
             ret['error_info'] = 'something wrong.'
             with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
