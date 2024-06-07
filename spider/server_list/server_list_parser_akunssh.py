@@ -36,9 +36,9 @@ class Server_list_parser_akunssh(Server_list_parser_base):
                                               total=len(server_host_list), desc=f'{self.name} checking hosts: '):
             if not available:
                 continue
-            if not self.check_server(host, 443):
+            if not self.check_server(host, 80):
                 continue
-            ret[url] = {'region': region, 'host': host, 'port': 443, 'Referer': res.url}
+            ret[url] = {'region': region, 'host': host, 'port': 80, 'Referer': res.url}
         return ret             
 
 
