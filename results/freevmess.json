@@ -1,29 +1,24 @@
 {
     "https://www.freevmess.com/unitedkingdom-v2ray-server": {
-        "region": "",
-        "ip": "109.74.203.228",
-        "port": 8443,
+        "region": "England",
+        "ip": "188.166.149.175",
+        "port": 2083,
         "Referer": "https://www.freevmess.com/server-v2ray",
-        "config": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJ1ay12MnJheS5mcmVldm1lc3MuY29tLW11cTZ6ajA5IiwKICAiYWRkIjogInVrLXYycmF5LmZyZWV2bWVzcy5jb20iLAogICJwb3J0IjogODQ0MywKICAiaWQiOiAiYzBiNGY2YjItZDc4Mi00ZGQzLTg2YjgtYjEzOWYyZjAxYjdhIiwKICAibmV0IjogInRjcCIsCiAgInR5cGUiOiAibm9uZSIsCiAgInRscyI6ICJ0bHMiLAogICJhbHBuIjogImh0dHAvMS4xLGgyIgp9",
+        "config": "vmess://eyJhZGQiOiAiMTg4LjE2Ni4xNDkuMTc1IiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgImhvc3QiOiAiY24uYmluZy5jb20iLCAiaWQiOiAiN2E5ZTdlYmYtMDJkOC00ZmUxLTlhZGQtYjU5MzlhZjU2M2EwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicG9ydCI6ICIyMDgzIiwgInBzIjogIjIwMjQtMDYtMTIgZnJlZXZtZXNzOiBFbmdsYW5kIiwgInRscyI6ICJ0bHMiLCAic25pIjogImNuLmJpbmcuY29tIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAiYWxwbiI6ICJoMixodHRwLzEuMSJ9",
         "host": "uk-v2ray.freevmess.com",
-        "error_info": "something wrong."
+        "date_create": "2024-06-07",
+        "date_expire": "2024-06-12",
+        "date_span": "2024-06-07 - 2024-06-12"
     },
-    "https://www.freevmess.com/japan-v2ray-server": {
-        "region": "",
-        "ip": "172.233.66.154",
-        "port": 8443,
+    "https://www.freevmess.com/india-v2ray-server": {
+        "region": "India",
+        "ip": "206.189.131.32",
+        "port": 2083,
         "Referer": "https://www.freevmess.com/server-v2ray",
-        "config": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJqcC12MnJheS5mcmVldm1lc3MuY29tLTIzeXp6b3poIiwKICAiYWRkIjogImpwLXYycmF5LmZyZWV2bWVzcy5jb20iLAogICJwb3J0IjogODQ0MywKICAiaWQiOiAiMzViZGRiY2MtNzg2Yy00MzEyLWE1YjUtMzhkZGJjZmZmYTAyIiwKICAibmV0IjogInRjcCIsCiAgInR5cGUiOiAibm9uZSIsCiAgInRscyI6ICJ0bHMiLAogICJhbHBuIjogImh0dHAvMS4xLGgyIgp9",
-        "host": "jp-v2ray.freevmess.com",
-        "error_info": "something wrong."
-    },
-    "https://www.freevmess.com/france-v2ray-server": {
-        "region": "",
-        "ip": "172.232.43.7",
-        "port": 8443,
-        "Referer": "https://www.freevmess.com/server-v2ray",
-        "config": "vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICJmci12MnJheS5mcmVldm1lc3MuY29tLXpjNGtzb2g1IiwKICAiYWRkIjogImZyLXYycmF5LmZyZWV2bWVzcy5jb20iLAogICJwb3J0IjogODQ0MywKICAiaWQiOiAiOWU2ZTViZWItZjUzNi00OWUzLWJlN2YtMTAyMDE0ODI3YjRjIiwKICAibmV0IjogInRjcCIsCiAgInR5cGUiOiAibm9uZSIsCiAgInRscyI6ICJ0bHMiLAogICJhbHBuIjogImh0dHAvMS4xLGgyIgp9",
-        "host": "fr-v2ray.freevmess.com",
-        "error_info": "something wrong."
+        "config": "vmess://eyJhZGQiOiAiMjA2LjE4OS4xMzEuMzIiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAiaG9zdCI6ICJjbi5iaW5nLmNvbSIsICJpZCI6ICI5NzNkYWJjZC05ZjE3LTRkZWItOWMxOS1jZmQ4NWYxOGUwMTUiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogIjIwODMiLCAicHMiOiAiMjAyNC0wNi0xMiBmcmVldm1lc3M6IEluZGlhIiwgInRscyI6ICJ0bHMiLCAic25pIjogImNuLmJpbmcuY29tIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAiYWxwbiI6ICJoMixodHRwLzEuMSJ9",
+        "host": "in-v2ray.freevmess.com",
+        "date_create": "2024-06-07",
+        "date_expire": "2024-06-12",
+        "date_span": "2024-06-07 - 2024-06-12"
     }
 }

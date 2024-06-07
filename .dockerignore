@@ -1,0 +1,17 @@
+# .dockerignore
+
+# 忽略git目录
+.git
+.gitignore
+utils/
+
+# 忽略测试文件
+test.py
+tmp*
+
+# 忽略临时文件
+__pycache__/
+
+# 忽略调试文件
+.vscode/
+

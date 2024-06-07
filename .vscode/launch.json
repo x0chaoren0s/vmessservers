@@ -7,27 +7,33 @@
     
         {
             "name": "Python: 当前文件",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
+            "env": {"API_KEY": "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331",
+                    "MODE": "DEBUG"},
             "console": "integratedTerminal",
             "justMyCode": true
         },
         {
             "name": "run.py",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "run.py",
+            "env": {"API_KEY": "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331",
+                    "MODE": "DEBUG"},
             "console": "integratedTerminal",
             "justMyCode": true
         },
         {
             "name": "test.py",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "test.py",
+            "env": {"API_KEY": "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331",
+                    "MODE": "DEBUG"},
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": false
         }
     ]
 }

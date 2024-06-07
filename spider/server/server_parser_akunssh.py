@@ -50,7 +50,8 @@ class Server_parser_akunssh(Server_parser_base):
             ret['host'] = info_card_xpath.xpath('div[2]/text()[2]')[0].strip()
             ret['date_create'] = self.normalize_date(info_card_xpath.xpath('div[5]/text()')[0].strip(), '%d %b %Y')
             ret['date_expire'] = self.normalize_date(info_card_xpath.xpath('div[6]/text()')[0].strip(), '%d %b %Y')
-            ret['config'] = info_card_xpath.xpath('div[8]/button[2]/@data-clipboard-text')[0].strip()
+            # ret['config'] = info_card_xpath.xpath('div[8]/button[2]/@data-clipboard-text')[0].strip() # tls
+            ret['config'] = info_card_xpath.xpath('div[9]/button[2]/@data-clipboard-text')[0].strip() # ntls
         except:
             ret['error_info'] = 'something wrong.'
             with open(f'{self.name}.html', 'w', encoding='GB18030') as fout:
