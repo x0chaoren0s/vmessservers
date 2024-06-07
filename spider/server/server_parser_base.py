@@ -1,9 +1,13 @@
 import time, requests, logging, random, string, json, base64, socket
+from urllib.parse import urlparse
 from requests.adapters import HTTPAdapter
-from lxml import etree
+from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
+from playwright.sync_api import sync_playwright
+# from lxml import etree
 from typing import Tuple, Iterable
 from tqdm import tqdm
 from pathlib import Path
+import os
 
 import sys
 from pathlib import Path
@@ -24,7 +28,7 @@ class Server_parser_base:
                  server_list_parser: Server_list_parser_base = None,
                  interval_sec: int = 0,
                  use_selenium: bool = False,
-                 change_session: bool = True
+                 change_session: bool = True,
                  ) -> None:
         '''
         server_dict 若为 None, 则使用 server_list_parser.parse()
@@ -34,14 +38,9 @@ class Server_parser_base:
         self.server_dict = server_dict
         self.server_list_parser = server_list_parser
         self.interval_sec = interval_sec
-        
+                      
         self.use_selenium = use_selenium
-        self.change_session = change_session
-        self.session = self.new_session()
-        self.headers = {
-                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
-            }
-        
+        self.change_session = change_session      
             
         logger = logging.getLogger(self.name)
         logger.setLevel(logging.INFO)
@@ -57,6 +56,39 @@ class Server_parser_base:
         logger.addHandler(fileHandler)
         self.logger = logger
 
+        # self.yesCaptcha_clientKey = os.environ.get('API_KEY', 'empty') # clientKey：在个人中心获取
+        self.yesCaptcha_clientKey = "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331"
+
+
+    def run(self) -> dict:
+        '''包括init以外的初始化以及parse'''
+
+        if self.server_dict is None:
+            self.server_dict = self.server_list_parser.run()
+            self.browser = self.server_list_parser.browser
+            self.host = self.server_list_parser.host
+            self.server_provider_url = 'https://'+self.host
+            self.ip   = self.server_list_parser.ip
+        else:
+            playwright = sync_playwright().start() # 其实没关
+            self.browser = playwright.chromium.launch(headless=False)
+            self.host = urlparse(list(self.server_dict.keys())[0]).netloc
+            self.server_provider_url = 'https://'+self.host
+            self.ip   = self.get_ip(self.host)
+        
+
+        self.logger.info(f'num of servers: {len(self.server_dict)}')
+
+        self.session = self.new_session()
+        self.session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(
+                            dest_ip=self.ip, # type the desired ip
+                            max_retries=3))
+        self.headers = {
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36',
+            }
+        return self.parse()
+
+
     def parse(self, save=True, init_index=0) -> dict:
         if self.use_selenium:
             return self.parse_by_selenium(save, init_index)
@@ -64,10 +96,6 @@ class Server_parser_base:
             return self.parse_by_requests(save, init_index)
 
     def parse_by_requests(self, save=True, init_index=0) -> dict:
-        if self.server_dict is None:
-            self.server_dict = self.server_list_parser.parse()
-        self.logger.info(f'num of servers: {len(self.server_dict)}')
-
         ret = self.server_dict.copy()
         registered_hosts = set()
         for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
@@ -144,10 +172,6 @@ class Server_parser_base:
         return res_before
 
     def parse_by_selenium(self, save=True, init_index=0) -> dict:
-        if self.server_dict is None:
-            self.server_dict = self.server_list_parser.parse()
-        self.logger.info(f'num of servers: {len(self.server_dict)}')
-
         ret = self.server_dict.copy()
         for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
             if i<init_index:
@@ -211,7 +235,7 @@ class Server_parser_base:
     def solve_recaptcha_v2(self, websiteURL: str, websiteKey: str) -> str:
         sleep_sec = 4 # 循环请求识别结果，sleep_sec 秒请求一次
         max_sec = 180  # 最多等待 max_sec 秒
-        clientKey = "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331" # clientKey：在个人中心获取
+        clientKey = self.yesCaptcha_clientKey # clientKey：在个人中心获取
 
         # 第一步，创建验证码任务 
         self.logger.info(f'getting yescaptcha taskID for recaptcha_v2...')
@@ -265,7 +289,7 @@ class Server_parser_base:
     def solve_hcaptcha(self, websiteURL: str, websiteKey: str) -> str:
         sleep_sec = 4 # 循环请求识别结果，sleep_sec 秒请求一次
         max_sec = 180  # 最多等待 max_sec 秒
-        clientKey = "ddd1cf72d9955a0e8ca7d05597fea5eb1dce33de5331" # clientKey：在个人中心获取
+        clientKey = self.yesCaptcha_clientKey
 
         # 第一步，创建验证码任务 
         self.logger.info(f'getting yescaptcha taskID for hcaptcha...')
@@ -464,14 +488,22 @@ class Server_parser_base:
         '''
         return time.strftime("%Y-%m-%d",time.localtime())
 
-    @staticmethod
-    def get_ip(hostname) -> str:
-        # res = requests.post('https://greenssh.com/hostname-to-ip',
-        #                         data={
-        #                                 'hostname': hostname,
-        #                                 'submit': ''
-        #                         })
-        # return etree.HTML(res.content).xpath('//div[@class="alert alert-success rounded-pill"]/strong/text()')[0]
+    def get_ip(self, hostname) -> str:
+        '''目标网站的可用ip，主要目的是用于绕过dns封锁'''
+        page = self.browser.new_page()
+        page.goto("https://tool.chinaz.com/speedworld/"+hostname)
+        page.wait_for_load_state('load')
+        ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
+        page.close()
+        for ip in ips:
+            test_session = requests.Session()
+            test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3))
+            try:
+                r = test_session.get(self.server_provider_url)
+                if r.status_code==200:
+                    return ip
+            except:
+                continue
         return socket.gethostbyname(hostname)
 
 if __name__ == '__main__':

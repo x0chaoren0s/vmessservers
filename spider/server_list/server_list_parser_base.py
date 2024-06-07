@@ -1,7 +1,9 @@
 from urllib.parse import urlparse
 import logging, socket
 import requests
-from requests.adapters import HTTPAdapter
+# from requests.adapters import HTTPAdapter
+from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
+from playwright.sync_api import sync_playwright
 
 class Server_list_parser_base:
     name = 'Server_list_parser_base'
@@ -18,14 +20,6 @@ class Server_list_parser_base:
             urlp = urlparse(server_list_url)
             self.server_provider_url = f'{urlp.scheme}://{urlp.netloc}'
 
-
-        self.session = requests.Session()
-        self.session.mount('http://', HTTPAdapter(max_retries=10))
-        self.session.mount('https://', HTTPAdapter(max_retries=10))
-        self.headers = {
-                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
-            }
-            
         logger = logging.getLogger(self.name)
         logger.setLevel(logging.INFO)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -39,6 +33,28 @@ class Server_list_parser_base:
         logger.addHandler(streamHandler)
         logger.addHandler(fileHandler)
         self.logger = logger
+
+    def run(self) -> dict:
+        '''包括init以外的初始化以及parse'''
+        playwright = sync_playwright().start()
+        self.browser = playwright.chromium.launch(headless=False)
+
+        self.host = urlparse(self.server_list_url).netloc
+        self.ip = self.get_ip()
+
+        
+        self.session = requests.Session()
+        # self.session.mount('http://', HTTPAdapter(max_retries=10))
+        # self.session.mount('https://', HTTPAdapter(max_retries=10))
+        self.session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(
+                            dest_ip=self.ip, # type the desired ip
+                            max_retries=3))        
+
+        self.headers = {
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
+            }
+            
+        return self.parse()
 
     def parse(self) -> dict:
         self.logger.info(f'[{self.server_provider_url}], {self.server_list_url}')
@@ -56,6 +72,26 @@ class Server_list_parser_base:
             return False
         finally:
             sock.close()
+
+    def get_ip(self) -> str:
+        '''返回当前网站的可用ip，主要目的是用于绕过dns封锁'''
+        page = self.browser.new_page()
+        page.goto("https://tool.chinaz.com/speedworld/"+self.host)
+        page.wait_for_load_state('load')
+        ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
+        page.close()
+        for ip in ips:
+            test_session = requests.Session()
+            test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3))
+            try:
+                r = test_session.get(self.server_provider_url)
+                if r.status_code==200:
+                    self.logger.info(f'{self.host} - {ip}')
+                    return ip
+            except:
+                continue
+        return socket.gethostbyname(self.host)
+
 
 
 
