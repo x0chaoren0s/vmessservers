@@ -4,6 +4,7 @@ import requests
 # from requests.adapters import HTTPAdapter
 from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
 from playwright.sync_api import sync_playwright
+from tqdm import tqdm
 
 class Server_list_parser_base:
     name = 'Server_list_parser_base'
@@ -78,19 +79,39 @@ class Server_list_parser_base:
         page = self.browser.new_page()
         page.goto("https://tool.chinaz.com/speedworld/"+self.host)
         page.wait_for_load_state('load')
-        ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
-        page.close()
-        for ip in ips:
+        # [page.wait_for_selector(f'xpath=//div[@class="row listw clearfix"][{row}]/div/div[@name="ip"]/a')
+        #     for row in range(1,len(page.locator('xpath=//div[@class="row listw clearfix"]').all())+1)] # 保证所有监测点都加载好
+        # ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
+        # page.close()
+        tested_ip = set()
+        found_ip = False
+        ip = ''
+        for row in tqdm(range(1,len(page.locator('xpath=//div[@class="row listw clearfix"]').all())+1),desc=f'testing ip for {self.host}'):
+        # for ip in tqdm(ips,desc=f'testing ip for {self.host}'):
+            page.wait_for_selector(f'xpath=//div[@class="row listw clearfix"][{row}]/div/div[@name="ip"]/a')
+            ip = page.locator(f'xpath=//div[@class="row listw clearfix"][{row}]/div/div[@name="ip"]/a').get_attribute('title')
+            if ip in tested_ip:
+                continue
+            tested_ip.add(ip)
             test_session = requests.Session()
-            test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3))
+            test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3,))
             try:
-                r = test_session.get(self.server_provider_url)
+                r = test_session.get(self.server_provider_url,timeout=2)
                 if r.status_code==200:
                     self.logger.info(f'{self.host} - {ip}')
-                    return ip
+                    found_ip = True
             except:
-                continue
-        return socket.gethostbyname(self.host)
+                pass
+            finally:
+                test_session.close()
+            if found_ip:
+                break
+        if found_ip:
+            print(f'{self.host} - {ip}')
+            return ip
+        else:
+            print(f'{self.host} - no valid ip')
+            return socket.gethostbyname(self.host)
 
 
 
