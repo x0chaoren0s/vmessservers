@@ -39,7 +39,6 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
             if not self.check_server(ip, 10000):
                 continue
             ret[url] = {'region': region, 'host': host, 'ip': ip, 'port': 10000, 'Referer': res.url}
-            break
         return ret
     
     def parse_ip(self, ip_url):
