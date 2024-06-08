@@ -2,7 +2,6 @@ import time, requests, logging, random, string, json, base64, socket
 from urllib.parse import urlparse
 from requests.adapters import HTTPAdapter
 from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
-from collections import OrderedDict
 from playwright.sync_api import sync_playwright
 # from lxml import etree
 from typing import Tuple, Iterable

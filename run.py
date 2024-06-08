@@ -16,20 +16,20 @@ if __name__ == '__main__':
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS,SP_AKUNSSH]
     # spiders = [SP_LIONSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,]
     # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
-    spiders = [SP_GREENSSH]
+    # spiders = [SP_GREENSSH]
     # spiders = [SP_LIONSSH,]
     # spiders = []
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_FREEVMESS,SP_AKUNSSH]
-    # spider_processes = [Process(target=s.run) for s in spiders]
-    # # [process.start() for process in spider_processes]
-    # for process in spider_processes:
-    #     process.start()
-    #     time.sleep(5)
-    # [process.join() for process in spider_processes]
-    SP_VPNJANTIT.run()
+    spider_processes = [Process(target=s.run) for s in spiders]
+    # [process.start() for process in spider_processes]
+    for process in spider_processes:
+        process.start()
+        time.sleep(10)
+    [process.join() for process in spider_processes]
+    # SP_VPNJANTIT.run()
 
     if os.environ.get('MODE', 'RELEASE')=='DEBUG':
         from utils.update_subscription import update_subscription
         from utils.update_git import update_git
         update_subscription()
-        update_git()
+        # update_git()
