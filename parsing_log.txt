@@ -176,3 +176,52 @@
 2024-06-07 23:29:35 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
 2024-06-07 23:31:40 - vpnjantit - INFO - num of servers: 85
 2024-06-07 23:31:40 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=uk&type=V2ray
+2024-06-08 21:45:16 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 21:49:25 - Server_list_parser_base - INFO - [https://sshocean.com], https://sshocean.com/ssh7days
+2024-06-08 21:51:39 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 21:54:08 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 22:29:58 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 22:33:13 - Server_list_parser_base - INFO - [https://sshocean.com], https://sshocean.com/ssh7days
+2024-06-08 22:35:20 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 22:39:18 - vmess_list_greenssh - INFO - [https://greenssh.com], https://greenssh.com/v2ray-vmess
+2024-06-08 23:27:42 - vmess_list_vpnjantit - INFO - www.vpnjantit.com - 172.67.176.210
+2024-06-08 23:28:00 - vmess_list_vpnjantit - INFO - [https://www.vpnjantit.com], https://www.vpnjantit.com/free-v2ray-vmess-7-days
+2024-06-08 23:31:56 - vpnjantit - INFO - num of servers: 90
+2024-06-08 23:31:56 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=uk&type=V2ray
+2024-06-08 23:32:29 - vpnjantit - ERROR - London, United Kingdom, https://www.vpnjantit.com/create-free-account?server=uk&type=V2ray , get timeout
+2024-06-08 23:32:29 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=ae3&type=V2ray
+2024-06-08 23:33:02 - vpnjantit - ERROR - Al Fujairah City, UAE, https://www.vpnjantit.com/create-free-account?server=ae3&type=V2ray , get timeout
+2024-06-08 23:33:02 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=au2&type=V2ray
+2024-06-08 23:33:35 - vpnjantit - ERROR - Sydney, Australia, https://www.vpnjantit.com/create-free-account?server=au2&type=V2ray , get timeout
+2024-06-08 23:33:35 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=az1&type=V2ray
+2024-06-08 23:39:04 - vmess_list_vpnjantit - INFO - www.vpnjantit.com - 104.21.31.136
+2024-06-08 23:39:19 - vmess_list_vpnjantit - INFO - [https://www.vpnjantit.com], https://www.vpnjantit.com/free-v2ray-vmess-7-days
+2024-06-08 23:41:23 - vpnjantit - INFO - num of servers: 1
+2024-06-08 23:54:31 - vmess_list_vpnjantit - INFO - www.vpnjantit.com - 172.67.176.210
+2024-06-08 23:54:57 - vmess_list_vpnjantit - INFO - [https://www.vpnjantit.com], https://www.vpnjantit.com/free-v2ray-vmess-7-days
+2024-06-08 23:55:06 - vpnjantit - INFO - num of servers: 1
+2024-06-08 23:57:29 - vmess_list_vpnjantit - INFO - www.vpnjantit.com - 172.67.176.210
+2024-06-08 23:57:29 - vmess_list_vpnjantit - INFO - [https://www.vpnjantit.com], https://www.vpnjantit.com/free-v2ray-vmess-7-days
+2024-06-08 23:57:33 - vpnjantit - INFO - num of servers: 1
+2024-06-09 00:06:13 - vmess_list_vpnjantit - INFO - www.vpnjantit.com - 172.67.176.210
+2024-06-09 00:06:13 - vmess_list_vpnjantit - INFO - [https://www.vpnjantit.com], https://www.vpnjantit.com/free-v2ray-vmess-7-days
+2024-06-09 00:06:23 - vpnjantit - INFO - num of servers: 1
+2024-06-09 00:07:30 - vpnjantit - INFO - https://www.vpnjantit.com/create-free-account?server=ae3&type=V2ray
+2024-06-09 00:07:33 - vpnjantit - INFO - getting yescaptcha taskID for recaptcha_v2...
+2024-06-09 00:07:36 - vpnjantit - INFO - yescaptcha taskID for recaptcha_v2: 371c12a0-25b1-11ef-9569-ea4dca0e50d3
+2024-06-09 00:07:36 - vpnjantit - INFO - getting yescaptcha result for recaptcha_v2...
+2024-06-09 00:07:37 - vpnjantit - INFO - spent 4s in getting...
+2024-06-09 00:07:42 - vpnjantit - INFO - spent 8s in getting...
+2024-06-09 00:07:46 - vpnjantit - INFO - spent 12s in getting...
+2024-06-09 00:07:51 - vpnjantit - INFO - spent 16s in getting...
+2024-06-09 00:07:55 - vpnjantit - INFO - spent 20s in getting...
+2024-06-09 00:08:00 - vpnjantit - INFO - spent 24s in getting...
+2024-06-09 00:08:05 - vpnjantit - INFO - spent 28s in getting...
+2024-06-09 00:08:10 - vpnjantit - INFO - spent 32s in getting...
+2024-06-09 00:08:15 - vpnjantit - INFO - spent 36s in getting...
+2024-06-09 00:08:19 - vpnjantit - INFO - spent 40s in getting...
+2024-06-09 00:08:24 - vpnjantit - INFO - spent 44s in getting...
+2024-06-09 00:08:29 - vpnjantit - INFO - spent 48s in getting...
+2024-06-09 00:08:34 - vpnjantit - INFO - spent 52s in getting...
+2024-06-09 00:09:04 - vpnjantit - INFO - Al Fujairah City, UAE, vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiY24uYmluZy5jb20iLCAibmV0IjogIndzIiwgInBvcnQiOiAiMTAwMDAiLCAiYWRkIjogIjUuNDQuNDIuMTg2IiwgInBzIjogIjIwMjQtMDYtMTUgdnBuamFudGl0OiBBbCBGdWphaXJhaCBDaXR5LCBVQUUiLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiNWZmYmJlMzItMjViMS0xMWVmLWJhMmEtYTc2N2M4ZTA4ZTYzIiwgInNuaSI6ICJjbi5iaW5nLmNvbSJ9
+2024-06-09 00:09:04 - vpnjantit - INFO - finished. succeed: 1 / 1
