@@ -492,20 +492,20 @@ class Server_parser_base:
 
     def get_ip(self, hostname) -> str:
         '''目标网站的可用ip，主要目的是用于绕过dns封锁'''
-        page = self.browser.new_page()
-        page.goto("https://tool.chinaz.com/speedworld/"+hostname)
-        page.wait_for_load_state('load')
-        ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
-        page.close()
-        for ip in ips:
-            test_session = requests.Session()
-            test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3))
-            try:
-                r = test_session.get(self.server_provider_url)
-                if r.status_code==200:
-                    return ip
-            except:
-                continue
+        # page = self.browser.new_page()
+        # page.goto("https://tool.chinaz.com/speedworld/"+hostname)
+        # page.wait_for_load_state('load')
+        # ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
+        # page.close()
+        # for ip in ips:
+        #     test_session = requests.Session()
+        #     test_session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(dest_ip=ip,max_retries=3))
+        #     try:
+        #         r = test_session.get(self.server_provider_url)
+        #         if r.status_code==200:
+        #             return ip
+        #     except:
+        #         continue
         return socket.gethostbyname(hostname)
 
 if __name__ == '__main__':
