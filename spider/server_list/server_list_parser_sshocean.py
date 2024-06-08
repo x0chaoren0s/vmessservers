@@ -21,15 +21,24 @@ class Server_list_parser_sshocean(Server_list_parser_base):
     def parse(self) -> dict:
         super().parse()
 
-        res = self.session.get(self.server_list_url, timeout=60)
-        assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
-        # print(res.text)
-        html = etree.HTML(res.content)
-        region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6 col-10 mb-5"]')
-        region_str_list = [x.xpath('div/div/div/text()')[0] for x in region_card_xpath_list]
-        # # print(region_str_list) # ['Singapore', ..
-        region_url_list = [x.xpath('div/div/a/@href')[0] for x in region_card_xpath_list]
-        # print(region_url_list) # ['https://www.sshocean.com/singapore-v2ray-server', ..
+        region_url_list = []
+        last_region_url_list = []
+        page = 1
+        while True:
+            res = self.session.get(self.server_list_url+f'/page-{page}', timeout=60)
+            assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
+            # print(res.text)
+            html = etree.HTML(res.content)
+            region_card_xpath_list = html.xpath('//div[@class="col-lg-3 col-md-6 col-10 mb-5"]')
+            # region_str_list = [x.xpath('div/div/div/text()')[0] for x in region_card_xpath_list]
+            # # print(region_str_list) # ['Singapore', ..
+            tmp_region_url_list = [x.xpath('div/div/a/@href')[0] for x in region_card_xpath_list]
+            # print(tmp_region_url_list) # ['https://www.sshocean.com/singapore-v2ray-server', ..
+            if last_region_url_list==tmp_region_url_list:
+                break
+            region_url_list += tmp_region_url_list
+            page += 1
+            last_region_url_list = tmp_region_url_list
 
         ret = dict()
         # for region,url in tqdm(zip(region_str_list,region_url_list),
