@@ -21,7 +21,7 @@ class Server_parser_sshocean(Server_parser_base):
         if recaptcha_res=='solve failed.':
             form_data['error_info'] = recaptcha_res
         form_data['username'] = self.getRandStr(12)
-        form_data['sni_bug'] = ''
+        form_data['sni_bug'] = 'cn.bing.com'
         form_data['sni_type'] = 'sni'
         form_data['g-recaptcha-response'] = recaptcha_res
         form_data['submit'] = ''
@@ -32,8 +32,10 @@ class Server_parser_sshocean(Server_parser_base):
         html = etree.HTML(res.text)
         try:
             info_card_xpath = html.xpath('//div[@class="col-10 col-lg-4 col-10 card mb-2 h-100"]')[0]
-            # ret['config'] = html.xpath('//input[@id="ssClipboard"]/@value')[0].strip()
-            ret['config'] = html.xpath('//input[@id="ssClipboardtls"]/@value')[0].strip()
+            # ws 亲测不通
+            # ret['config'] = html.xpath('//button[@class="btn btn-primary rounded-pill col"]/@onclick')[0].split("copyData('")[1].split("'")[0]
+            # grpc 亲测可用
+            ret['config'] = html.xpath('//button[@class="btn btn-primary rounded-pill col"]/@onclick')[1].split("copyData('")[1].split("'")[0]
             # ret['cloudflare_host'] = info_card_xpath.xpath('div/div/ul/li[2]/span/text()')[0][17:]
             # ret['use_cloudflare'] = False
             # ret['region'] = html.xpath('//meta[@property="og:title"]/@content')[0][53:].strip()
