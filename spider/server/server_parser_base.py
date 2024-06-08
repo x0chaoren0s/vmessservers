@@ -2,6 +2,7 @@ import time, requests, logging, random, string, json, base64, socket
 from urllib.parse import urlparse
 from requests.adapters import HTTPAdapter
 from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
+from collections import OrderedDict
 from playwright.sync_api import sync_playwright
 # from lxml import etree
 from typing import Tuple, Iterable
@@ -344,13 +345,15 @@ class Server_parser_base:
 
     def new_session(self) -> requests.Session:
         ''' 每创建一个账号都使用新 session 可直接绕过网站设置的创建账户时间间隔限制 '''
+        new_session = requests.Session()
+        new_session.mount('http://', HTTPAdapter(max_retries=10))
+        new_session.mount('https://', HTTPAdapter(max_retries=10))
         if 'session' in dir(self) and self.session is not None:
+            new_session.adapters = self.session.adapters.copy()
+            # self.session.adapters = OrderedDict()
             self.session.close()
             del self.session
-        session = requests.Session()
-        session.mount('http://', HTTPAdapter(max_retries=10))
-        session.mount('https://', HTTPAdapter(max_retries=10))
-        return session
+        return new_session
 
     def adjust_config(self, server_info: dict, host='cn.bing.com', sni='cn.bing.com') -> str:
         config = server_info['config']
