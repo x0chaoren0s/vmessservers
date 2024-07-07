@@ -14,19 +14,19 @@ if __name__ == '__main__':
     # SP_GREENSSH 的网站和服务器的ip似乎都不通
     spiders = [SP_LIONSSH,SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS,SP_AKUNSSH]
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS,SP_AKUNSSH]
-    # spiders = [SP_LIONSSH,SP_SSHVPNFREE,SP_VPNJANTIT,SP_SSHOCEAN,]
+    # spiders = [SP_VPNJANTIT,SP_SSHOCEAN,SP_GREENSSH,SP_FREEVMESS]
     # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
-    # spiders = [SP_GREENSSH]
+    # spiders = [SP_FREEVMESS]
     # spiders = [SP_LIONSSH,]
-    # spiders = []
+    # spiders = [SP_AKUNSSH]
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_FREEVMESS,SP_AKUNSSH]
     spider_processes = [Process(target=s.run) for s in spiders]
-    # [process.start() for process in spider_processes]
-    for process in spider_processes:
-        process.start()
-        time.sleep(10)
-    [process.join() for process in spider_processes]
-    # SP_VPNJANTIT.run()
+    [process.start() for process in spider_processes]
+    # for process in spider_processes:
+    #     process.start()
+    #     time.sleep(10)
+    # [process.join() for process in spider_processes]
+    # SP_LIONSSH.run()
 
     if os.environ.get('MODE', 'RELEASE')=='DEBUG':
         from utils.update_subscription import update_subscription
