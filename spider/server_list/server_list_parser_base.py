@@ -78,7 +78,7 @@ class Server_list_parser_base:
         '''返回当前网站的可用ip，主要目的是用于绕过dns封锁'''
         page = self.browser.new_page()
         page.goto("https://tool.chinaz.com/speedworld/"+self.host)
-        page.wait_for_load_state('load')
+        page.wait_for_load_state('load',timeout=0)
         # [page.wait_for_selector(f'xpath=//div[@class="row listw clearfix"][{row}]/div/div[@name="ip"]/a')
         #     for row in range(1,len(page.locator('xpath=//div[@class="row listw clearfix"]').all())+1)] # 保证所有监测点都加载好
         # ips = [e.get_attribute('title') for e in page.locator('xpath=//div[@name="ip"]/a').all()]
