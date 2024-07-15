@@ -2,6 +2,7 @@ from urllib.parse import urlparse
 import logging, socket
 import requests
 # from requests.adapters import HTTPAdapter
+from lxml.etree import HTML
 from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
 from playwright.sync_api import sync_playwright
 from tqdm import tqdm
@@ -40,11 +41,12 @@ class Server_list_parser_base:
         playwright = sync_playwright().start()
         self.browser = playwright.chromium.launch(headless=False)
 
+        
+        self.session = requests.Session()
+
         self.host = urlparse(self.server_list_url).netloc
         self.ip = self.get_ip()
 
-        
-        self.session = requests.Session()
         # self.session.mount('http://', HTTPAdapter(max_retries=10))
         # self.session.mount('https://', HTTPAdapter(max_retries=10))
         self.session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(
@@ -75,6 +77,19 @@ class Server_list_parser_base:
             sock.close()
 
     def get_ip(self) -> str:
+        '''返回当前网站的可用ip，主要目的是用于绕过dns封锁'''
+        url = f'https://ip.900cha.com/{self.host}.html'
+        # html = HTML(self.session.get(url).text)
+        # ip = html.xpath('//h1/small/text()')[0].split('IP:')[1]
+        page = self.browser.new_page()
+        page.goto(url)
+        # page.wait_for_load_state('load',timeout=0)
+        page.wait_for_selector(f'xpath=//h1/small')
+        ip = page.locator(f'xpath=//h1/small').inner_text().split('IP:')[1]
+        page.close()
+        return ip
+
+    def get_ip_bak(self) -> str:
         '''返回当前网站的可用ip，主要目的是用于绕过dns封锁'''
         page = self.browser.new_page()
         page.goto("https://tool.chinaz.com/speedworld/"+self.host)

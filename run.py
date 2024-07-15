@@ -26,7 +26,7 @@ if __name__ == '__main__':
     #     process.start()
     #     time.sleep(10)
     # [process.join() for process in spider_processes]
-    # SP_LIONSSH.run()
+    # SP_AKUNSSH.run()
 
     if os.environ.get('MODE', 'RELEASE')=='DEBUG':
         from utils.update_subscription import update_subscription

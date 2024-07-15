@@ -1,28 +1,4 @@
 {
-    "https://sshocean.com/v2ray/vmess/austria/at2": {
-        "region": "Austria",
-        "host": "at2.v2vmess.site",
-        "cloudflare_host": "at2.v2vmess.site",
-        "port": 80,
-        "Referer": "https://sshocean.com/v2ray/vmess/austria",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBzc2hvY2VhbjogQXVzdHJpYSIsICJhZGQiOiAiOTUuMTY0LjEuMTMiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiY2Q0ODgxNWUtZjAyZS00NGI1LTlkMjAtYjBjZWE1YjQ0MWQ1IiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJncnBjIiwgInR5cGUiOiAiZ3VuIiwgImhvc3QiOiAiIiwgInBhdGgiOiAidm1lc3MtZ3JwYyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJjbi5iaW5nLmNvbSIsICJhbHBuIjogIiIsICJmcCI6ICIifQ==",
-        "change_host": false,
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
-    },
-    "https://sshocean.com/v2ray/vmess/austria/at3": {
-        "region": "Austria",
-        "host": "at3.v2vmess.site",
-        "cloudflare_host": "at3.v2vmess.site",
-        "port": 80,
-        "Referer": "https://sshocean.com/v2ray/vmess/austria",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBzc2hvY2VhbjogQXVzdHJpYSIsICJhZGQiOiAiOTUuMTY0LjEuNiIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICI1MDk4NzNiMS1kM2NmLTQyM2YtYWIwOC02NWE4MmI2M2QzZjUiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogImdycGMiLCAidHlwZSI6ICJndW4iLCAiaG9zdCI6ICIiLCAicGF0aCI6ICJ2bWVzcy1ncnBjIiwgInRscyI6ICJ0bHMiLCAic25pIjogImNuLmJpbmcuY29tIiwgImFscG4iOiAiIiwgImZwIjogIiJ9",
-        "change_host": false,
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
-    },
     "https://sshocean.com/v2ray/vmess/canada/ca3": {
         "region": "Canada",
         "host": "ca3.v2vmess.site",
@@ -47,16 +23,12 @@
         "Referer": "https://sshocean.com/v2ray/vmess/hongkong",
         "error_info": "something wrong."
     },
-    "https://sshocean.com/v2ray/vmess/netherlands/nl2": {
-        "region": "Netherlands",
-        "host": "nl2.v2vmess.site",
-        "cloudflare_host": "nl2.v2vmess.site",
+    "https://sshocean.com/v2ray/vmess/singapore/sg1": {
+        "region": "Singapore",
+        "host": "sg1.v2vmess.site",
+        "cloudflare_host": "sg1.v2vmess.site",
         "port": 80,
-        "Referer": "https://sshocean.com/v2ray/vmess/netherlands",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBzc2hvY2VhbjogTmV0aGVybGFuZHMiLCAiYWRkIjogIjkxLjI0Mi4yMjkuNzciLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiMzQ2ZTE3ZmMtNmIxZS00OGEzLTlmMmQtOTY5NWZkZWRkNDMzIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJncnBjIiwgInR5cGUiOiAiZ3VuIiwgImhvc3QiOiAiIiwgInBhdGgiOiAidm1lc3MtZ3JwYyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJjbi5iaW5nLmNvbSIsICJhbHBuIjogIiIsICJmcCI6ICIifQ==",
-        "change_host": false,
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
+        "Referer": "https://sshocean.com/v2ray/vmess/singapore",
+        "error_info": "something wrong."
     }
 }

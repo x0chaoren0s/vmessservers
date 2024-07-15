@@ -98,7 +98,7 @@ class Server_parser_base:
     def parse_by_requests(self, save=True, init_index=0) -> dict:
         ret = self.server_dict.copy()
         registered_hosts = set()
-        for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers: '):
+        for i, url in tqdm(enumerate(self.server_dict.keys()), desc=f'{self.name} parsing servers(tot{len(self.server_dict)}): '):
             if 'host' in self.server_dict[url]:
                 if self.server_dict[url]['host'] in registered_hosts:
                     self.logger.warn(f"already registered: {self.server_dict[url]['host']}")

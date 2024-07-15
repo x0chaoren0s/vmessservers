@@ -2,3 +2,5 @@ requests
 lxml
 tqdm
 selenium
+forcediphttpsadapter
+playwright
