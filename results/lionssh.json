@@ -4,43 +4,20 @@
         "host": "vm.sg.servergo.pw",
         "port": 80,
         "Referer": "https://lionssh.com/services/vray/asia/SG/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBsaW9uc3NoOiBTaW5nYXBvcmUiLCAiYWRkIjogIjEzOS4xODAuMTkwLjE4NCIsICJwb3J0IjogIjQ0MyIsICJpZCI6ICJlZDg2NWYzOS1kYWE3LTQwZTYtYWJjNC1jYzczNzc2ZWZlYjIiLCAiYWlkIjogIjAiLCAibmV0IjogIndzIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogImNuLmJpbmcuY29tIiwgInBhdGgiOiAiL3YycmF5LXZtZXNzL3RscyIsICJ0bHMiOiAidGxzIiwgInNuaSI6ICJjbi5iaW5nLmNvbSJ9",
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
+        "error_info": "post timeout"
     },
-    "https://lionssh.com/create/vmess-ws-in-2": {
-        "region": "India",
-        "host": "vm.in.servergo.pw",
+    "https://lionssh.com/create/vmess-ws-fr": {
+        "region": "France",
+        "host": "vm.fr.servergo.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/IN/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBsaW9uc3NoOiBJbmRpYSIsICJhZGQiOiAiMTM5Ljg0LjE2NC4xOTEiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiZmI2ZWY2ZTItODBkMS00ZjFjLTk2M2ItODE2NTRlMGFhZjExIiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJjbi5iaW5nLmNvbSIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAiY24uYmluZy5jb20ifQ==",
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
+        "Referer": "https://lionssh.com/services/vray/europe/FR/7-days",
+        "error_info": "get timeout"
     },
-    "https://lionssh.com/create/vmess-ws-id-1": {
-        "region": "Indonesia",
-        "host": "vm.id.servergo.pw",
+    "https://lionssh.com/create/vmess-ws-au-1": {
+        "region": "Australia",
+        "host": "vm.au.servergo.pw",
         "port": 80,
-        "Referer": "https://lionssh.com/services/vray/asia/ID/7-days",
-        "error_info": "Server Error"
-    },
-    "https://lionssh.com/create/vmess-ws-us-1": {
-        "region": "America",
-        "host": "vm.us.servergo.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/america/US/7-days",
-        "config": "vmess://eyJ2IjogIjIiLCAicHMiOiAiMjAyNC0wNy0xNCBsaW9uc3NoOiBBbWVyaWNhIiwgImFkZCI6ICI0NS42My4xMDguOTkiLCAicG9ydCI6ICI0NDMiLCAiaWQiOiAiOWQwMmY2ZTEtZDM1Ny00ZmExLTkyOGMtMTBhZDRkMjY4MTg1IiwgImFpZCI6ICIwIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJjbi5iaW5nLmNvbSIsICJwYXRoIjogIi92MnJheS12bWVzcy90bHMiLCAidGxzIjogInRscyIsICJzbmkiOiAiY24uYmluZy5jb20ifQ==",
-        "date_create": "2024-07-07",
-        "date_expire": "2024-07-14",
-        "date_span": "2024-07-07 - 2024-07-14"
-    },
-    "https://lionssh.com/create/vmess-ws-ca-2": {
-        "region": "Canada",
-        "host": "vm.ca.servergo.pw",
-        "port": 80,
-        "Referer": "https://lionssh.com/services/vray/america/CA/7-days",
-        "error_info": "Server Error"
+        "Referer": "https://lionssh.com/services/vray/AU/AU/7-days",
+        "error_info": "get timeout"
     }
 }
