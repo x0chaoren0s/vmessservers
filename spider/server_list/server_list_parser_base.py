@@ -21,6 +21,7 @@ class Server_list_parser_base:
         else:
             urlp = urlparse(server_list_url)
             self.server_provider_url = f'{urlp.scheme}://{urlp.netloc}'
+        self.host = urlparse(self.server_list_url).netloc
 
         logger = logging.getLogger(self.name)
         logger.setLevel(logging.INFO)
@@ -35,6 +36,8 @@ class Server_list_parser_base:
         logger.addHandler(streamHandler)
         logger.addHandler(fileHandler)
         self.logger = logger
+        
+        self.session = requests.Session()
 
     def run(self) -> dict:
         '''包括init以外的初始化以及parse'''
@@ -42,9 +45,7 @@ class Server_list_parser_base:
         self.browser = playwright.chromium.launch(headless=False)
 
         
-        self.session = requests.Session()
 
-        self.host = urlparse(self.server_list_url).netloc
         self.ip = self.get_ip()
 
         # self.session.mount('http://', HTTPAdapter(max_retries=10))
@@ -80,13 +81,24 @@ class Server_list_parser_base:
         '''返回当前网站的可用ip，主要目的是用于绕过dns封锁'''
         url = f'https://ip.900cha.com/{self.host}.html'
         # html = HTML(self.session.get(url).text)
-        # ip = html.xpath('//h1/small/text()')[0].split('IP:')[1]
-        page = self.browser.new_page()
-        page.goto(url)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36 Edg/124.0.0.0',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+            'Connection': 'keep-alive',
+            # 添加更多默认请求头...
+        }     
+        with self.session.request('GET', url, headers=headers, proxies=None) as response:
+            html = response.content.decode()
+        html = HTML(html)
+        ip = html.xpath('//h1/small/text()')[0].split('IP:')[1]
+        # page = self.browser.new_page()
+        # page.goto(url)
         # page.wait_for_load_state('load',timeout=0)
-        page.wait_for_selector(f'xpath=//h1/small')
-        ip = page.locator(f'xpath=//h1/small').inner_text().split('IP:')[1]
-        page.close()
+        # page.wait_for_selector(f'xpath=//h1/small')
+        # ip = page.locator(f'xpath=//h1/small').inner_text().split('IP:')[1]
+        # page.close()
         return ip
 
     def get_ip_bak(self) -> str:
