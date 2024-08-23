@@ -341,6 +341,65 @@ class Server_parser_base:
             sec += sleep_sec
             self.logger.info(f'spent {sec}s in getting...')
             time.sleep(sleep_sec)
+    
+    def solve_turnstile(self, websiteURL: str, websiteKey: str) -> str:
+        '''cloudflare的真人确认，人类通过只需要点击“确认您是真人”无需答题'''
+        sleep_sec = 4 # 循环请求识别结果，sleep_sec 秒请求一次
+        max_sec = 180  # 最多等待 max_sec 秒
+        clientKey = self.yesCaptcha_clientKey
+
+        # 第一步，创建验证码任务 
+        self.logger.info(f'getting yescaptcha taskID for turnstile...')
+        url = "https://china.yescaptcha.com/createTask"
+        url = "https://cn.yescaptcha.com/createTask"
+        data = {
+            "clientKey": clientKey,
+            "task": {
+                "websiteURL": websiteURL,
+                "websiteKey": websiteKey,
+                "type": "TurnstileTaskProxyless"
+            }
+        }
+        try:
+            # 发送JSON格式的数据
+            res_dict = self.session.post(url, json=data, timeout=60).json()
+            taskID = res_dict.get('taskId')
+            self.logger.info(f'yescaptcha taskID for turnstile: {taskID}')
+            if taskID is None:
+                self.logger.error(res_dict)
+                return 'solve failed. failed to get taskID.'
+            
+        except Exception as e:
+            self.logger.error(e)
+            return 'solve failed.'
+
+        # 第二步：使用taskId获取response 
+        self.logger.info(f'getting yescaptcha result for turnstile...')
+        sec = 0
+        while sec < max_sec:
+            try:
+                url = f"https://china.yescaptcha.com/getTaskResult"
+                url = f"https://cn.yescaptcha.com/getTaskResult"
+                data = {
+                    "clientKey": clientKey,
+                    "taskId": taskID
+                }
+            
+                result = self.session.post(url, json=data, timeout=60).json()
+                solution = result.get('solution', {})
+                if solution:
+                    token = solution.get('token')
+                    # userAgent = solution.get('userAgent')
+                    if token:
+                        # return token, userAgent
+                        return token
+            except Exception as e:
+                self.logger.error(e)
+                return 'solve failed.'
+
+            sec += sleep_sec
+            self.logger.info(f'spent {sec}s in getting...')
+            time.sleep(sleep_sec)
 
     def new_session(self) -> requests.Session:
         ''' 每创建一个账号都使用新 session 可直接绕过网站设置的创建账户时间间隔限制 '''
