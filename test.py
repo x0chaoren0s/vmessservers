@@ -1,4 +1,4 @@
-# from spider.server_list.server_list_parser_vpnjantit import SLP_VPNJANTIT
+from spider.server_list.server_list_parser_vpnjantit import SLP_VPNJANTIT
 from spider.server_list.server_list_parser_lionssh import SLP_LIONSSH
 from spider.server_list.server_list_parser_akunssh import SLP_AKUNSSH
 # from spider.server_list.server_list_parser_sshvpnfree import SLP_SSHVPNFREE
@@ -7,22 +7,28 @@ from spider.server_list.server_list_parser_akunssh import SLP_AKUNSSH
 # from spider.server_list.server_list_parser_greenssh import SLP_GREENSSH
 # from spider.server_list.server_list_parser_opentunnel import SLP_OPENTUNNEL
 # from spider.server.server_parser_sshvpnfree import SP_SSHVPNFREE, Server_parser_sshvpnfree
-# from spider.server.server_parser_vpnjantit import Server_parser_vpnjantit, SP_VPNJANTIT
+from spider.server.server_parser_vpnjantit import Server_parser_vpnjantit, SP_VPNJANTIT
 # from spider.server.server_parser_sshocean import Server_parser_sshocean
-from spider.server.server_parser_lionssh import Server_parser_lionssh
+# from spider.server.server_parser_lionssh import Server_parser_lionssh
 # from spider.server.server_parser_akunssh import Server_parser_akunssh
 # from spider.server_list.server_list_parser_serverssh import SLP_SERVERSSH
 
-print(SLP_AKUNSSH.get_ip())
-# sl=SLP_LIONSSH.run()
+# print(SLP_AKUNSSH.get_ip())
+# sl=SLP_VPNJANTIT.run()
 # print(len(sl))
 # for item in list(sl.items()):
 #     print(item)
 # server_dict={
 #      'https://lionssh.com/create/vmess-ws-in-2': {'region': 'India', 'host': 'vm.in.servergo.pw', 'port': 80, 'Referer': 'https://lionssh.com/services/vray/asia/IN/7-days'}
 # }
-# SP=Server_parser_lionssh(server_dict=server_dict)
-# SP.run()
+server_dict={
+     'https://www.vpnjantit.com/create-free-account?server=premihk1&type=V2ray': {'region': 'Hong Kong, Hong Kong', 'host': 'premihk1.vpnjantit.com', 'ip': '8.217.135.42', 'port': 10000, 'Referer': 'https://www.vpnjantit.com/free-v2ray-vmess-7-days'},
+     'https://www.vpnjantit.com/create-free-account?server=hk1&type=V2ray': {'region': 'Hong Kong, Hong Kong', 'host': 'hk1.vpnjantit.com', 'ip': '8.218.127.229', 'port': 10000, 'Referer': 'https://www.vpnjantit.com/free-v2ray-vmess-7-days'},
+     'https://www.vpnjantit.com/create-free-account?server=hk2&type=V2ray': {'region': 'Hong Kong, Hong Kong', 'host': 'hk2.vpnjantit.com', 'ip': '8.218.64.170', 'port': 10000, 'Referer': 'https://www.vpnjantit.com/free-v2ray-vmess-7-days'},
+     'https://www.vpnjantit.com/create-free-account?server=hk3&type=V2ray': {'region': 'Hong Kong, Hong Kong', 'host': 'hk3.vpnjantit.com', 'ip': '8.217.100.15', 'port': 10000, 'Referer': 'https://www.vpnjantit.com/free-v2ray-vmess-7-days'}
+}
+SP=Server_parser_vpnjantit(server_dict=server_dict)
+SP.run()
 # server_info={
 #     "region": "Hong Kong, Hong Kong",
 #     "host": "hk1.vpnjantit.com",
