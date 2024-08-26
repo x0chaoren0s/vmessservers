@@ -565,7 +565,8 @@ class Server_parser_base:
         #             return ip
         #     except:
         #         continue
-        return socket.gethostbyname(hostname)
+        # return socket.gethostbyname(hostname)
+        return self.server_list_parser.get_ip()
 
 if __name__ == '__main__':
     spb = Server_parser_base()
