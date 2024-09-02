@@ -1,16 +1,27 @@
 {
+    "https://www.vpnjantit.com/create-free-account?server=premihk1&type=V2ray": {
+        "region": "Hong Kong, Hong Kong",
+        "host": "premihk1.vpnjantit.com",
+        "ip": "8.217.135.42",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "error_info": "status_code: 403"
+    },
+    "https://www.vpnjantit.com/create-free-account?server=hk1&type=V2ray": {
+        "region": "Hong Kong, Hong Kong",
+        "host": "hk1.vpnjantit.com",
+        "ip": "8.218.127.229",
+        "port": 10000,
+        "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
+        "error_info": "status_code: 403"
+    },
     "https://www.vpnjantit.com/create-free-account?server=hk2&type=V2ray": {
         "region": "Hong Kong, Hong Kong",
         "host": "hk2.vpnjantit.com",
         "ip": "8.218.64.170",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiY24uYmluZy5jb20iLCAibmV0IjogIndzIiwgInBvcnQiOiAiMTAwMDAiLCAiYWRkIjogIjguMjE4LjY0LjE3MCIsICJwcyI6ICIyMDI0LTA4LTI1IHZwbmphbnRpdDogSG9uZyBLb25nLCBIb25nIEtvbmciLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiOTk4YTRlYTItNjExNi0xMWVmLThiY2QtMDAxNjNlMDg5ZGI1IiwgInNuaSI6ICJjbi5iaW5nLmNvbSJ9",
-        "date_create": "2024-08-23",
-        "date_expire": "2024-08-25",
-        "uuid": "998a4ea2-6116-11ef-8bcd-00163e089db5",
-        "use_uuid": true,
-        "date_span": "2024-08-23 - 2024-08-25"
+        "error_info": "status_code: 403"
     },
     "https://www.vpnjantit.com/create-free-account?server=hk3&type=V2ray": {
         "region": "Hong Kong, Hong Kong",
@@ -18,11 +29,6 @@
         "ip": "8.217.100.15",
         "port": 10000,
         "Referer": "https://www.vpnjantit.com/free-v2ray-vmess-7-days",
-        "config": "vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiY24uYmluZy5jb20iLCAibmV0IjogIndzIiwgInBvcnQiOiAiMTAwMDAiLCAiYWRkIjogIjguMjE3LjEwMC4xNSIsICJwcyI6ICIyMDI0LTA4LTMwIHZwbmphbnRpdDogSG9uZyBLb25nLCBIb25nIEtvbmciLCAidGxzIjogIiIsICJhaWQiOiAiMCIsICJ2IjogIjIiLCAiaWQiOiAiYTAyOTBmODItNjExNi0xMWVmLTlmZTItMDAxNjNlMGYyZDRkIiwgInNuaSI6ICJjbi5iaW5nLmNvbSJ9",
-        "date_create": "2024-08-23",
-        "date_expire": "2024-08-30",
-        "uuid": "a0290f82-6116-11ef-9fe2-00163e0f2d4d",
-        "use_uuid": true,
-        "date_span": "2024-08-23 - 2024-08-30"
+        "error_info": "status_code: 403"
     }
 }
