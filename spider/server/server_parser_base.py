@@ -63,6 +63,7 @@ class Server_parser_base:
     def run(self) -> dict:
         '''包括init以外的初始化以及parse'''
 
+        self.proxies = self.server_list_parser.proxies if self.server_list_parser.use_proxy else None
         if self.server_dict is None:
             self.server_dict = self.server_list_parser.run()
             self.browser = self.server_list_parser.browser
@@ -129,7 +130,7 @@ class Server_parser_base:
                 continue
             self.headers['Referer'] = res.url
             try:
-                res = self.session.post(post_url, data=form_data, headers=self.headers, allow_redirects=False, timeout=60)
+                res = self.session.post(post_url, data=form_data, proxies=self.proxies, headers=self.headers, allow_redirects=False, timeout=60)
                 res = self.post_redirect(res)
             except:
                 ret[url]['error_info'] = 'post timeout'
