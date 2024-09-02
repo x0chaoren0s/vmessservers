@@ -66,5 +66,5 @@ for node_link in node_links:
     v2ray_config["observatory"]['subjectSelector'].append(tag)
     v2ray_config["routing"]['balancers'][0]['selector'].append(tag)
 
-with open('results/v2ray_config.json.conf', 'w') as fout:
+with open('results/v2ray_config.conf', 'w') as fout:
     json.dump(v2ray_config, fout, indent=4)
