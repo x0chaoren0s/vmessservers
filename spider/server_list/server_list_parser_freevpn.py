@@ -8,7 +8,7 @@ from lxml import etree
 from tqdm import tqdm
 
 class Server_list_parser_freevpn(Server_list_parser_base):
-    name = 'vmess_list_freevpn'
+    name = 'vless_list_freevpn'
 
     def __init__(self, server_list_url: str = 'https://www.freevpn.us/v2ray-vless/',
                  server_provider_url: str = None) -> None:
@@ -26,7 +26,7 @@ class Server_list_parser_freevpn(Server_list_parser_base):
         server_host_list,server_region_list,server_available_list,server_url_list = [], [], [], []
         for region_server_list_url in tqdm(region_urls_list, desc=f'{self.name} parsing regions:'):
             # res = self.session.get('https://www.freevpn.us/v2ray-vless/hk/')
-            res = self.session.get(region_server_list_url)
+            res = self.session.get(region_server_list_url, proxies=self.proxies)
             assert res.status_code==200, f'status_code: {res.status_code}, url: {res.url}'
             html = etree.HTML(res.text)
             server_card_xpath_list = html.xpath('//div[@class="col-lg-3 mb-5 mb-lg-4"]')
