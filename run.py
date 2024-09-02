@@ -7,6 +7,7 @@ from spider.server.server_parser_vpnjantit import SP_VPNJANTIT, Server_parser_vp
 from spider.server.server_parser_sshocean import SP_SSHOCEAN
 from spider.server.server_parser_freevmess import SP_FREEVMESS
 from spider.server.server_parser_akunssh import SP_AKUNSSH
+from spider.server.server_parser_freevpn import SP_FREEVPN
 
 import os,time
 
@@ -23,7 +24,7 @@ if __name__ == '__main__':
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_SSHOCEAN,SP_FREEVMESS,SP_AKUNSSH]
     # spiders = [SP_VPNJANTIT,SP_SSHOCEAN,SP_GREENSSH,SP_FREEVMESS]
     # spiders = [SP_LIONSSH,SP_GREENSSH,SP_SSHVPNFREE,SP_SSHOCEAN,SP_FREEVMESS]
-    # spiders = [SP_FREEVMESS]
+    spiders = [SP_FREEVPN]
     # spiders = [SP_LIONSSH,]
     # spiders = [SP_AKUNSSH]
     # spiders = [SP_GREENSSH,SP_VPNJANTIT,SP_FREEVMESS,SP_AKUNSSH]
@@ -32,11 +33,11 @@ if __name__ == '__main__':
     # for process in spider_processes:
     #     process.start()
     #     time.sleep(10)
-    # [process.join() for process in spider_processes]
-    # SP_AKUNSSH.run()
+    [process.join() for process in spider_processes]
+    # SP_FREEVPN.run()
 
-    if os.environ.get('MODE', 'RELEASE')=='DEBUG':
-        from utils.update_subscription import update_subscription
-        from utils.update_git import update_git
-        update_subscription()
+    # if os.environ.get('MODE', 'RELEASE')=='DEBUG':
+    #     from utils.update_subscription import update_subscription
+    #     from utils.update_git import update_git
+        # update_subscription()
         # update_git()

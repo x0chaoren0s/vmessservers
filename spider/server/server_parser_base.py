@@ -68,7 +68,7 @@ class Server_parser_base:
             self.browser = self.server_list_parser.browser
             self.host = self.server_list_parser.host
             self.server_provider_url = 'https://'+self.host
-            self.ip   = self.server_list_parser.ip
+            self.ip   = self.get_ip(self.host)
         else:
             playwright = sync_playwright().start() # 其实没关
             self.browser = playwright.chromium.launch(headless=False)
@@ -140,7 +140,7 @@ class Server_parser_base:
             if 'error_info' in ret[url]:
                 self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
             else:
-                ret[url]['config'] = self.adjust_config(ret[url])
+                ret[url]['config'] = self.adjust_config(ret[url], ret[url]['region'])
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
                 # print(ret[url])
@@ -193,7 +193,7 @@ class Server_parser_base:
             if 'error_info' in ret[url]:
                 self.logger.error(f"{ret[url]['region']}, {url} , {ret[url]['error_info']}")
             else:
-                ret[url]['config'] = self.adjust_config(ret[url])
+                ret[url]['config'] = self.adjust_config(ret[url], ret[url]['region'])
                 ret[url]['date_span'] = f"{ret[url]['date_create']} - {ret[url]['date_expire']}"
                 self.logger.info(f"{ret[url]['region']}, {ret[url]['config']}")
                 
@@ -413,30 +413,59 @@ class Server_parser_base:
             del self.session
         return new_session
 
-    def adjust_config(self, server_info: dict, host='cn.bing.com', sni='cn.bing.com') -> str:
+    def adjust_config(self, server_info: dict, region='', host='cn.bing.com', sni='cn.bing.com') -> str:
         config = server_info['config']
         try:
-            config_dict = json.loads(base64.b64decode(config.split('vmess://')[1]).decode())
-            if 'ip' in server_info and server_info.get('use_ip', True):
-                # config = self.config_using_ip(config, server_info['ip'])
-                config_dict['add'] = server_info['ip']
-            if 'ip' not in server_info:
-                ip = self.get_ip(server_info['host'])
-                config_dict['add'] = ip
-            if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
-                # config = self.config_using_ip(config, server_info['ip'])
-                config_dict['add'] = server_info['cloudflare_host']
-            if 'uuid' in server_info and server_info.get('use_uuid', False):
-                config_dict['id'] = server_info['uuid']
-            config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
-            if server_info.get('change_host', True):
-                config_dict['host'] = host
-            if server_info.get('change_sni', True):
-                config_dict['sni'] = sni
-            return 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
+            ret = ''
+            if server_info.get('type', 'vmess')=='vmess':
+                config_dict = json.loads(base64.b64decode(config.split('vmess://')[1]).decode())
+                if 'ip' in server_info and server_info.get('use_ip', True):
+                    # config = self.config_using_ip(config, server_info['ip'])
+                    config_dict['add'] = server_info['ip']
+                if 'ip' not in server_info:
+                    ip = self.get_ip(server_info['host'])
+                    config_dict['add'] = ip
+                if 'cloudflare_host' in server_info and server_info.get('use_cloudflare', False):
+                    # config = self.config_using_ip(config, server_info['ip'])
+                    config_dict['add'] = server_info['cloudflare_host']
+                if 'uuid' in server_info and server_info.get('use_uuid', False):
+                    config_dict['id'] = server_info['uuid']
+                config_dict['ps'] = f"{server_info['date_expire']} {self.name}: {server_info['region']}"
+                if server_info.get('change_host', True):
+                    config_dict['host'] = host
+                if server_info.get('change_sni', True):
+                    config_dict['sni'] = sni
+                ret = 'vmess://'+base64.b64encode(json.dumps(config_dict).encode()).decode()
+            elif server_info.get('type', 'vmess')=='vless':
+                # ntls: vless://66726565-7670-4e2e-b573-2d6e6e656e6e@hkc-s89.v2sv.xyz:80?   # 此处add是真实add
+                #               uuid@add:port?
+                #           encryption=none&
+                #           security=none&
+                #           type=ws&
+                #           host=hkc-s89.v2sv.xyz&      # 很离谱，同一个提供商的连接有时候要用ip，有时候要用host
+                #           path=%2Ffreevpn%2Ffreevpn.us-nnennenne%2FHK
+                #           #%5BHK%5D freevpn.us-nnennenne
+                                #ps
+                # tls:  vless://66726565-7670-4e2e-b573-2d6e6e656e6e@cn.bing.com:443?       # 此处add是错误的（提供商就填错了）要改成真实add
+                #           encryption=none&
+                #           security=tls&
+                #           sni=hkc-s89.v2sv.xyz&
+                #           fp=randomized&
+                #           type=ws&
+                #           host=hkc-s89.v2sv.xyz&
+                #           path=%2Ffreevpn%2Ffreevpn.us-nnennenne%2FHK
+                #           #%5BHK%5D freevpn.us-nnennenne
+                ps = f"{server_info['date_expire']} {self.name}: {region}"
+                sep1 = config.split('@')[0]
+                # sep2 = config.split('@')[1].split('?')[0]
+                sep3 = config.split('?')[1].split('#')[0]
+                # sep4 = config.split('#')[1]
+                ret = f"{sep1}@{server_info['host']}:{server_info['port']}?{sep3}#{ps}"
         except Exception as e:
             self.logger.error(e)
             self.logger.error(server_info)
+        finally:
+            return ret
 
     @staticmethod
     def null_config() -> str:

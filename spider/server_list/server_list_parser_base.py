@@ -13,8 +13,9 @@ class Server_list_parser_base:
     def __init__(self,
                  server_list_url: str = None,
                  server_provider_url: str = None) -> None:
-        self.server_list_url = server_list_url[:-1] if server_list_url.endswith('/') \
-                                else server_list_url
+        # self.server_list_url = server_list_url[:-1] if server_list_url.endswith('/') \
+        #                         else server_list_url
+        self.server_list_url = server_list_url
         if server_provider_url:
             self.server_provider_url = server_provider_url[:-1] if server_provider_url.endswith('/') \
                 else server_provider_url
@@ -38,6 +39,11 @@ class Server_list_parser_base:
         self.logger = logger
         
         self.session = requests.Session()
+        self.proxies = {
+            'http': 'http://127.0.0.1:7602',
+            'https': 'http://127.0.0.1:7602'
+        }
+        self.use_proxy = False
 
     def run(self) -> dict:
         '''包括init以外的初始化以及parse'''
@@ -45,14 +51,15 @@ class Server_list_parser_base:
         self.browser = playwright.chromium.launch(headless=False)
 
         
+        if not self.use_proxy:
+            self.ip = self.get_ip()
 
-        self.ip = self.get_ip()
-
-        # self.session.mount('http://', HTTPAdapter(max_retries=10))
-        # self.session.mount('https://', HTTPAdapter(max_retries=10))
-        self.session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(
-                            dest_ip=self.ip, # type the desired ip
-                            max_retries=3))        
+            # self.session.mount('http://', HTTPAdapter(max_retries=10))
+            # self.session.mount('https://', HTTPAdapter(max_retries=10))
+            self.session.mount(self.server_provider_url, ForcedIPHTTPSAdapter(
+                                dest_ip=self.ip, # type the desired ip
+                                max_retries=3))      
+        
 
         self.headers = {
                 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36'
