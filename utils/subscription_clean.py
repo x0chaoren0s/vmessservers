@@ -1,6 +1,6 @@
 '''本脚本用于清洗网上公开的订阅链接。仅收纳归类hk、tw、jp的节点'''
 
-import requests, json, base64
+import requests, json, base64, os
 from tqdm import tqdm
 
 regions = ['hk', 'tw', 'jp', '_']
@@ -82,6 +82,8 @@ for sublink in tqdm(sublinks, desc='clean subs'):
         nodes[link_region(line)].add(line.strip()+'\n')
 
 # print(nodes)
+script_path = os.path.abspath(__file__)
+script_dir = os.path.dirname(script_path)  
 for region in regions[:-1]:
-    with open(f'results/{region}.conf', 'w', encoding='utf8') as fout:
+    with open(f'{script_dir}/../results/{region}.conf', 'w', encoding='utf8') as fout:
         fout.writelines(nodes[region])
