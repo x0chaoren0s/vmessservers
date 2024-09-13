@@ -8,7 +8,7 @@ regions = ['hk', 'tw', 'jp', '_']
 region_keys = {
     'hk': ['🇭🇰', 'hk', 'Hk', 'HK', 'hong kong', 'hongkong', 'Hong kong', 'Hongkong', 'Hong Kong', 'HongKong', 'HONG KONG', 'HONGKONG', '香港'],
     'tw': ['🇹🇼', 'tw', 'Tw', 'TW', 'tai wan',   'taiwan',   'Tai wan',   'Taiwan',   'Tai Wan',   'TaiWan',   'TAI WAN',   'TAIWAN',   '台湾',
-                                   'tai pei',   'taipei',   'Tai pei',   'Taipei',   'Tai Pei',   'TaiPei',   'TAI PEI',   'TAIPEI'],
+                                   'tai pei',   'taipei',   'Tai pei',   'Taipei',   'Tai Pei',   'TaiPei',   'TAI PEI',   'TAIPEI',   '台北'],
     'jp': ['🇯🇵', 'jp', 'Jp', 'JP', 'japan', 'Japan', 'JAPAN', '日本',
                                    'tokyo', 'Tokyo', 'TOKYO', '东京',
                                    'osaka', 'Osaka', 'OSAKA', '大阪'],
