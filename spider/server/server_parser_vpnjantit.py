@@ -17,16 +17,16 @@ class Server_parser_vpnjantit(Server_parser_base):
         form_data = dict()
         html = etree.HTML(res.text)
         try:
-            websiteKey = html.xpath('//div[@class="cf-turnstile"]/@data-sitekey')[0]
+            websiteKey = html.xpath('//div[@class="g-recaptcha"]/@data-sitekey')[0]
         except:
-            form_data['error_info'] = 'no cf-turnstile data-sitekey'
+            form_data['error_info'] = 'no g-recaptcha data-sitekey'
             return res.url, form_data
-        recaptcha_res = self.solve_turnstile(res.url, websiteKey)
+        recaptcha_res = self.solve_recaptcha_v2(res.url, websiteKey)
         if recaptcha_res=='solve failed.':
             form_data['error_info'] = recaptcha_res
         form_data['user'] = self.getRandStr(12)
         form_data['pass'] = 'kosong'
-        form_data['cf-turnstile-response'] = recaptcha_res
+        form_data['g-recaptcha-response'] = recaptcha_res
         return res.url, form_data
     
     def after_filling_form(self, res) -> dict:
