@@ -1,7 +1,8 @@
 '''本脚本用于清洗网上公开的订阅链接。仅收纳归类hk、tw、jp的节点'''
 
-import requests, json, base64, os
+import requests, json, base64, os, shutil
 from tqdm import tqdm
+from xray2glider import Glider_config_convertor
 
 regions = ['hk', 'tw', 'jp', '_']
 
@@ -15,7 +16,14 @@ region_keys = {
     '_': []
 }
 
-nodes = {
+nodes = { # xray config
+    'hk': set(),
+    'tw': set(),
+    'jp': set(),
+    '_': set()
+}
+
+glider_nodes = { # glider config
     'hk': set(),
     'tw': set(),
     'jp': set(),
@@ -81,9 +89,21 @@ for sublink in tqdm(sublinks, desc='clean subs'):
     for line in lines:
         nodes[link_region(line)].add(line.strip()+'\n')
 
+for region in regions[:-1]:
+    glider_nodes[region] = {Glider_config_convertor().convert(xraylink) for xraylink in nodes[region]}-{''}
+
 # print(nodes)
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)  
 for region in regions[:-1]:
-    with open(f'{script_dir}/../results/{region}.conf', 'w', encoding='utf8') as fout:
+    with open(f'{script_dir}/../results/{region}.txt', 'w', encoding='utf8') as fout:
         fout.writelines(nodes[region])
+    with open(f'{script_dir}/../results/{region}.conf', 'w', encoding='utf8') as fout:
+        fout.writelines(glider_nodes[region])
+    
+shutil.copy(f'{script_dir}/../results/glider_template.conf',f'{script_dir}/../results/glider.conf')
+with open(f'{script_dir}/../results/glider.conf', 'a', encoding='utf8') as fout:
+    fout.writelines(['\n'])
+    for region in regions[:-1]:
+        fout.writelines(['\n','# '+region,'\n'])
+        fout.writelines(glider_nodes[region])
