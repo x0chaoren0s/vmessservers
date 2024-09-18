@@ -1,4 +1,4 @@
-import time, requests, logging, random, string, json, base64, socket
+import time, requests, logging, random, string, json, base64, shutil
 from urllib.parse import urlparse
 from requests.adapters import HTTPAdapter
 from forcediphttpsadapter.adapters import ForcedIPHTTPSAdapter
@@ -14,6 +14,7 @@ from pathlib import Path
 sys.path.append(Path(__file__).parent.parent.parent)
 
 from ..server_list.server_list_parser_base import Server_list_parser_base
+from utils.xray2glider import Glider_config_convertor
 
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
@@ -154,8 +155,8 @@ class Server_parser_base:
             json_file = self.save_folder/f'{self.name}.json'
             with open(json_file, 'w') as fout:
                 json.dump(ret, fout, indent=4)
-            config_file = self.save_folder/f'{self.name}.conf'
-            with open(config_file, 'w') as fout:
+            xray_config_file = self.save_folder/f'{self.name}.txt'
+            with open(xray_config_file, 'w') as fout:
                 if num_succeed>0:
                     data_span_printed = False
                     for server_info in ret.values():
@@ -168,6 +169,18 @@ class Server_parser_base:
                             print(server_info['config'], file=fout)
                 else:
                     print(self.null_config(), file=fout)
+            glider_config_file = self.save_folder/f'{self.name}.conf'
+            shutil.copy(self.save_folder/'glider_mangaharb_template.conf',glider_config_file)
+            with open(glider_config_file, 'a') as fout:
+                with open(xray_config_file, 'r') as fin:
+                    xray_lines = fin.readlines()
+                for xray_line in xray_lines:
+                    xray_line = xray_line.strip()
+                    glider_link = Glider_config_convertor().convert(xray_line)
+                    if glider_link == '':
+                        print(xray_line, file=fout)
+                    else:
+                        print(glider_link, file=fout)
         return ret
     def post_redirect(self, res_before) -> requests.Response:
         return res_before
@@ -205,7 +218,7 @@ class Server_parser_base:
             json_file = self.save_folder/f'{self.name}.json'
             with open(json_file, 'w') as fout:
                 json.dump(ret, fout, indent=4)
-            config_file = self.save_folder/f'{self.name}.conf'
+            config_file = self.save_folder/f'{self.name}.txt'
             with open(config_file, 'w') as fout:
                 if num_succeed>0:
                     data_span_printed = False
