@@ -101,7 +101,7 @@ for region in regions[:-1]:
     with open(f'{script_dir}/../results/{region}.conf', 'w', encoding='utf8') as fout:
         fout.writelines(glider_nodes[region])
     
-shutil.copy(f'{script_dir}/../results/glider_template.conf',f'{script_dir}/../results/glider.conf')
+shutil.copy(f'{script_dir}/../results/glider_sub_template.conf',f'{script_dir}/../results/glider_sub.conf')
 with open(f'{script_dir}/../results/glider.conf', 'a', encoding='utf8') as fout:
     fout.writelines(['\n'])
     for region in regions[:-1]:
