@@ -38,7 +38,7 @@ class Glider_config_convertor:
             path = path if path.startswith('/') else '/'+path
             fakehost = data.get('host', '')
             if transport=='ws':
-                purelink = f"tls://{hostport}?skipVerify=true,ws://@{path}&host={fakehost},trojanc://{passwd}@{hostport}"
+                purelink = f"tls://{hostport}?skipVerify=true,ws://@{path}{'&' if '?' in path else '?'}host={fakehost},trojanc://{passwd}@{hostport}"
             elif transport=='tcp':
                 purelink = f'trojan://{passwd}@{hostport}?skipVerify=true'
         return self.post_process(purelink)
@@ -58,9 +58,9 @@ class Glider_config_convertor:
         fakehost = data.get('host', '')
         if transport=='ws':
             if data.get('security', 'tls') == 'tls':
-                purelink = f"tls://{hostport}?skipVerify=true,ws://@{path}&host={fakehost},{purelink}"
+                purelink = f"tls://{hostport}?skipVerify=true,ws://@{path}{'&' if '?' in path else '?'}host={fakehost},{purelink}"
             else:
-                purelink = f"ws://{hostport}{path}&host={fakehost},{purelink}"
+                purelink = f"ws://{hostport}{path}{'&' if '?' in path else '?'}host={fakehost},{purelink}"
         elif transport=='tcp':
             if data.get('security', 'tls') == 'tls':
                 purelink = f"tls://{hostport}?skipVerify=true,{purelink}"
@@ -88,9 +88,9 @@ class Glider_config_convertor:
         fakehost = config_dict.get('host', '')
         tls = config_dict.get('tls', '')
         if tls=='tls':
-            ret1 = f'ws://@{path}&host={fakehost},' if net=='ws' else ''
+            ret1 = f"ws://@{path}{'&' if '?' in path else '?'}host={fakehost}," if net=='ws' else ''
         else:
-            ret1 = f'ws://{host}:{port}{path}&host={fakehost},' if net=='ws' else ''
+            ret1 = f"ws://{host}:{port}{path}{'&' if '?' in path else '?'}host={fakehost}," if net=='ws' else ''
         # 传输安全层 tls
         #   tls://host:port?cert=PATH&key=PATH[&alpn=proto1][&alpn=proto2]
         alpn = config_dict.get('alpn', '')
@@ -105,9 +105,12 @@ if __name__=='__main__':
     # # print(gliderlinks)
     # with open('hk.conf', 'w') as fout:
     #     fout.writelines([link+'\n' for link in set(gliderlinks)])
-    print('vless ws tls')
-    link='vless://d342d11e-d424-4583-b36e-524ab1f0afa4@38.207.172.42:80?encryption=none&security=none&type=ws&host=a.ssll.gay&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai_8%20%2F%3Fed%3D2048#%F0%9F%94%92%20VL-WS-NA%20%F0%9F%87%AD%F0%9F%87%B0%20HK-38.207.172.42%3A80'
-    print(Glider_config_convertor().vless(link))
+    print('vmess ws tls')
+    link='vmess://eyJ0eXBlIjogIm5vbmUiLCAicGF0aCI6ICIvdnBuamFudGl0IiwgImhvc3QiOiAiIiwgIm5ldCI6ICJ3cyIsICJwb3J0IjogIjEwMDAxIiwgImFkZCI6ICJoazIudnBuamFudGl0LmNvbSIsICJwcyI6ICJ1dHRvdXR0by12cG5qYW50aXQuY29tIiwgInRscyI6ICJ0bHMiLCAiYWlkIjogIjAiLCAidiI6ICIyIiwgImlkIjogImFmMmQ5ZWVlLTc1NmItMTFlZi05YjBjLTAwMTYzZTA4OWRiNSJ9'
+    print(Glider_config_convertor().convert(link))
+    # print('vless ws tls')
+    # link='vless://d342d11e-d424-4583-b36e-524ab1f0afa4@38.207.172.42:80?encryption=none&security=none&type=ws&host=a.ssll.gay&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai_8%20%2F%3Fed%3D2048#%F0%9F%94%92%20VL-WS-NA%20%F0%9F%87%AD%F0%9F%87%B0%20HK-38.207.172.42%3A80'
+    # print(Glider_config_convertor().vless(link))
     # print('trojan ws tls')
     # link='trojan://dc2d9db59868ba6b@139.162.111.25:3306?security=tls&sni=TG.WangCai2&type=ws&host=TG.WangCai_1&path=%2Fgateway%2Fconnect#%F0%9F%94%92%20TR-WS-TLS%20%F0%9F%87%AF%F0%9F%87%B5%20JP-139.162.111.25%3A3306'
     # print(Glider_config_convertor().trojan(link))
