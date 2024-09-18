@@ -36,9 +36,9 @@ class Server_list_parser_vpnjantit(Server_list_parser_base):
                 ip = self.parse_ip(ip_url)
             except:
                 continue
-            if not self.check_server(ip, 10000):
+            if not self.check_server(ip, 10001):
                 continue
-            ret[url] = {'region': region, 'host': host, 'ip': ip, 'port': 10000, 'Referer': res.url}
+            ret[url] = {'region': region, 'host': host, 'ip': ip, 'port': 10001, 'Referer': res.url}
         return ret
     
     def parse_ip(self, ip_url):
