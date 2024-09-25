@@ -227,11 +227,11 @@ async def main():
 
         async with combine.stream() as streamer:  
             j = 0
-            async for item in streamer:
+            async for line in streamer:
                 j += 1
-                print(f'{i}/{len(subscriptions)} {j}/{len(links)}',item)
-                if item is not None:  # Only collect successful links  
-                    available_links.append(item)  
+                print(f'{i}/{len(subscriptions)} {j}/{len(links)}',line)
+                if line.startswith('vmess://'):  # Only collect successful links  
+                    available_links.append(line)  
 
     # Save available links to file  
     with open('results/available_links.txt', 'w') as fout:  
