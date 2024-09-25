@@ -230,7 +230,7 @@ async def main():
             async for line in streamer:
                 j += 1
                 print(f'{i}/{len(subscriptions)} {j}/{len(links)}',line)
-                if line.startswith('vmess://'):  # Only collect successful links  
+                if isinstance(line, str) and line.startswith('vmess://'):  # Only collect successful links  
                     available_links.append(line)  
 
     # Save available links to file  
