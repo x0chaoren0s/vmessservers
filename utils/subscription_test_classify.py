@@ -8,9 +8,16 @@ import traceback
 import subprocess  
 import signal  
 from aiostream import stream  
+from urllib.parse import unquote
+from normalize_date import normalized_local_date
 
 # Your error definitions and function implementations here...  
 class Tcp_Ping_Error(Exception):  
+    def __init__(self, msg):  
+        self.msg = msg  
+    def __str__(self):  
+        return self.msg  
+class Udp_Ping_Error(Exception):  
     def __init__(self, msg):  
         self.msg = msg  
     def __str__(self):  
@@ -22,29 +29,80 @@ class Forwarding_Error(Exception):
     def __str__(self):  
         return self.msg  
 
-def tcp_ping(host, port, timeout=2) -> float:  
+def tcp_ping(host, port, timeout=2) -> bool:  
     try:  
+        status = False
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
         sock.settimeout(timeout)  
-        start_time = time.time()  
+        # start_time = time.time()  
         sock.connect((host, int(port)))  
-        end_time = time.time()  
-        latency = (end_time - start_time) * 1000  # Convert to milliseconds  
-        sock.close()  
-        return latency  
-    except (socket.timeout, ConnectionRefusedError):  
-        raise Tcp_Ping_Error('socket.timeout or ConnectionRefusedError')  
-    except Exception:  
-        raise Tcp_Ping_Error('other error')  
+        # end_time = time.time()  
+        # latency = (end_time - start_time) * 1000  # Convert to milliseconds  
+        sock.close()
+        status = True
+    finally:
+        return status
+    
+def udp_ping(host, port, timeout=2) -> bool:  
+    try:  
+        status = False
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
+        sock.settimeout(timeout)  
+        message = b'\x00'  
+        # start_time = time.time()  
+        sock.sendto(message, (host, int(port)))  
+        data, _ = sock.recvfrom(1024)  # Buffer size is 1024 bytes  
+        # end_time = time.time()  
+        # latency = (end_time - start_time) * 1000  # Convert to milliseconds  
+        sock.close()
+        status = True
+    finally:
+        return status
 
-def decode_vmess_link(vmess_link):  
-    # Strip the vmess:// prefix  
-    encoded_json = vmess_link.split("://")[1]  
-    # Decode the Base64 encoded JSON  
-    decoded_bytes = base64.urlsafe_b64decode(encoded_json + "==")  # Add padding  
-    decoded_json = decoded_bytes.decode('utf-8')  
-    # Parse the JSON  
-    return json.loads(decoded_json)  
+def decode_raw_link(raw_link):
+    # 转换成和vmess解码后统一的格式
+    ret = dict()
+    if raw_link.startswith('vmess://'):
+        encoded_json = raw_link.split("://")[1]  
+        # Decode the Base64 encoded JSON  
+        decoded_bytes = base64.urlsafe_b64decode(encoded_json + "==")  # Add padding  
+        decoded_json = decoded_bytes.decode('utf-8')
+        ret = json.loads(decoded_json)
+        ret['net_security'] = ret.get('tls', '')
+    elif raw_link.startswith('vless://'):
+        ret['id'] = raw_link.split('://')[1].split('@')[0]
+        ret['add'] = raw_link.split('@')[1].split(':')[0]
+        ret['port'] = raw_link.split('@')[1].split(':')[1].split('?')[0]
+        ret.update({kv.split('=')[0]:kv.split('=')[1] for kv in raw_link.split('?')[1].split('#')[0].split('&')})
+        ret['net'] = ret.get('type', 'tcp')
+        ret['net_security'] = ret.get('security', '')
+        ret['ps'] = raw_link.split('#')[1]
+    elif raw_link.startswith('trojan://'):
+        ret['password'] = raw_link.split('://')[1].split('@')[0]
+        ret['add'] = raw_link.split('@')[1].split(':')[0]
+        ret['port'] = raw_link.split('@')[1].split(':')[1].split('?')[0]
+        ret.update({kv.split('=')[0]:kv.split('=')[1] for kv in raw_link.split('?')[1].split('#')[0].split('&')})
+        ret['net'] = ret.get('type', 'tcp')
+        ret['net_security'] = ret.get('security', '')
+        ret['ps'] = raw_link.split('#')[1]
+    elif raw_link.startswith('hysteria2://'):
+        ret['password'] = raw_link.split('://')[1].split('@')[0]
+        ret['add'] = raw_link.split('@')[1].split(':')[0]
+        ret['port'] = raw_link.split('@')[1].split(':')[1].split('?')[0]
+        ret.update({kv.split('=')[0]:kv.split('=')[1] for kv in raw_link.split('?')[1].split('#')[0].split('&')})
+        ret['net'] = ret.get('type', 'tcp')
+        ret['net_security'] = ret.get('security', '')
+        ret['ps'] = raw_link.split('#')[1]
+    elif raw_link.startswith('ss://'):
+        ret['encryption'] = base64.b64decode(raw_link.split('://')[1].split('@')[0]).decode().split(':')[0]
+        ret['password'] = base64.b64decode(raw_link.split('://')[1].split('@')[0]).decode().split(':')[1]
+        ret['add'] = raw_link.split('@')[1].split(':')[0]
+        ret['port'] = raw_link.split('@')[1].split(':')[1].split('?')[0]
+        ret['ps'] = raw_link.split('#')[1]
+    ret['protocol'] = raw_link.split('://')[0]
+    if 'path' in ret:
+        ret['path'] = unquote(ret['path'])
+    return ret
 
 def find_available_port(min=10000, start=10000, max=20000):  
     found = False  
@@ -62,15 +120,13 @@ def find_available_port(min=10000, start=10000, max=20000):
     return port  
 
 def save_xray_config(node, port) -> str:  
-    use_tls = node.get("tls", "") == "tls"  
-
     xray_config_inbounds = {  
         "inbounds": [  
             {  
-                "tag": "http",  
+                "tag": "socks",  
                 "port": port,  
                 "listen": "127.0.0.1",  
-                "protocol": "http",  
+                "protocol": "socks",  
                 "sniffing": {  
                     "enabled": True,  
                     "destOverride": ["http", "tls"],  
@@ -87,41 +143,83 @@ def save_xray_config(node, port) -> str:
     xray_config_outbounds = {  
         "outbounds": [  
             {  
-                "protocol": "vmess",  
+                "tag": "proxy",
+                "protocol": node["protocol"],  
                 "settings": {  
                     "vnext": [  
                         {  
-                            "address": node["add"],  
-                            "port": int(node["port"]),  
-                            "users": [  
-                                {  
-                                    "id": node["id"],  
-                                    "alterId": int(node["aid"]),  
-                                    "security": node.get("scy", "auto")  
-                                }  
+                            "address": node["add"],
+                            "port": int(node["port"]),
+                            "users": [
+                                {
+                                    "id": node["id"],
+                                    "alterId": int(node.get("aid",0)),
+                                    "security": node.get("scy", "auto"),
+                                    "encryption": node.get("encryption", ""),
+                                }
                             ]  
                         }  
-                    ]  
+                    ] if node["protocol"] in ['vmess', 'vless'] else [],
+                    "servers": [
+                        {
+                            "address": "36.151.192.201",
+                            "method": "chacha20",
+                            "ota": False,
+                            "password": "wwTIozXY",
+                            "port": 27131,
+                            "level": 1
+                        }
+                    ] if node["protocol"] in ['trojan'] else [],
                 },  
                 "streamSettings": {  
                     "network": node.get("net", "tcp"),  
-                    "security": "tls" if use_tls else "",  
+                    "security": node.get("net_security", ""),  
                     "tlsSettings": {  
                         "allowInsecure": True,  
                         "serverName": node.get("sni", ""),  
                         "show": False,  
-                    } if use_tls else {},  
+                    } if node.get("net_security", "") == "tls"  else {},  
+                    "realitySettings": {
+                        "serverName": node.get("sni", ""),  
+                        "fingerprint": node.get("fp", ""),  
+                        "show": False,
+                        "publicKey": node.get("pbk", ""),  
+                        "shortId": node.get("sid", ""),  
+                        "spiderX": ""
+                    } if node.get("net_security", "") == "reality"  else {},  
                     "wsSettings": {  
                         "path": node.get("path", ""),  
                         "headers": {  
                             "Host": node.get("host", ""),  
                         },  
                     } if node.get("net") == "ws" else {},  
+                    "grpcSettings": {
+                        "serviceName": node.get("serviceName", ""),  
+                        "multiMode": False,
+                        "idle_timeout": 60,
+                        "health_check_timeout": 20,
+                        "permit_without_stream": False,
+                        "initial_windows_size": 0
+                    } if node.get("net") == "grpc" else {},  
+                    "httpSettings": {
+                        "path": node.get("path", ""),  
+                    } if node.get("net") == "http" else {},  
                     "mux": {  
                         "enabled": False,  
                         "concurrency": -1,  
-                    }  
-                }  
+                    }
+                },
+                "type": node["protocol"],  
+                "server": node["add"],
+                "server_port": int(node["port"]),
+                "up_mbps": 100,
+                "down_mbps": 100,
+                "password": node.get("password", ''),
+                "tls": {
+                    "enabled": True,
+                    "server_name": node.get("sni", ""),
+                    "insecure": True,
+                },
             }  
         ]  
     }  
@@ -150,33 +248,39 @@ def stop_xray(process) -> None:
         process.send_signal(signal.SIGINT)  
         process.wait()  
 
-async def async_test_google(port):  
+async def async_test_google(port, retry=3):  
     try:  
         res = requests.get('https://www.google.com', proxies={'https': f'http://127.0.0.1:{port}'})  
         if res.status_code != 200:  
             raise Forwarding_Error(f'google response != 200')  
         return "Success"  
     except Exception as e:  
+        if retry>0:
+            return await async_test_google(port, retry-1)
         return str(e)
 
 async def async_test_one_link(link):  
-    yield_ret = None
+    yield_ret = {'status': False, 'link': link, 'error_info': ''}
     process = None
     try:  
-        link_json = decode_vmess_link(link)  
-        tcp_ping(link_json['add'], link_json['port'])  
+        link_json = decode_raw_link(link)  
+        assert link_json['protocol'] in ['vmess', 'vless', 'trojan']
+        if link_json['protocol'] in ['vmess', 'vless', 'trojan']:
+            assert tcp_ping(link_json['add'], link_json['port']), 'Tcp_Ping_Error'
         port = find_available_port()  
         xray_config_file = save_xray_config(link_json, port)  
         process = await async_run_xray(xray_config_file)  
         await asyncio.sleep(0.3)  # Wait for the server to start  
         test_result = await async_test_google(port)  
         if test_result == "Success":  
-            yield_ret = link  # Use yield to make this an async generator  
+            yield_ret['status'] = True  # Use yield to make this an async generator  
     except (Tcp_Ping_Error, Forwarding_Error, requests.exceptions.ProxyError, requests.exceptions.SSLError) as e:  
-        yield_ret = f"Error: {e}"
+        yield_ret['error_info'] = str(e)
+    except AssertionError as e:  
+        yield_ret['error_info'] = str(e)
     except Exception as e:  
-        # traceback.print_exc()  
-        yield_ret = f"Exception: {e}"
+        traceback.print_exc()
+        yield_ret['error_info'] = str(e)
     finally:  
         stop_xray(process)  
         yield yield_ret  # Ensure every invocation is followed by a yield 
@@ -204,7 +308,7 @@ async def main():
         'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
     ] 
 
-    available_links = []  
+    available_links = set()
     for i,subscription in enumerate(subscriptions,start=1):
         # Load links from subscription  
         while True:  
@@ -220,23 +324,32 @@ async def main():
             pass  
 
         links = lines.split('\n')  
-        links = [link.strip().replace('`','') for link in links if link.startswith('vmess://')]  
+        links = [link.strip().replace('`','') for link in links if link.startswith('vmess://') or link.startswith('vless://')]  
+#         links = [
+# # 'vless://89b3cbba-e6ac-485a-9481-976a0415eab9@172.66.46.249:2096?encryption=none&security=tls&sni=JoinV2nGFaSt-2MM.pAges.DEV&type=ws&host=JOInv2ngFaSt-2mM.pAges.DeV&path=%2FN9AxDoukMSap6Kq1%3Fed%3D2560#%F0%9F%94%92%20VL-WS-TLS%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20NA-172.66.46.249%3A2096',
+# # 'trojan://wwTIozXY@36.151.192.201:27131?security=tls&type=tcp&headerType=none#%F0%9F%87%A8%F0%9F%87%B3%20%E6%B1%9F%E8%8B%8F%E7%9C%81%20%E7%A7%BB%E5%8A%A8',
+# # 'hysteria2://plkoijhu@40.76.225.108:443?sni=pan.imcxx.com&insecure=1#azure',
+#         ]
 
         # Use aiostream to merge results from each async iterable generated by magic_async_fun  
         combine = stream.merge(*(async_test_one_link(link) for link in links))  
 
         async with combine.stream() as streamer:  
             j = 0
-            async for line in streamer:
+            async for test_result in streamer:
                 j += 1
-                print(f'{i}/{len(subscriptions)} {j}/{len(links)}',line)
-                if isinstance(line, str) and line.startswith('vmess://'):  # Only collect successful links  
-                    available_links.append(line)  
+                print(f'{i}/{len(subscriptions)} {j}/{len(links)}', end=' ')
+                print(test_result['link'] if test_result['status'] else test_result['error_info'])
+                if test_result['status']:  # Only collect successful links  
+                    available_links.add(test_result['link'])
 
     # Save available links to file  
-    with open('results/available_links.txt', 'w') as fout:  
+    with open('results/available_links.txt', 'w') as fout:
+        print(f'# {len(available_links)} - {normalized_local_date()}')
+        print(f'# {len(available_links)} - {normalized_local_date()}', file=fout)
         for link in available_links:  
             print(link, file=fout)  
 
 if __name__ == "__main__":  
     asyncio.run(main())  
+    # print(udp_ping('40.76.225.108',443))
