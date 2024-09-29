@@ -1,0 +1,257 @@
+{
+    "policy": {
+        "system": {
+            "statsOutboundUplink": true,
+            "statsOutboundDownlink": true
+        }
+    },
+    "log": {
+        "access": "",
+        "error": "",
+        "loglevel": "warning"
+    },
+    "inbounds": [
+        {
+            "tag": "socks",
+            "port": 7601,
+            "listen": "127.0.0.1",
+            "protocol": "socks",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "routeOnly": false
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "allowTransparent": false
+            }
+        },
+        {
+            "tag": "http",
+            "port": 7602,
+            "listen": "127.0.0.1",
+            "protocol": "http",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "routeOnly": false
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "allowTransparent": false
+            }
+        },
+        {
+            "tag": "socks2",
+            "port": 7603,
+            "listen": "0.0.0.0",
+            "protocol": "socks",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "routeOnly": false
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "allowTransparent": false
+            }
+        },
+        {
+            "tag": "http2",
+            "port": 7604,
+            "listen": "0.0.0.0",
+            "protocol": "http",
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ],
+                "routeOnly": false
+            },
+            "settings": {
+                "auth": "noauth",
+                "udp": true,
+                "allowTransparent": false
+            }
+        },
+        {
+            "tag": "api",
+            "port": 9090,
+            "listen": "127.0.0.1",
+            "protocol": "dokodemo-door",
+            "settings": {
+                "udp": false,
+                "address": "127.0.0.1",
+                "allowTransparent": false
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "tag": "proxy",
+            "protocol": "vmess",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "8.217.135.42",
+                        "port": 10001,
+                        "users": [
+                            {
+                                "id": "f299d136-7af0-11ef-9d31-00163e0c458d",
+                                "alterId": 0,
+                                "email": "t@t.tt",
+                                "security": "auto"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "security": "tls",
+                "tlsSettings": {
+                    "allowInsecure": true,
+                    "serverName": "cn.bing.com",
+                    "show": false
+                },
+                "wsSettings": {
+                    "path": "/vpnjantit",
+                    "headers": {
+                        "Host": "cn.bing.com"
+                    }
+                }
+            },
+            "mux": {
+                "enabled": false,
+                "concurrency": -1
+            }
+        },
+        {
+            "tag": "direct",
+            "protocol": "freedom",
+            "settings": {}
+        },
+        {
+            "tag": "block",
+            "protocol": "blackhole",
+            "settings": {
+                "response": {
+                    "type": "http"
+                }
+            }
+        }
+    ],
+    "stats": {},
+    "api": {
+        "tag": "api",
+        "services": [
+            "StatsService"
+        ]
+    },
+    "dns": {
+        "hosts": {
+            "dns.google": "8.8.8.8",
+            "proxy.example.com": "127.0.0.1"
+        },
+        "servers": [
+            {
+                "address": "223.5.5.5",
+                "domains": [
+                    "geosite:cn"
+                ],
+                "expectIPs": [
+                    "geoip:cn"
+                ]
+            },
+            "1.1.1.1",
+            "8.8.8.8",
+            "https://dns.google/dns-query"
+        ]
+    },
+    "routing": {
+        "domainStrategy": "AsIs",
+        "rules": [
+            {
+                "type": "field",
+                "inboundTag": [
+                    "api"
+                ],
+                "outboundTag": "api"
+            },
+            {
+                "type": "field",
+                "outboundTag": "direct",
+                "domain": [
+                    "domain:example-example.com",
+                    "domain:example-example2.com",
+                    "domain:pypi.tuna.tsinghua.edu.cn",
+                    "domain:www.4kvm.org",
+                    "domain:play.4kvm.org",
+                    "domain:mangaharb.fun",
+                    "domain:js.tingliu.cc",
+                    "domain:res1.xiaoqinre.com",
+                    "domain:img.jiuyaomanhua.com",
+                    "domain:pic.yydsmh.com",
+                    "domain:static-tw.baozimh.com",
+                    "domain:img.jiuyaomanhua.com",
+                    "domain:pic.piuqiupia.com"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "direct",
+                "ip": [
+                    "172.203.185.173"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "block",
+                "domain": [
+                    "geosite:category-ads-all"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "direct",
+                "domain": [
+                    "geosite:cn"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "direct",
+                "ip": [
+                    "geoip:private",
+                    "geoip:cn"
+                ]
+            },
+            {
+                "type": "field",
+                "port": "0-65535",
+                "outboundTag": "proxy"
+            },
+            {
+                "type": "field",
+                "outboundTag": "direct",
+                "domain": [
+                    "domain:www.4kvm.org",
+                    "domain:play.4kvm.org"
+                ]
+            }
+        ]
+    }
+}

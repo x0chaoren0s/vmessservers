@@ -1,0 +1,45 @@
+{
+  "tag": "proxy",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "speedtest.net",
+        "port": 443,
+        "users": [
+          {
+            "id": "TELEGRAM-NUFiLTER",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "security": "auto",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "ws",
+    "security": "tls",
+    "tlsSettings": {
+      "allowInsecure": true,
+      "serverName": "speedtest.net",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "fingerprint": "chrome",
+      "show": false
+    },
+    "wsSettings": {
+      "path": "/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=2048",
+      "headers": {
+        "Host": "Bs.net"
+      }
+    }
+  },
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}

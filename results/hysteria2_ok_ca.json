@@ -1,0 +1,10 @@
+{
+    "server": "40.76.225.108:443",
+    "auth": "plkoijhu",
+    "tls": {
+        "ca": "/home/u3060/apps/hysteria2/azure.crt"
+    },
+    "socks5": {
+        "listen": "127.0.0.1:7621"
+    }
+}

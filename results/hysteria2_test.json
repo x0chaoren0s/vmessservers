@@ -1,0 +1,10 @@
+{
+    "server": "free.netmh3.pro:443",
+    "auth": "751c1e55ead7439a",
+    "tls": {
+        "insecure": true
+    },
+    "socks5": {
+        "listen": "127.0.0.1:7631"
+    }
+}

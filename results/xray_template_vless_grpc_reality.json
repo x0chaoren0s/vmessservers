@@ -1,0 +1,45 @@
+{
+  "tag": "proxy",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "116.203.149.241",
+        "port": 443,
+        "users": [
+          {
+            "id": "1596e7f0-2106-468f-e2b0-93f19e83bd0c",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "security": "auto",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "grpc",
+    "security": "reality",
+    "realitySettings": {
+      "serverName": "greenpepper.ir",
+      "fingerprint": "firefox",
+      "show": false,
+      "publicKey": "wxzZx9_9R0QXG4Hjc8e3_ckaUIbn9oKc5yKsBqh8ulc",
+      "shortId": "a18472f7",
+      "spiderX": "/"
+    },
+    "grpcSettings": {
+      "serviceName": "@ipV2Ray",
+      "multiMode": false,
+      "idle_timeout": 60,
+      "health_check_timeout": 20,
+      "permit_without_stream": false,
+      "initial_windows_size": 0
+    }
+  },
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}

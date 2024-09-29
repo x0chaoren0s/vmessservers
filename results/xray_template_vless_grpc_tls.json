@@ -1,0 +1,47 @@
+{
+  "tag": "proxy",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "cltechip-mci.argha-v2pedia.monster",
+        "port": 8443,
+        "users": [
+          {
+            "id": "d7b33e23-42be-4fdd-c3f9-50582d0c4236",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "security": "auto",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "grpc",
+    "security": "tls",
+    "tlsSettings": {
+      "allowInsecure": true,
+      "serverName": "footlo.argha-v2pedia.monster",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "fingerprint": "chrome",
+      "show": false
+    },
+    "grpcSettings": {
+      "serviceName": "Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia,Telegram:@v2pedia",
+      "multiMode": false,
+      "idle_timeout": 60,
+      "health_check_timeout": 20,
+      "permit_without_stream": false,
+      "initial_windows_size": 0
+    }
+  },
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}

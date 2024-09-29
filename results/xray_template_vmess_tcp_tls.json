@@ -1,0 +1,33 @@
+{
+    "tag": "proxy",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "63.lwdh.us",
+          "port": 12953,
+          "users": [
+            {
+              "id": "a32313ad-5e39-4f9a-9cad-512041790050",
+              "alterId": 0,
+              "email": "t@t.tt",
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp",
+      "security": "tls",
+      "tlsSettings": {
+        "allowInsecure": true,
+        "serverName": "63.lwdh.us",
+        "show": false
+      }
+    },
+    "mux": {
+      "enabled": false,
+      "concurrency": -1
+    }
+  }

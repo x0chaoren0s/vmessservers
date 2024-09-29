@@ -1,0 +1,40 @@
+{
+  "tag": "proxy",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "188.245.87.153",
+        "port": 2096,
+        "users": [
+          {
+            "id": "476ed3b0-b9e6-4a8c-b738-537094fa5d53",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "security": "auto",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "h2",
+    "security": "reality",
+    "httpSettings": {
+      "path": "/resource/9876/abcd/ef12g3h4i5j6k7l8m9n0opqrs/2024/xyz?auth=abcd1234efgh5678ijkl9101mnopqrstu&session=abc1234def5678ghijkl910mno_pqrst&checksum=1a2b3c4d5e6f7g8h9i0jklmnopqrstuvwx"
+    },
+    "realitySettings": {
+      "serverName": "www.python.org",
+      "fingerprint": "randomized",
+      "show": false,
+      "publicKey": "TS5-zLzFKNxp7JFXjT_uxmcBKWyW2cesU1YsdgRlQTs",
+      "shortId": "c7ad7539483029e7",
+      "spiderX": ""
+    }
+  },
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "tag": "proxy",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "8.217.135.42",
+          "port": 10001,
+          "users": [
+            {
+              "id": "f299d136-7af0-11ef-9d31-00163e0c458d",
+              "alterId": 0,
+              "email": "t@t.tt",
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {
+        "allowInsecure": true,
+        "serverName": "cn.bing.com",
+        "show": false
+      },
+      "wsSettings": {
+        "path": "/vpnjantit",
+        "headers": {
+          "Host": "cn.bing.com"
+        }
+      }
+    },
+    "mux": {
+      "enabled": false,
+      "concurrency": -1
+    }
+  }

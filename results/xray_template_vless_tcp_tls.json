@@ -1,0 +1,33 @@
+{
+  "tag": "proxy",
+  "protocol": "vless",
+  "settings": {
+    "vnext": [
+      {
+        "address": "127.0.0.1",
+        "port": 8080,
+        "users": [
+          {
+            "id": "bacacba-bcaa-abac-cbad-aaccbcaabcbb",
+            "alterId": 0,
+            "email": "t@t.tt",
+            "security": "auto",
+            "encryption": "none"
+          }
+        ]
+      }
+    ]
+  },
+  "streamSettings": {
+    "network": "tcp",
+    "security": "tls",
+    "tlsSettings": {
+      "allowInsecure": true,
+      "show": false
+    }
+  },
+  "mux": {
+    "enabled": false,
+    "concurrency": -1
+  }
+}

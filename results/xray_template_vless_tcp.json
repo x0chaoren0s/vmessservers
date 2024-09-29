@@ -1,0 +1,27 @@
+{
+    "tag": "proxy",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "120.232.153.40",
+          "port": 35601,
+          "users": [
+            {
+              "id": "418048af-a293-4b99-9b0c-98ca3580dd24",
+              "alterId": 64,
+              "email": "t@t.tt",
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "tcp"
+    },
+    "mux": {
+      "enabled": false,
+      "concurrency": -1
+    }
+  }

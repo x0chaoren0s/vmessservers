@@ -1,0 +1,33 @@
+{
+    "tag": "proxy",
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [
+        {
+          "address": "172.64.167.15",
+          "port": 2086,
+          "users": [
+            {
+              "id": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+              "alterId": 0,
+              "email": "t@t.tt",
+              "security": "auto"
+            }
+          ]
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "github.com/Alvin9999",
+        "headers": {
+          "Host": "ip2.1457230.xyz"
+        }
+      }
+    },
+    "mux": {
+      "enabled": false,
+      "concurrency": -1
+    }
+  }

@@ -1,0 +1,121 @@
+{
+  "policy": {
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "log": {
+    "access": "",
+    "error": "",
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks",
+      "port": 10001,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "routeOnly": false
+      },
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "allowTransparent": false
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ir8.seeb.shop",
+            "port": 443,
+            "users": [
+              {
+                "id": "7d3b945d-0f23-4719-9fae-50033251e2fd",
+                "alterId": 0,
+                "security": "auto",
+                "encryption": "none"
+              }
+            ]
+          }
+        ],
+        "servers": []
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "9pgcn69xy7i539t1wtli.khodavakili.buzz",
+          "show": false
+        },
+        "realitySettings": {},
+        "wsSettings": {
+          "path": "/kos_madar_publisher",
+          "headers": {
+            "Host": "dl.khodavakili.buzz"
+          }
+        },
+        "grpcSettings": {},
+        "httpSettings": {},
+        "mux": {
+          "enabled": false,
+          "concurrency": -1
+        }
+      },
+      "type": "vless",
+      "server": "ir8.seeb.shop",
+      "server_port": 443,
+      "up_mbps": 100,
+      "down_mbps": 100,
+      "password": "",
+      "tls": {
+        "enabled": true,
+        "server_name": "9pgcn69xy7i539t1wtli.khodavakili.buzz",
+        "insecure": true
+      }
+    }
+  ],
+  "stats": {},
+  "dns": {
+    "hosts": {
+      "dns.google": "8.8.8.8",
+      "proxy.example.com": "127.0.0.1"
+    },
+    "servers": [
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
+        ]
+      },
+      "1.1.1.1",
+      "8.8.8.8",
+      "https://dns.google/dns-query"
+    ]
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "port": "0-65535",
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
