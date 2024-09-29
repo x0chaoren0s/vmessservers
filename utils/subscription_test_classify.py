@@ -306,7 +306,9 @@ async def main():
 
         'https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt', # 看历史好像是30min更新
         'https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md', # 每日分享
-        'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
+        'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub', # 6小时更新一次  需要先把整个文件做base64解码
+
+        'https://mangaharb.fun:7643/v2ray/available_links.txt'  # 保证现有能用的也留住
     ] 
 
     available_links = set()
