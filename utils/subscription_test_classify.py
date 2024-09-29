@@ -289,24 +289,24 @@ async def async_test_one_link(link):
 async def main():  
     subscriptions = [
         'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt', # Updating Every 10 minutes.
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub3.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub4.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub5.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub6.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub7.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub8.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub9.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub20.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub21.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub22.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub23.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub24.txt',
-        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub25.txt', # Updating Every 10 minutes.
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub3.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub4.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub5.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub6.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub7.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub8.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub9.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub20.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub21.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub22.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub23.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub24.txt',
+        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub25.txt', # Updating Every 10 minutes.
 
-        # 'https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt', # 看历史好像是30min更新
-        # 'https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md', # 每日分享
-        # 'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
+        'https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt', # 看历史好像是30min更新
+        'https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md', # 每日分享
+        'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
     ] 
 
     available_links = set()
