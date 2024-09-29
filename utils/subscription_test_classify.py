@@ -251,7 +251,7 @@ def stop_xray(process) -> None:
 async def async_test_google(port, retry=3):  
     try:  
         # 测的是YouTube上一个视频的封面图
-        res = requests.get('https://i.ytimg.com/vi/EMTTPIZlXCw/hq720.jpg', proxies={'https': f'http://127.0.0.1:{port}'})  
+        res = requests.get('https://i.ytimg.com/vi/EMTTPIZlXCw/hq720.jpg', proxies={'https': f'http://127.0.0.1:{port}'}, timeout=1.0)  
         if res.status_code != 200:  
             raise Forwarding_Error(f'google response != 200')  
         return "Success"  
