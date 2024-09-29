@@ -249,35 +249,9 @@ def stop_xray(process) -> None:
         process.wait()  
 
 async def async_test_google(port, retry=3):  
-    headers = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
-        'cache-control': 'no-cache',
-        'dnt': '1',
-        'pragma': 'no-cache',
-        'priority': 'u=0, i',
-        'referer': 'https://www.google.com/',
-        'sec-ch-prefers-color-scheme': 'light',
-        'sec-ch-ua': '"Not=A?Brand";v="8", "Chromium";v="129", "Google Chrome";v="129"',
-        'sec-ch-ua-arch': '"x86"',
-        'sec-ch-ua-bitness': '"64"',
-        'sec-ch-ua-form-factors': '"Desktop"',
-        'sec-ch-ua-full-version': '"129.0.6668.71"',
-        'sec-ch-ua-full-version-list': '"Not=A?Brand";v="8.0.0.0", "Chromium";v="129.0.6668.71", "Google Chrome";v="129.0.6668.71"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-model': '""',
-        'sec-ch-ua-platform': '"Windows"',
-        'sec-ch-ua-platform-version': '"15.0.0"',
-        'sec-ch-ua-wow64': '?0',
-        'sec-fetch-dest': 'document',
-        'sec-fetch-mode': 'navigate',
-        'sec-fetch-site': 'same-origin',
-        'sec-fetch-user': '?1',
-        'upgrade-insecure-requests': '1',
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'
-    }
     try:  
-        res = requests.get('https://www.google.com', proxies={'https': f'http://127.0.0.1:{port}'}, headers=headers)  
+        # 测的是YouTube上一个视频的封面图
+        res = requests.get('https://i.ytimg.com/vi/EMTTPIZlXCw/hq720.jpg', proxies={'https': f'http://127.0.0.1:{port}'})  
         if res.status_code != 200:  
             raise Forwarding_Error(f'google response != 200')  
         return "Success"  
@@ -315,24 +289,24 @@ async def async_test_one_link(link):
 async def main():  
     subscriptions = [
         'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt', # Updating Every 10 minutes.
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub3.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub4.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub5.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub6.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub7.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub8.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub9.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub20.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub21.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub22.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub23.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub24.txt',
-        'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub25.txt', # Updating Every 10 minutes.
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub3.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub4.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub5.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub6.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub7.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub8.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub9.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub20.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub21.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub22.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub23.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub24.txt',
+        # 'https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub25.txt', # Updating Every 10 minutes.
 
-        'https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt', # 看历史好像是30min更新
-        'https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md', # 每日分享
-        'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
+        # 'https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt', # 看历史好像是30min更新
+        # 'https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md', # 每日分享
+        # 'https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub' # 6小时更新一次  需要先把整个文件做base64解码
     ] 
 
     available_links = set()
@@ -352,9 +326,9 @@ async def main():
 
         links = lines.split('\n')  
         links = [link.strip().replace('`','') for link in links if link.startswith('vmess://') or link.startswith('vless://')]  
-#         links = [
-# 'vless://5f0b2bda-0457-5e95-ba0e-9a425356f4cb@188.114.96.216:80?encryption=none&security=none&type=ws&host=wwww.speedtest.net.xn--Join.ELiV2RY.io.ie1.vless.Sitespeedtest.net.&path=%2F-%40ELiV2RY-%40ELiV2RY%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83-ELeNaTheGreatDictator#%F0%9F%91%89%F0%9F%86%94%20%40v2ray_configs_pool%F0%9F%93%A1%F0%9F%87%A8%F0%9F%87%A6Canada',
-#         ]
+        links = [
+'vless://5f0b2bda-0457-5e95-ba0e-9a425356f4cb@188.114.96.216:80?encryption=none&security=none&type=ws&host=wwww.speedtest.net.xn--Join.ELiV2RY.io.ie1.vless.Sitespeedtest.net.&path=%2F-%40ELiV2RY-%40ELiV2RY%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83-ELeNaTheGreatDictator#%F0%9F%91%89%F0%9F%86%94%20%40v2ray_configs_pool%F0%9F%93%A1%F0%9F%87%A8%F0%9F%87%A6Canada',
+        ]
 
         # Use aiostream to merge results from each async iterable generated by magic_async_fun  
         combine = stream.merge(*(async_test_one_link(link) for link in links))  
