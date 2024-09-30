@@ -326,8 +326,29 @@ async def main():
         except Exception:  
             pass  
 
-        links = lines.split('\n')  
-        links = [link.strip().replace('`','') for link in links if link.startswith('vmess://') or link.startswith('vless://')]  
+        links_ = lines.split('\n')  
+        links_ = [link.strip().replace('`','') for link in links_ if link.startswith('vmess://') or link.startswith('vless://') or link.startswith('trojan://')]
+        links = set()  # 解决几个link连着不换行的情况
+        for link in links_:
+            starts = []
+            def buildStarts(link:str, prefix:str, initstart:int, starts:list) -> None:
+                start = link.find(prefix,initstart)
+                if start == -1:
+                    return
+                starts.append(start)
+                buildStarts(link, prefix, start+1, starts)
+            for prefix in ['vmess://', 'vless://', 'trojan://']:
+                buildStarts(link, prefix, 0, starts)
+            starts = sorted(starts, reverse=True)
+            for start in starts:
+                links.add(link[start:])
+                link = link[:start]
+
+
+
+            
+                
+
 #         links = [
 # 'vless://5f0b2bda-0457-5e95-ba0e-9a425356f4cb@188.114.96.216:80?encryption=none&security=none&type=ws&host=wwww.speedtest.net.xn--Join.ELiV2RY.io.ie1.vless.Sitespeedtest.net.&path=%2F-%40ELiV2RY-%40ELiV2RY%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83-ELeNaTheGreatDictator#%F0%9F%91%89%F0%9F%86%94%20%40v2ray_configs_pool%F0%9F%93%A1%F0%9F%87%A8%F0%9F%87%A6Canada',
 #         ]
