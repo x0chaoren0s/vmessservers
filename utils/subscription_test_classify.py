@@ -266,7 +266,9 @@ async def async_test_one_link(link, semaphore):
     async with semaphore:  # Use semaphore to limit concurrent tasks 
         try:  
             link_json = decode_raw_link(link)  
-            assert link_json['protocol'] in ['vmess', 'vless', 'trojan']
+            assert link_json['protocol'] in ['vmess', 'vless', 'trojan'], "protocal not in ['vmess', 'vless', 'trojan']"
+            assert 'add' in link_json in ['vmess', 'vless', 'trojan'], "add not in link_json"
+            assert 'port' in link_json in ['vmess', 'vless', 'trojan'], "port not in link_json"
             if link_json['protocol'] in ['vmess', 'vless', 'trojan']:
                 assert tcp_ping(link_json['add'], link_json['port']), 'Tcp_Ping_Error'
             port = find_available_port()  
