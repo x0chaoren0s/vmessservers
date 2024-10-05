@@ -265,34 +265,33 @@ async def async_test_google(port, retry=3):
             return await async_test_google(port, retry-1)
         return str(e)
 
-async def async_test_one_link(link, semaphore):  
+async def async_test_one_link(link):  
     yield_ret = {'status': False, 'link': link, 'error_info': ''}
     process = None
-    async with semaphore:  # Use semaphore to limit concurrent tasks 
-        try:  
-            link_json = decode_raw_link(link)  
-            assert link_json['protocol'] in ['vmess', 'vless', 'trojan'], "protocal not in ['vmess', 'vless', 'trojan']"
-            assert 'add' in link_json in ['vmess', 'vless', 'trojan'], "add not in link_json"
-            assert 'port' in link_json in ['vmess', 'vless', 'trojan'], "port not in link_json"
-            if link_json['protocol'] in ['vmess', 'vless', 'trojan']:
-                assert tcp_ping(link_json['add'], link_json['port']), 'Tcp_Ping_Error'
-            port = find_available_port()  
-            xray_config_file = save_xray_config(link_json, port)  
-            process = await async_run_xray(xray_config_file)  
-            await asyncio.sleep(0.3)  # Wait for the server to start  
-            test_result = await async_test_google(port)  
-            if test_result == "Success":  
-                yield_ret['status'] = True  # Use yield to make this an async generator  
-        except (Tcp_Ping_Error, Forwarding_Error, requests.exceptions.ProxyError, requests.exceptions.SSLError) as e:  
-            yield_ret['error_info'] = str(e)
-        except AssertionError as e:  
-            yield_ret['error_info'] = str(e)
-        except Exception as e:  
-            traceback.print_exc()
-            yield_ret['error_info'] = str(e)
-        finally:  
-            stop_xray(process)  
-            yield yield_ret  # Ensure every invocation is followed by a yield 
+    try:  
+        link_json = decode_raw_link(link)  
+        assert link_json['protocol'] in ['vmess', 'vless', 'trojan'], "protocal not in ['vmess', 'vless', 'trojan']"
+        assert 'add' in link_json in ['vmess', 'vless', 'trojan'], "add not in link_json"
+        assert 'port' in link_json in ['vmess', 'vless', 'trojan'], "port not in link_json"
+        if link_json['protocol'] in ['vmess', 'vless', 'trojan']:
+            assert tcp_ping(link_json['add'], link_json['port']), 'Tcp_Ping_Error'
+        port = find_available_port()  
+        xray_config_file = save_xray_config(link_json, port)  
+        process = await async_run_xray(xray_config_file)  
+        await asyncio.sleep(0.3)  # Wait for the server to start  
+        test_result = await async_test_google(port)  
+        if test_result == "Success":  
+            yield_ret['status'] = True  # Use yield to make this an async generator  
+    except (Tcp_Ping_Error, Forwarding_Error, requests.exceptions.ProxyError, requests.exceptions.SSLError) as e:  
+        yield_ret['error_info'] = str(e)
+    except AssertionError as e:  
+        yield_ret['error_info'] = str(e)
+    except Exception as e:  
+        traceback.print_exc()
+        yield_ret['error_info'] = str(e)
+    finally:  
+        stop_xray(process)  
+        yield yield_ret  # Ensure every invocation is followed by a yield 
 
 async def main():  
     subscriptions = [
