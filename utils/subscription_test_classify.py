@@ -363,7 +363,7 @@ async def main():
             async for test_result in streamer:
                 j += 1
                 print(f'{i}/{len(subscriptions)} {j}/{len(links)}', end=' ')
-                print(test_result['link'] if test_result['status'] else test_result['error_info'])
+                print(test_result['link'] if test_result['status'] else test_result['error_info']+'\nerror_link:'+test_result['link'])
                 if test_result['status']:  # Only collect successful links  
                     available_links.add(test_result['link'])
 
