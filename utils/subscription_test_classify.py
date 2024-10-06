@@ -318,6 +318,7 @@ async def main():
         'https://mangaharb.fun:7643/v2ray/available_links.txt'  # 保证现有能用的也留住
     ] 
 
+    checked_links = set()
     available_links = set()
     for i,subscription in enumerate(subscriptions,start=1):
         # Load links from subscription  
@@ -350,6 +351,7 @@ async def main():
             for start in starts:
                 links.add(link[start:])
                 link = link[:start]
+        links = links - checked_links
 
 #         links = [
 # 'vless://5f0b2bda-0457-5e95-ba0e-9a425356f4cb@188.114.96.216:80?encryption=none&security=none&type=ws&host=wwww.speedtest.net.xn--Join.ELiV2RY.io.ie1.vless.Sitespeedtest.net.&path=%2F-%40ELiV2RY-%40ELiV2RY%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83%F0%9F%92%83-ELeNaTheGreatDictator#%F0%9F%91%89%F0%9F%86%94%20%40v2ray_configs_pool%F0%9F%93%A1%F0%9F%87%A8%F0%9F%87%A6Canada',
@@ -366,6 +368,8 @@ async def main():
                 print(test_result['link'] if test_result['status'] else test_result['error_info']+'\nerror_link:'+test_result['link'])
                 if test_result['status']:  # Only collect successful links  
                     available_links.add(test_result['link'])
+
+        checked_links = checked_links | links
 
     # Save available links to file  
     with open('results/available_links.txt', 'w') as fout:
